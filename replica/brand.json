@@ -1,6 +1,15 @@
 {
-  "name": "Syncut",
-  "avoid": ["SynApp", "PluralEyes", "Red Giant", "Maxon"],
-  "domains": ["redgiant.com", "maxon.net"],
+  "name": "TakeSync",
+  "avoid": [
+    "SynApp",
+    "Syncut",
+    "PluralEyes",
+    "Red Giant",
+    "Maxon"
+  ],
+  "domains": [
+    "redgiant.com",
+    "maxon.net"
+  ],
   "colors": []
 }

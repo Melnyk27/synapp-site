@@ -1,4 +1,4 @@
-// Syncut site: language switch (EN/UK) and the before/after sync demo.
+// TakeSync site: language switch (EN/UK) and the before/after sync demo.
 (function () {
   'use strict';
 
@@ -7,7 +7,7 @@
     'nav.how': 'Як це працює', 'nav.features': 'Можливості', 'nav.pricing': 'Ціна', 'nav.faq': 'Питання', 'nav.download': 'Завантажити',
     'hero.eyebrow': 'Для multicam, інтерв’ю, кліпів і подкастів',
     'hero.title': 'Камери й звук — синхронно за секунди.',
-    'hero.lead': 'Перетягніть папки з усіх камер і рекордера — Syncut вирівняє кліпи за звуком і віддасть готовий таймлайн у Premiere Pro, Final Cut Pro чи DaVinci Resolve. Без таймкоду, без хлопавки, без ручного підганяння хвиль.',
+    'hero.lead': 'Перетягніть папки з усіх камер і рекордера — TakeSync вирівняє кліпи за звуком і віддасть готовий таймлайн у Premiere Pro, Final Cut Pro чи DaVinci Resolve. Без таймкоду, без хлопавки, без ручного підганяння хвиль.',
     'hero.mac': 'Завантажити для macOS',
     'hero.fine': 'Безкоштовна пробна версія на 7 днів · Разова покупка, без підписки',
     'hero.demoLabel': 'Три треки до і після синхронізації',
@@ -15,12 +15,12 @@
     'strip.label': 'Куди експортує', 'strip.to': 'Експорт у', 'strip.files': 'WAV і відеофайли', 'strip.os': '· macOS і Windows',
     'how.kicker': 'ЯК ЦЕ ПРАЦЮЄ', 'how.title': 'Три кроки замість години ручного підганяння.',
     'how.s1t': 'Додайте медіа', 'how.s1': 'Перетягніть папки камер і рекордерів. Кожна папка стає треком; карти AVCHD, P2, XDCAM, DCIM і Canon XF розпізнаються самі.',
-    'how.s2t': 'Синхронізуйте', 'how.s2': 'Одна кнопка. Syncut аналізує звук усіх кліпів, знаходить збіги між треками, розкладає дублі по подіях і виправляє дрейф рекордера.',
+    'how.s2t': 'Синхронізуйте', 'how.s2': 'Одна кнопка. TakeSync аналізує звук усіх кліпів, знаходить збіги між треками, розкладає дублі по подіях і виправляє дрейф рекордера.',
     'how.s3t': 'Експортуйте', 'how.s3': 'Готовий таймлайн у вашу монтажку — з окремою sequence, де звук камер уже замінено чистим звуком рекордера.',
     'feat.kicker': 'МОЖЛИВОСТІ', 'feat.title': 'Зроблено для реальних зйомок, а не ідеальних.',
     'feat.1tag': 'імпорт', 'feat.1t': 'Треки самі по папках', 'feat.1': 'Кожна папка або карта камери — окремий трек. Розбиті на частини довгі записи склеюються в один кліп.',
     'feat.2tag': 'синк', 'feat.2t': 'Кілька камер і подій', 'feat.2': 'Скільки завгодно треків. Різні сцени й повтори лягають окремими подіями, а не накладаються.',
-    'feat.3tag': 'дрейф', 'feat.3t': 'Корекція дрейфу', 'feat.3': 'Рекордер біжить швидше за камеру? Syncut помітить розбіжність на довгому записі й вирівняє звук.',
+    'feat.3tag': 'дрейф', 'feat.3t': 'Корекція дрейфу', 'feat.3': 'Рекордер біжить швидше за камеру? TakeSync помітить розбіжність на довгому записі й вирівняє звук.',
     'feat.4tag': 'перевірка', 'feat.4t': 'Плеєр і таймлайн', 'feat.4': 'Хвилі, плейхед і відтворення всіх треків разом — перевірте синк на слух до експорту.',
     'feat.5tag': 'експорт', 'feat.5t': 'Звук уже замінено', 'feat.5': 'Окрема sequence зі звуком рекордера замість камерного. Або нові WAV і відеофайли для будь-якої монтажки.',
     'feat.6tag': 'приватність', 'feat.6t': 'Працює офлайн', 'feat.6': 'Усе рахується на вашому комп’ютері. Медіа нікуди не завантажується, оригінали не змінюються.',
@@ -33,9 +33,9 @@
     'price.kicker': 'ЦІНА', 'price.title': 'Купуєте раз — користуєтесь завжди.',
     'price.trial': 'Пробна версія', 'price.trialSub': 'Усі функції на 7 днів', 'price.download': 'Завантажити',
     'price.full': 'Повна ліцензія', 'price.fullSub': 'Разова оплата · 2 комп’ютери', 'price.once': 'разово',
-    'price.l1': 'Усі формати експорту', 'price.l2': 'macOS і Windows', 'price.l3': 'Усі оновлення 1.x включено', 'price.buy': 'Купити Syncut',
+    'price.l1': 'Усі формати експорту', 'price.l2': 'macOS і Windows', 'price.l3': 'Усі оновлення 1.x включено', 'price.buy': 'Купити TakeSync',
     'faq.title': 'Питання',
-    'faq.q1': 'Потрібен таймкод або хлопавка?', 'faq.a1': 'Ні. Syncut порівнює звук, записаний різними пристроями одночасно. Достатньо 5–10 секунд розбірливого звуку з перекриттям.',
+    'faq.q1': 'Потрібен таймкод або хлопавка?', 'faq.a1': 'Ні. TakeSync порівнює звук, записаний різними пристроями одночасно. Достатньо 5–10 секунд розбірливого звуку з перекриттям.',
     'faq.q2': 'Які формати підтримуються?', 'faq.a2': 'MOV, MP4, MTS/M2TS, MXF, WAV, AIFF, MP3, M4A та інші — усе, що читає ffmpeg. Структури карт AVCHD, P2, XDCAM, DCIM, Canon XF розпізнаються автоматично.',
     'faq.q3': 'Що робити з кліпом, який не синхронізувався?', 'faq.a3': 'Він позначається червоним. Зазвичай це запис, під час якого більше ніхто не писав, або надто тихий фрагмент. В експорті такі кліпи можна відправити в кінець таймлайну.',
     'faq.q4': 'Чи працює з Premiere Pro, Final Cut і Resolve?', 'faq.a4': 'Так: XML для Premiere Pro і DaVinci Resolve, fcpxml для Final Cut Pro, а також нові медіафайли для будь-якої іншої програми.',
@@ -45,7 +45,7 @@
     'demo.camA': 'Камера A', 'demo.camB': 'Камера B', 'demo.rec': 'Рекордер',
     'foot.support': 'Підтримка', 'foot.privacy': 'Політика конфіденційності', 'foot.terms': 'Умови використання'
   };
-  var TITLES = { en: document.title, uk: 'Syncut — синхронізація відео за звуком' };
+  var TITLES = { en: document.title, uk: 'TakeSync — синхронізація відео за звуком' };
 
   // ---- before / after demo ----
   function bars(seed, n, color) {
@@ -119,12 +119,12 @@
     document.querySelectorAll('.lang button').forEach(function (b) {
       b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang));
     });
-    try { localStorage.setItem('syncut-lang', lang); } catch (e) { /* storage unavailable */ }
+    try { localStorage.setItem('takesync-lang', lang); } catch (e) { /* storage unavailable */ }
   }
 
   var initial = 'en';
   try {
-    var saved = localStorage.getItem('syncut-lang');
+    var saved = localStorage.getItem('takesync-lang');
     if (saved === 'en' || saved === 'uk') initial = saved;
     else if (/^(uk|ru|be)/i.test(navigator.language || '')) initial = 'uk';
   } catch (e) {

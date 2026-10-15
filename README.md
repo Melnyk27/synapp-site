@@ -1,6 +1,6 @@
-# Syncut — website
+# TakeSync — website
 
-Landing page for Syncut, the audio-based multicam sync app for macOS and Windows.
+Landing page for TakeSync, the audio-based multicam sync app for macOS and Windows.
 Static HTML/CSS/JS, no build step. English and Ukrainian (switch in the header; auto-detected from the browser).
 
 - `index.html` — page (English copy lives in the markup)
