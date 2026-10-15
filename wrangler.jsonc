@@ -1,0 +1,8 @@
+{
+  // Cloudflare Workers static-assets site. Deployed by Cloudflare on every push to main.
+  "name": "takesync",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./"
+  }
+}
