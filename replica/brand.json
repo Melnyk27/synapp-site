@@ -1,0 +1,6 @@
+{
+  "name": "Syncut",
+  "avoid": ["SynApp", "PluralEyes", "Red Giant", "Maxon"],
+  "domains": ["redgiant.com", "maxon.net"],
+  "colors": []
+}
