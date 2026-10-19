@@ -6,3 +6,5 @@ wrangler.jsonc
 .assetsignore
 .nojekyll
 node_modules
+legal
+tools
