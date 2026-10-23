@@ -1,4 +1,4 @@
-# Source of the site translations. Generates synapp-site/i18n.js.
+# Source of the site translations. Generates i18n.js.
 import json
 
 L = {}

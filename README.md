@@ -11,5 +11,5 @@ Prices: eurozone visitors see the same numbers in euros; elsewhere the dollar pr
 Hosted on Cloudflare (Workers static assets), connected to this repo: every push to `main` deploys automatically.
 Build command: empty. Deploy command: `npx wrangler deploy` (config in `wrangler.jsonc`; files listed in `.assetsignore` are not published).
 `_headers` sets caching and basic security headers on Cloudflare.
-Download buttons point to this repo's latest release — attach the Apple Silicon `.dmg` there.
+Download buttons point to `/download/TakeSync.dmg`. Either put the file in `download/` (Workers static assets allow up to 25 MiB per file) or, for a bigger file, upload it to a Cloudflare R2 bucket and add a `_redirects` line: `/download/TakeSync.dmg https://<your-r2-domain>/TakeSync.dmg 302`.
 Overview video: put it at `media/takesync-overview.mp4` — the “Watch” button in the hero appears by itself once the file is published.
