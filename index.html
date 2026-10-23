@@ -46,12 +46,19 @@
 
   <!-- HERO: the timeline syncs itself as you scroll -->
   <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" id="hero-video" muted loop playsinline preload="none" poster="media/hero-poster.jpg">
+          <source src="media/hero-av1.mp4" type='video/mp4; codecs="av01.0.05M.08"'>
+          <source src="media/hero.webm" type="video/webm">
+          <source src="media/hero.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="container hero-copy">
         <h1 id="hero-title" data-i18n="hero.title">Drop the footage. Get the timeline.</h1>
         <p class="lead" data-i18n="hero.lead">TakeSync lines up every camera, recorder and lav mic by their sound — no timecode, no slate, no clapping. Then hands the synced timeline to Premiere Pro.</p>
         <div class="cta-row">
           <a href="#download" class="btn btn-primary btn-lg" data-i18n="hero.cta">Download free trial</a>
-          <button type="button" class="btn btn-ghost btn-lg" id="watch" hidden data-i18n="hero.watch">Watch the 30-second overview</button>
+          <button type="button" class="btn btn-ghost btn-lg" id="watch" hidden data-i18n="hero.watch">Watch the 36-second overview</button>
         </div>
         <p class="fine" data-i18n="hero.fine">Version 1.0 for Macs with Apple Silicon. 7 days free, works offline.</p>
       </div>

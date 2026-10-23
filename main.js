@@ -235,6 +235,22 @@
     window.addEventListener('resize', onScroll);
   }
 
+  // ---------- hero background loop: muted, starts only when visible, skipped on Save-Data / reduced motion ----------
+  var hv = document.getElementById('hero-video');
+  var saveData = navigator.connection && navigator.connection.saveData;
+  if (hv && !reduce && !saveData) {
+    var started = false;
+    var play = function () { var p = hv.play(); if (p && p.catch) p.catch(function () {}); };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { if (!started) { started = true; hv.preload = 'auto'; hv.load(); } play(); }
+          else hv.pause();
+        });
+      }, { threshold: 0.05 }).observe(hv);
+    } else { hv.preload = 'auto'; play(); }
+  }
+
   // ---------- overview video: the button appears once the file is published ----------
   var VIDEO = 'media/takesync-overview.mp4';
   var watch = document.getElementById('watch');
