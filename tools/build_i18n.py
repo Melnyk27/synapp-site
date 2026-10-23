@@ -4,6 +4,7 @@ import json
 L = {}
 
 L['uk'] = {
+ 'foot.refund': 'Повернення коштів',
  'nav.lang': 'Мова',
  'skip': 'Перейти до змісту',
  'nav.features': 'Що вміє', 'nav.how': 'Як це працює', 'nav.compat': 'Сумісність', 'nav.pricing': 'Ціна', 'nav.faq': 'Питання', 'nav.download': 'Завантажити',
@@ -62,6 +63,7 @@ L['uk'] = {
 }
 
 L['de'] = {
+ 'foot.refund': 'Rückerstattung',
  'nav.lang': 'Sprache',
  'skip': 'Zum Inhalt springen',
  'nav.features': 'Funktionen', 'nav.how': 'So funktioniert’s', 'nav.compat': 'Kompatibilität', 'nav.pricing': 'Preise', 'nav.faq': 'FAQ', 'nav.download': 'Download',
@@ -120,6 +122,7 @@ L['de'] = {
 }
 
 L['es'] = {
+ 'foot.refund': 'Reembolsos',
  'nav.lang': 'Idioma',
  'skip': 'Ir al contenido',
  'nav.features': 'Qué hace', 'nav.how': 'Cómo funciona', 'nav.compat': 'Compatibilidad', 'nav.pricing': 'Precios', 'nav.faq': 'Preguntas', 'nav.download': 'Descargar',
@@ -178,6 +181,7 @@ L['es'] = {
 }
 
 L['fr'] = {
+ 'foot.refund': 'Remboursements',
  'nav.lang': 'Langue',
  'skip': 'Aller au contenu',
  'nav.features': 'Ce qu’il fait', 'nav.how': 'Comment ça marche', 'nav.compat': 'Compatibilité', 'nav.pricing': 'Tarifs', 'nav.faq': 'FAQ', 'nav.download': 'Télécharger',
@@ -236,6 +240,7 @@ L['fr'] = {
 }
 
 L['it'] = {
+ 'foot.refund': 'Rimborsi',
  'nav.lang': 'Lingua',
  'skip': 'Vai al contenuto',
  'nav.features': 'Cosa fa', 'nav.how': 'Come funziona', 'nav.compat': 'Compatibilità', 'nav.pricing': 'Prezzi', 'nav.faq': 'FAQ', 'nav.download': 'Scarica',
@@ -294,6 +299,7 @@ L['it'] = {
 }
 
 L['pl'] = {
+ 'foot.refund': 'Zwroty',
  'nav.lang': 'Język',
  'skip': 'Przejdź do treści',
  'nav.features': 'Co robi', 'nav.how': 'Jak działa', 'nav.compat': 'Zgodność', 'nav.pricing': 'Cennik', 'nav.faq': 'Pytania', 'nav.download': 'Pobierz',
@@ -352,6 +358,7 @@ L['pl'] = {
 }
 
 L['hu'] = {
+ 'foot.refund': 'Visszatérítés',
  'nav.lang': 'Nyelv',
  'skip': 'Ugrás a tartalomhoz',
  'nav.features': 'Mit tud', 'nav.how': 'Hogyan működik', 'nav.compat': 'Kompatibilitás', 'nav.pricing': 'Árak', 'nav.faq': 'GYIK', 'nav.download': 'Letöltés',
@@ -410,6 +417,7 @@ L['hu'] = {
 }
 
 L['tr'] = {
+ 'foot.refund': 'İade politikası',
  'nav.lang': 'Dil',
  'skip': 'İçeriğe geç',
  'nav.features': 'Neler yapar', 'nav.how': 'Nasıl çalışır', 'nav.compat': 'Uyumluluk', 'nav.pricing': 'Fiyatlar', 'nav.faq': 'SSS', 'nav.download': 'İndir',
@@ -468,6 +476,7 @@ L['tr'] = {
 }
 
 L['ko'] = {
+ 'foot.refund': '환불 정책',
  'nav.lang': '언어',
  'skip': '본문으로 건너뛰기',
  'nav.features': '기능', 'nav.how': '사용 방법', 'nav.compat': '호환성', 'nav.pricing': '가격', 'nav.faq': 'FAQ', 'nav.download': '다운로드',
@@ -526,6 +535,7 @@ L['ko'] = {
 }
 
 L['zh'] = {
+ 'foot.refund': '退款政策',
  'nav.lang': '语言',
  'skip': '跳到正文',
  'nav.features': '功能', 'nav.how': '使用方法', 'nav.compat': '兼容性', 'nav.pricing': '价格', 'nav.faq': '常见问题', 'nav.download': '下载',
@@ -588,7 +598,7 @@ NAMES = {'en': 'English', 'uk': 'Українська', 'de': 'Deutsch', 'es': '
 
 if __name__ == '__main__':
     import sys
-    en_keys = set(json.load(open('tools/en_keys.json'))) | {'hero.synced', 'price.noteUsd', 'price.noteEur', 'price.noteLocal', '_title', 'nav.lang'}
+    en_keys = set(json.load(open('tools/en_keys.json'))) | {'hero.synced', 'price.noteUsd', 'price.noteEur', 'price.noteLocal', '_title', 'nav.lang', 'foot.refund'}
     en_keys.discard('price.note')
     bad = False
     for lang, d in L.items():

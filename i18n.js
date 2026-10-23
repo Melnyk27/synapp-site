@@ -15,6 +15,7 @@ window.TAKESYNC_I18N = {
 },
 "langs": {
 "uk": {
+"foot.refund": "Повернення коштів",
 "nav.lang": "Мова",
 "skip": "Перейти до змісту",
 "nav.features": "Що вміє",
@@ -134,6 +135,7 @@ window.TAKESYNC_I18N = {
 "_title": "TakeSync — синхронізація multicam за звуком для Premiere Pro"
 },
 "de": {
+"foot.refund": "Rückerstattung",
 "nav.lang": "Sprache",
 "skip": "Zum Inhalt springen",
 "nav.features": "Funktionen",
@@ -253,6 +255,7 @@ window.TAKESYNC_I18N = {
 "_title": "TakeSync – Multicam-Synchronisation über den Ton für Premiere Pro"
 },
 "es": {
+"foot.refund": "Reembolsos",
 "nav.lang": "Idioma",
 "skip": "Ir al contenido",
 "nav.features": "Qué hace",
@@ -372,6 +375,7 @@ window.TAKESYNC_I18N = {
 "_title": "TakeSync — sincronización multicámara por sonido para Premiere Pro"
 },
 "fr": {
+"foot.refund": "Remboursements",
 "nav.lang": "Langue",
 "skip": "Aller au contenu",
 "nav.features": "Ce qu’il fait",
@@ -491,6 +495,7 @@ window.TAKESYNC_I18N = {
 "_title": "TakeSync — synchronisation multicam par le son pour Premiere Pro"
 },
 "it": {
+"foot.refund": "Rimborsi",
 "nav.lang": "Lingua",
 "skip": "Vai al contenuto",
 "nav.features": "Cosa fa",
@@ -610,6 +615,7 @@ window.TAKESYNC_I18N = {
 "_title": "TakeSync — sincronizzazione multicamera dal suono per Premiere Pro"
 },
 "pl": {
+"foot.refund": "Zwroty",
 "nav.lang": "Język",
 "skip": "Przejdź do treści",
 "nav.features": "Co robi",
@@ -729,6 +735,7 @@ window.TAKESYNC_I18N = {
 "_title": "TakeSync — synchronizacja multicam po dźwięku dla Premiere Pro"
 },
 "hu": {
+"foot.refund": "Visszatérítés",
 "nav.lang": "Nyelv",
 "skip": "Ugrás a tartalomhoz",
 "nav.features": "Mit tud",
@@ -848,6 +855,7 @@ window.TAKESYNC_I18N = {
 "_title": "TakeSync — multicam szinkron hang alapján a Premiere Pro-hoz"
 },
 "tr": {
+"foot.refund": "İade politikası",
 "nav.lang": "Dil",
 "skip": "İçeriğe geç",
 "nav.features": "Neler yapar",
@@ -967,6 +975,7 @@ window.TAKESYNC_I18N = {
 "_title": "TakeSync — Premiere Pro için sese göre çok kameralı eşitleme"
 },
 "ko": {
+"foot.refund": "환불 정책",
 "nav.lang": "언어",
 "skip": "본문으로 건너뛰기",
 "nav.features": "기능",
@@ -1086,6 +1095,7 @@ window.TAKESYNC_I18N = {
 "_title": "TakeSync — Premiere Pro용 소리 기반 멀티캠 싱크"
 },
 "zh": {
+"foot.refund": "退款政策",
 "nav.lang": "语言",
 "skip": "跳到正文",
 "nav.features": "功能",

@@ -13,3 +13,6 @@ Build command: empty. Deploy command: `npx wrangler deploy` (config in `wrangler
 `_headers` sets caching and basic security headers on Cloudflare.
 Download buttons point to `/download/TakeSync.dmg`. Either put the file in `download/` (Workers static assets allow up to 25 MiB per file) or, for a bigger file, upload it to a Cloudflare R2 bucket and add a `_redirects` line: `/download/TakeSync.dmg https://<your-r2-domain>/TakeSync.dmg 302`.
 Overview video: put it at `media/takesync-overview.mp4` — the “Watch” button in the hero appears by itself once the file is published.
+
+## Legal pages
+`privacy.html`, `terms.html`, `refund.html` are generated: edit `legal/*.md`, then `python3 tools/build_legal.py` (`pip install markdown`). It refuses to build while `[PLACEHOLDERS]` remain. `legal/` and `tools/` are not published.

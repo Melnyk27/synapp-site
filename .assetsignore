@@ -6,3 +6,4 @@ wrangler.jsonc
 .nojekyll
 node_modules
 tools
+legal
