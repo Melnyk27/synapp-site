@@ -134,6 +134,8 @@ p { margin: 0; }
 .feature:nth-child(4) .clip { --w: 80px; }
 .feature:nth-child(5) .clip { --w: 140px; }
 .feature:nth-child(6) .clip { --w: 52px; }
+.feature:nth-child(7) .clip { --w: 110px; }
+.feature:nth-child(8) .clip { --w: 70px; }
 .feature h3 { font-size: 22px; font-weight: 700; }
 .feature p { color: var(--muted); margin-top: 10px; max-width: 46ch; }
 @media (max-width: 760px) { .features { grid-template-columns: 1fr; } }
