@@ -240,15 +240,19 @@
   var saveData = navigator.connection && navigator.connection.saveData;
   if (hv && !reduce && !saveData) {
     var started = false;
-    var play = function () { var p = hv.play(); if (p && p.catch) p.catch(function () {}); };
+    var visible = false;
+    var play = function () { if (!visible) return; var p = hv.play(); if (p && p.catch) p.catch(function () {}); };
+    hv.addEventListener('canplay', play);
+    document.addEventListener('visibilitychange', function () { if (!document.hidden) play(); });
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(function (es) {
         es.forEach(function (e) {
-          if (e.isIntersecting) { if (!started) { started = true; hv.preload = 'auto'; hv.load(); } play(); }
+          visible = e.isIntersecting;
+          if (visible) { if (!started) { started = true; hv.preload = 'auto'; hv.load(); } play(); }
           else hv.pause();
         });
       }, { threshold: 0.05 }).observe(hv);
-    } else { hv.preload = 'auto'; play(); }
+    } else { visible = true; hv.preload = 'auto'; play(); }
   }
 
   // ---------- overview video: the button appears once the file is published ----------
