@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TakeSync — sync multicam video and audio in seconds</title>
-<meta name="description" content="TakeSync lines up footage from every camera and audio recorder by sound, then hands a ready timeline to Premiere Pro, Final Cut Pro or DaVinci Resolve. No timecode, no clapper. macOS and Windows.">
-<meta property="og:title" content="TakeSync — sync multicam video and audio in seconds">
-<meta property="og:description" content="Drop in your camera and recorder folders. Get a synced timeline for Premiere Pro, Final Cut Pro or DaVinci Resolve.">
+<title>TakeSync — multicam sync by sound for Premiere Pro</title>
+<meta name="description" content="TakeSync lines up every camera, recorder and lav mic by their sound — no timecode, no slate — and hands a synced timeline to Premiere Pro. Version 1.0 for Macs with Apple Silicon.">
+<meta property="og:title" content="TakeSync — drop the footage, get the timeline">
+<meta property="og:description" content="Multicam sync by sound for Premiere Pro. Cameras, recorders and lav mics, no timecode needed. For Macs with Apple Silicon.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0d0f13">
+<meta name="theme-color" content="#0e1014">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,12 +21,13 @@
 <header class="nav-wrap">
   <nav class="nav container" aria-label="Main">
     <a href="#top" class="brand" aria-label="TakeSync home">
-      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#15181d"/><rect x="5" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/><rect x="9" y="6" width="2.4" height="16" rx="1.2" fill="#4fd58a"/><rect x="13" y="10" width="2.4" height="8" rx="1.2" fill="#5b9cff"/><rect x="17" y="5" width="2.4" height="18" rx="1.2" fill="#4fd58a"/><rect x="21" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/></svg>
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#171a20"/><rect x="5" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/><rect x="9" y="6" width="2.4" height="16" rx="1.2" fill="#4fd58a"/><rect x="13" y="10" width="2.4" height="8" rx="1.2" fill="#5b9cff"/><rect x="17" y="5" width="2.4" height="18" rx="1.2" fill="#4fd58a"/><rect x="21" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/></svg>
       TakeSync
     </a>
     <div class="nav-links">
+      <a href="#features" data-i18n="nav.features">What it does</a>
       <a href="#how" data-i18n="nav.how">How it works</a>
-      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#compat" data-i18n="nav.compat">Compatibility</a>
       <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
       <a href="#faq" data-i18n="nav.faq">FAQ</a>
     </div>
@@ -41,142 +42,181 @@
 <main id="main">
   <span id="top"></span>
 
-  <section class="hero container">
-    <div class="hero-copy">
-      <p class="pill"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.eyebrow">For multicam, interviews, music videos and podcasts</span></p>
-      <h1 data-i18n="hero.title">Every camera and mic in sync — in seconds.</h1>
-      <p class="lead" data-i18n="hero.lead">Drop in the folders from every camera and your audio recorder. TakeSync lines the clips up by sound and hands a ready timeline to Premiere Pro, Final Cut Pro or DaVinci Resolve. No timecode, no clapper, no nudging waveforms by hand.</p>
-      <div class="cta-row">
-        <a href="#download" class="btn btn-primary btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-          <span data-i18n="hero.mac">Download for macOS</span>
-        </a>
-        <a href="#download" class="btn btn-ghost btn-lg">Windows</a>
+  <!-- HERO: the timeline syncs itself as you scroll -->
+  <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-copy">
+        <h1 id="hero-title" data-i18n="hero.title">Drop the footage. Get the timeline.</h1>
+        <p class="lead" data-i18n="hero.lead">TakeSync lines up every camera, recorder and lav mic by their sound — no timecode, no slate, no clapping. Then hands the synced timeline to Premiere Pro.</p>
+        <div class="cta-row">
+          <a href="#download" class="btn btn-primary btn-lg" data-i18n="hero.cta">Download free trial</a>
+          <button type="button" class="btn btn-ghost btn-lg" id="watch" hidden data-i18n="hero.watch">Watch the 30-second overview</button>
+        </div>
+        <p class="fine" data-i18n="hero.fine">Version 1.0 for Macs with Apple Silicon. 7 days free, works offline.</p>
       </div>
-      <p class="fine" data-i18n="hero.fine">7-day free trial · One-time purchase, no subscription</p>
-    </div>
-
-    <figure class="demo" aria-label="Three tracks before and after syncing" data-i18n-attr="aria-label:hero.demoLabel">
-      <div class="demo-head">
-        <span class="mono" data-i18n="demo.before">Before sync</span>
-        <span class="mono" id="tc">00:00:12:04</span>
-      </div>
-      <div class="tracks" id="tracks-before"></div>
-      <div class="demo-sep">
-        <span class="rule"></span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
-        <span data-i18n="demo.synced">Synced in 4 s · frame accurate</span>
-        <span class="rule"></span>
-      </div>
-      <div class="tracks" id="tracks-after"></div>
-    </figure>
   </section>
 
-  <section class="strip" aria-label="Export targets" data-i18n-attr="aria-label:strip.label">
-    <div class="container strip-row">
-      <span class="faint" data-i18n="strip.to">Exports to</span>
-      <span>Adobe Premiere Pro</span>
-      <span>Final Cut Pro</span>
-      <span>DaVinci Resolve</span>
-      <span data-i18n="strip.files">WAV and video files</span>
-      <span class="faint" data-i18n="strip.os">· macOS and Windows</span>
+  <section class="stage" id="stage" aria-label="Sync demo" data-i18n-attr="aria-label:hero.stage">
+    <div class="stage-pin">
+      <figure class="timeline" id="timeline" aria-label="Six tracks of a wedding sliding into sync" data-i18n-attr="aria-label:hero.tlLabel">
+        <div class="tl-head">
+          <span class="tl-status" id="tl-status" data-i18n="hero.unsynced">6 devices, out of sync</span>
+          <span class="tl-tc" id="tl-tc">16:42:07:12</span>
+        </div>
+        <div class="tl-lanes" id="tl-lanes"></div>
+        <span class="tl-flash" id="tl-flash" aria-hidden="true"></span>
+        <p class="tl-hint" id="tl-hint" aria-hidden="true" data-i18n="hero.hint">Scroll to sync</p>
+      </figure>
     </div>
   </section>
 
-  <section id="how" class="container section">
-    <p class="kicker" data-i18n="how.kicker">HOW IT WORKS</p>
-    <h2 data-i18n="how.title">Three steps instead of an hour of nudging.</h2>
-    <div class="grid-3">
-      <article class="card">
-        <span class="num">1</span>
-        <h3 data-i18n="how.s1t">Add media</h3>
-        <p data-i18n="how.s1">Drag in your camera and recorder folders. Each folder becomes a track; AVCHD, P2, XDCAM, DCIM and Canon XF cards are recognised automatically.</p>
+  <section class="pain container" aria-labelledby="pain-title">
+    <h2 id="pain-title" data-i18n="pain.title">A wedding is 500 files and six devices.</h2>
+    <p data-i18n="pain.text">Two cameras, a drone, a recorder on the DJ desk, four lav mics on the groom, the officiant and the parents. Lining that up by hand eats the first evening of every edit. TakeSync does it while you make coffee.</p>
+  </section>
+
+  <section id="features" class="container section" aria-labelledby="feat-title">
+    <h2 id="feat-title" data-i18n="feat.title">What it does for you</h2>
+    <div class="features">
+      <article class="feature" style="--c: var(--audio)">
+        <span class="clip" aria-hidden="true"></span>
+        <h3 data-i18n="feat.1t">Synced by sound</h3>
+        <p data-i18n="feat.1">Every clip is matched to the others by its audio. Any camera, phone, recorder or lav works — no timecode or slate needed.</p>
       </article>
-      <article class="card">
-        <span class="num">2</span>
-        <h3 data-i18n="how.s2t">Sync</h3>
-        <p data-i18n="how.s2">One button. TakeSync analyses the sound of every clip, matches them across tracks, sorts takes into separate events and corrects recorder drift.</p>
+      <article class="feature" style="--c: var(--clock)">
+        <span class="clip" aria-hidden="true"></span>
+        <h3 data-i18n="feat.2t">Nothing gets lost</h3>
+        <p data-i18n="feat.2">B-roll from a camera rolling on its own has no sound partner. TakeSync places it by the camera’s clock, at the time of day it was shot.</p>
       </article>
-      <article class="card">
-        <span class="num">3</span>
-        <h3 data-i18n="how.s3t">Export</h3>
-        <p data-i18n="how.s3">A ready timeline for your editor — plus a second sequence where the camera audio is already replaced with clean recorder sound.</p>
+      <article class="feature" style="--c: var(--cut)">
+        <span class="clip" aria-hidden="true"></span>
+        <h3 data-i18n="feat.3t">False matches caught</h3>
+        <p data-i18n="feat.3">A song played twice or an interview over the ceremony can look like a match. Every match is checked against the device clocks, and the ones that can’t be true are dropped.</p>
+      </article>
+      <article class="feature" style="--c: var(--video)">
+        <span class="clip" aria-hidden="true"></span>
+        <h3 data-i18n="feat.4t">The day, in order</h3>
+        <p data-i18n="feat.4">The timeline follows the real time of day: ceremony, portraits, speeches, first dance. Long stretches where nobody recorded are squeezed out.</p>
+      </article>
+      <article class="feature" style="--c: var(--audio)">
+        <span class="clip" aria-hidden="true"></span>
+        <h3 data-i18n="feat.5t">Recorder sound, swapped in</h3>
+        <p data-i18n="feat.5">One tick adds a second sequence where camera audio is replaced by the recorder or lav. Overlapping clips get their own tracks, so nothing hides under anything.</p>
+      </article>
+      <article class="feature" style="--c: var(--muted)">
+        <span class="clip" aria-hidden="true"></span>
+        <h3 data-i18n="feat.6t">Private and offline</h3>
+        <p data-i18n="feat.6">Your footage never leaves your Mac. No upload, no account, no internet needed to sync.</p>
       </article>
     </div>
   </section>
 
-  <section id="features" class="container section">
-    <p class="kicker" data-i18n="feat.kicker">FEATURES</p>
-    <h2 data-i18n="feat.title">Built for real shoots, not perfect ones.</h2>
-    <div class="feature-grid">
-      <article><span class="tag" data-i18n="feat.1tag">import</span><h3 data-i18n="feat.1t">Tracks from folders</h3><p data-i18n="feat.1">Every folder or camera card becomes its own track. Long recordings split across files are joined back into one clip.</p></article>
-      <article><span class="tag" data-i18n="feat.2tag">sync</span><h3 data-i18n="feat.2t">Many cameras, many events</h3><p data-i18n="feat.2">As many tracks as you like. Separate scenes and repeated takes land as separate events instead of stacking up.</p></article>
-      <article><span class="tag" data-i18n="feat.3tag">drift</span><h3 data-i18n="feat.3t">Drift correction</h3><p data-i18n="feat.3">Recorder clock running fast? TakeSync spots the slip across a long recording and corrects the audio.</p></article>
-      <article><span class="tag" data-i18n="feat.4tag">review</span><h3 data-i18n="feat.4t">Player and timeline</h3><p data-i18n="feat.4">Waveforms, a playhead and all tracks playing together — check the sync by ear before you export.</p></article>
-      <article><span class="tag" data-i18n="feat.5tag">export</span><h3 data-i18n="feat.5t">Audio already swapped</h3><p data-i18n="feat.5">A separate sequence with recorder audio in place of camera audio. Or new WAV and video files for any editor.</p></article>
-      <article><span class="tag" data-i18n="feat.6tag">privacy</span><h3 data-i18n="feat.6t">Works offline</h3><p data-i18n="feat.6">Everything runs on your computer. Nothing is uploaded and your original files are never changed.</p></article>
-    </div>
+  <section id="how" class="container section" aria-labelledby="how-title">
+    <h2 id="how-title" data-i18n="how.title">Three steps</h2>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-text">
+          <h3 data-i18n="how.s1t">Drop your folders</h3>
+          <p data-i18n="how.s1">Each camera, recorder or mic folder becomes a track. Proxies are detected — keep them or skip them.</p>
+        </div>
+        <div class="mock mock-drop" aria-hidden="true">
+          <div class="drop"><span data-i18n="mock.drop">Drop camera and recorder folders here</span></div>
+          <div class="folders"><i>Cam A</i><i>Cam B</i><i>Drone</i><i>Recorder</i><i>Lav mics</i></div>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-text">
+          <h3 data-i18n="how.s2t">Press Sync</h3>
+          <p data-i18n="how.s2">TakeSync listens to every clip, finds where they overlap and builds the timeline — by sound first, by clock for the rest.</p>
+        </div>
+        <div class="mock mock-sync" aria-hidden="true">
+          <div class="bar"><span class="bar-fill"></span></div>
+          <p class="mono" data-i18n="mock.synced">Synchronized · groups: 9</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-text">
+          <h3 data-i18n="how.s3t">Open it in Premiere Pro</h3>
+          <p data-i18n="how.s3">The TakeSync panel inside Premiere shows every export. One click imports the synced sequence into your open project, reusing the media you already have — no duplicates.</p>
+        </div>
+        <div class="mock mock-panel" aria-hidden="true">
+          <p class="panel-title">TakeSync</p>
+          <div class="panel-row"><span data-i18n="mock.p1">Wedding — ceremony</span><b data-i18n="mock.import">Import</b></div>
+          <div class="panel-row"><span data-i18n="mock.p2">Wedding — reception</span><b data-i18n="mock.import">Import</b></div>
+          <div class="panel-row dim"><span data-i18n="mock.p3">Interview, replaced audio</span><b data-i18n="mock.import">Import</b></div>
+        </div>
+      </li>
+    </ol>
   </section>
 
-  <section class="container section">
-    <div class="why">
-      <div>
-        <h2 class="h2-sm" data-i18n="why.title">Why not your editor's built-in sync?</h2>
-        <p class="muted" data-i18n="why.lead">Built-in waveform sync is fine for a few clips with clean sound. With four cameras, twenty takes and a recorder that ran for an hour straight, it turns into manual work.</p>
-      </div>
-      <ul class="checks">
-        <li data-i18n-html="why.1"><b>Hundreds of clips at once</b> — no picking pairs by hand.</li>
-        <li data-i18n-html="why.2"><b>Repeats and multiple events</b> — each scene lands on its own, without false matches.</li>
-        <li data-i18n-html="why.3"><b>Drift on long recordings</b> — corrected automatically.</li>
-        <li data-i18n-html="why.4"><b>One app for every editor</b> — sync once, export wherever you cut.</li>
-      </ul>
-    </div>
+  <section id="compat" class="container section" aria-labelledby="compat-title">
+    <h2 id="compat-title" data-i18n="compat.title">What TakeSync 1.0 runs on</h2>
+    <p class="section-lead" data-i18n="compat.lead">Version 1.0 is fully supported on Macs with Apple Silicon and with Adobe Premiere Pro. Other editors and Windows arrive in free updates once they’re tested.</p>
+    <table class="compat">
+      <thead><tr><th scope="col" data-i18n="compat.what">Platform or editor</th><th scope="col" data-i18n="compat.state">Status in 1.0</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" data-i18n="compat.mac">Mac with Apple Silicon (M1 or newer)</th><td><span class="state ok" data-i18n="compat.ok">Supported</span></td></tr>
+        <tr><th scope="row">Adobe Premiere Pro</th><td><span class="state ok" data-i18n="compat.okPanel">Supported, with the TakeSync panel</span></td></tr>
+        <tr><th scope="row">Final Cut Pro</th><td><span class="state test" data-i18n="compat.testing">In testing</span></td></tr>
+        <tr><th scope="row">DaVinci Resolve</th><td><span class="state test" data-i18n="compat.testing">In testing</span></td></tr>
+        <tr><th scope="row" data-i18n="compat.intel">Mac with Intel</th><td><span class="state no" data-i18n="compat.notYet">Not supported yet</span></td></tr>
+        <tr><th scope="row">Windows</th><td><span class="state no" data-i18n="compat.dev">In development</span></td></tr>
+      </tbody>
+    </table>
   </section>
 
-  <section id="pricing" class="container section">
-    <p class="kicker center" data-i18n="price.kicker">PRICING</p>
-    <h2 class="center" data-i18n="price.title">Buy once. Keep it.</h2>
+  <section class="container section" aria-labelledby="who-title">
+    <h2 id="who-title" class="h2-sm" data-i18n="who.title">Made for long, messy, multi-device days</h2>
+    <ul class="who">
+      <li data-i18n="who.1">Weddings</li>
+      <li data-i18n="who.2">Events and conferences</li>
+      <li data-i18n="who.3">Interviews and podcasts</li>
+      <li data-i18n="who.4">Documentaries</li>
+      <li data-i18n="who.5">Live music</li>
+    </ul>
+  </section>
+
+  <section id="pricing" class="container section" aria-labelledby="price-title">
+    <h2 id="price-title" data-i18n="price.title">Buy once. Keep it.</h2>
     <div class="plans">
       <article class="plan">
         <h3 data-i18n="price.trial">Free trial</h3>
-        <p class="muted" data-i18n="price.trialSub">Every feature for 7 days</p>
         <p class="price">$0</p>
-        <a href="#download" class="btn btn-ghost btn-block" data-i18n="price.download">Download</a>
+        <p class="muted" data-i18n="price.trialSub">Every feature for 7 days. No card required.</p>
+        <a href="#download" class="btn btn-ghost btn-block" data-i18n="price.download">Download free trial</a>
       </article>
       <article class="plan plan-main">
         <h3 data-i18n="price.full">Full licence</h3>
-        <p class="muted" data-i18n="price.fullSub">One-time payment · 2 computers</p>
-        <p class="price">$49 <span data-i18n="price.once">once</span></p>
+        <p class="price">$49</p>
+        <p class="muted" data-i18n="price.fullSub">One-time payment, for 2 computers.</p>
         <ul class="plan-list">
-          <li data-i18n="price.l1">Every export format</li>
-          <li data-i18n="price.l2">macOS and Windows</li>
-          <li data-i18n="price.l3">All 1.x updates included</li>
+          <li data-i18n="price.l1">Premiere Pro export and the TakeSync panel</li>
+          <li data-i18n="price.l2">Every 1.x update, including new editors and Windows</li>
         </ul>
         <a href="#buy" id="buy" class="btn btn-primary btn-block" data-i18n="price.buy">Buy TakeSync</a>
       </article>
     </div>
   </section>
 
-  <section id="faq" class="container narrow section">
-    <h2 data-i18n="faq.title">Questions</h2>
+  <section id="faq" class="container narrow section" aria-labelledby="faq-title">
+    <h2 id="faq-title" data-i18n="faq.title">Questions</h2>
     <div class="faq">
-      <details><summary data-i18n="faq.q1">Do I need timecode or a clapper?</summary><p data-i18n="faq.a1">No. TakeSync compares the sound recorded by different devices at the same time. 5–10 seconds of overlapping, audible sound is enough.</p></details>
-      <details><summary data-i18n="faq.q2">Which formats are supported?</summary><p data-i18n="faq.a2">MOV, MP4, MTS/M2TS, MXF, WAV, AIFF, MP3, M4A and more — anything ffmpeg can read. AVCHD, P2, XDCAM, DCIM and Canon XF card structures are recognised automatically.</p></details>
-      <details><summary data-i18n="faq.q3">What happens to a clip that doesn't sync?</summary><p data-i18n="faq.a3">It's marked red. Usually it was recorded when no other device was rolling, or the audio is too quiet. On export you can send such clips to the end of the timeline.</p></details>
-      <details><summary data-i18n="faq.q4">Does it work with Premiere Pro, Final Cut and Resolve?</summary><p data-i18n="faq.a4">Yes: XML for Premiere Pro and DaVinci Resolve, fcpxml for Final Cut Pro, plus new media files for any other editor.</p></details>
-      <details><summary data-i18n="faq.q5">Is it a subscription?</summary><p data-i18n="faq.a5">No. You pay once and the licence is yours, including every 1.x update.</p></details>
+      <details><summary data-i18n="faq.q1">Do I need timecode or a slate?</summary><p data-i18n="faq.a1">No. TakeSync compares the sound recorded by different devices at the same time. Cameras without timecode and phones work fine.</p></details>
+      <details><summary data-i18n="faq.q2">Which formats does it read?</summary><p data-i18n="faq.a2">MP4, MOV, WAV, AIFF, M4A and MP3 out of the box. MXF, MTS and other formats work after you install FFmpeg from Settings.</p></details>
+      <details><summary data-i18n="faq.q3">What happens to a clip with no sound partner?</summary><p data-i18n="faq.a3">If its camera’s clock is reliable, the clip goes on the timeline at the time it was recorded and is marked so you can check it. Otherwise it’s marked as not synced, and on export you can move such clips to the end.</p></details>
+      <details><summary data-i18n="faq.q4">Does it fix drift on long recordings?</summary><p data-i18n="faq.a4">Yes. TakeSync detects when a recorder runs slightly fast or slow against the cameras and corrects the audio.</p></details>
+      <details><summary data-i18n="faq.q5">What about Final Cut Pro, DaVinci Resolve and Windows?</summary><p data-i18n="faq.a5">Final Cut Pro and DaVinci Resolve export is being tested now. Windows is in development. Both come as free 1.x updates.</p></details>
+      <details><summary data-i18n="faq.q6">Is it a subscription?</summary><p data-i18n="faq.a6">No. You pay once and the licence is yours, including every 1.x update.</p></details>
     </div>
   </section>
 
-  <section id="download" class="container section-last">
+  <section id="download" class="container section-last" aria-labelledby="final-title">
     <div class="final">
-      <h2 data-i18n="final.title">Sync your next multicam in a minute.</h2>
+      <h2 id="final-title" data-i18n="final.title">Spend the evening editing, not lining up clips.</h2>
       <p class="muted" data-i18n="final.sub">Free for 7 days. No card required.</p>
-      <div class="cta-row center-row">
-        <a href="https://github.com/Melnyk27/synapp-site/releases/latest" class="btn btn-primary btn-lg" data-i18n="final.mac">macOS · Apple Silicon and Intel</a>
-        <a href="https://github.com/Melnyk27/synapp-site/releases/latest" class="btn btn-ghost btn-lg" data-i18n="final.win">Windows 10/11</a>
+      <div class="cta-row">
+        <a href="https://github.com/Melnyk27/synapp-site/releases/latest" class="btn btn-primary btn-lg" data-i18n="final.mac">Download for Mac (Apple Silicon)</a>
       </div>
-      <p class="mono faint small" data-i18n="final.req">Version 0.1 · macOS 12+ · Windows 10+</p>
+      <p class="small faint" data-i18n="final.req">TakeSync 1.0 · Mac with Apple Silicon · Adobe Premiere Pro. Windows is in development.</p>
     </div>
   </section>
 </main>
@@ -185,12 +225,17 @@
   <div class="container footer-row">
     <span>© 2026 TakeSync</span>
     <div class="footer-links">
-      <a href="#" data-i18n="foot.support">Support</a>
+      <a href="mailto:support@takesync.uk" data-i18n="foot.support">Support</a>
       <a href="#" data-i18n="foot.privacy">Privacy policy</a>
       <a href="#" data-i18n="foot.terms">Terms of use</a>
     </div>
   </div>
 </footer>
+
+<dialog class="video-dialog" id="video-dialog" aria-label="TakeSync overview">
+  <video id="overview" controls playsinline preload="none"></video>
+  <form method="dialog"><button class="btn btn-ghost btn-sm" data-i18n="video.close">Close</button></form>
+</dialog>
 
 <script src="main.js"></script>
 </body>
