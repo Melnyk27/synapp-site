@@ -15,6 +15,7 @@
     'hero.unsynced': '6 пристроїв, не синхронізовано',
     'hero.synced': '6 пристроїв у синхроні',
     'hero.hint': 'Прокрути, щоб синхронізувати',
+    'files.total': '500 файлів:', 'files.camA': 'Камера A', 'files.camB': 'Камера B', 'files.drone': 'Дрон', 'files.phone': 'Телефон', 'files.rec': 'Рекордер', 'files.lav': 'Петлички',
     'lane.camA': 'Камера A', 'lane.camB': 'Камера B', 'lane.drone': 'Дрон', 'lane.rec': 'Рекордер', 'lane.lav1': 'Петличка 1', 'lane.lav2': 'Петличка 2',
     'pain.title': 'Весілля — це 500 файлів і шість пристроїв.',
     'pain.text': 'Дві камери, дрон, рекордер на пульті діджея, чотири петлички на нареченому, ведучому й батьках. Звести це вручну — це перший вечір кожного монтажу. TakeSync робить це, поки ти вариш каву.',
@@ -64,6 +65,7 @@
   };
   var EXTRA_EN = {
     'hero.synced': '6 devices in sync',
+    'files.total': '500 files:', 'files.camA': 'Cam A', 'files.camB': 'Cam B', 'files.drone': 'Drone', 'files.phone': 'Phone', 'files.rec': 'Recorder', 'files.lav': 'Lav mics',
     'lane.camA': 'Cam A', 'lane.camB': 'Cam B', 'lane.drone': 'Drone', 'lane.rec': 'Recorder', 'lane.lav1': 'Lav 1', 'lane.lav2': 'Lav 2'
   };
   var TITLES = { en: document.title, uk: 'TakeSync — синхронізація multicam за звуком для Premiere Pro' };
@@ -164,6 +166,74 @@
     setSynced(e > 0.998);
   }
 
+  // ---------- file wall ----------
+  // 500 files from six devices, shuffled; as the timeline syncs they sort
+  // themselves into one run per device.
+  var DEVICES = [
+    ['files.camA', '#5b9cff', 210], ['files.camB', '#9cc2ff', 140], ['files.drone', '#b48cff', 30],
+    ['files.phone', '#6fd3e6', 34], ['files.rec', '#4fd58a', 6], ['files.lav', '#8fe3b0', 80]
+  ];
+  var FILE_COUNT = DEVICES.reduce(function (a, d) { return a + d[2]; }, 0);
+  var walls = [].slice.call(document.querySelectorAll('[data-files]')).map(function (root) {
+    var legend = root.querySelector('.files-legend');
+    var total = document.createElement('li'); total.className = 'total';
+    total.setAttribute('data-i18n', 'files.total'); total.textContent = EXTRA_EN['files.total'];
+    legend.appendChild(total);
+    DEVICES.forEach(function (d) {
+      var li = document.createElement('li'); li.style.setProperty('--c', d[1]);
+      var n = document.createElement('span'); n.setAttribute('data-i18n', d[0]); n.textContent = EXTRA_EN[d[0]];
+      var b = document.createElement('b'); b.textContent = d[2];
+      li.appendChild(n); li.appendChild(document.createTextNode(' ')); li.appendChild(b);
+      legend.appendChild(li);
+    });
+    return { root: root, canvas: root.querySelector('canvas'), cols: 0, last: -1 };
+  });
+  // device per sorted slot, and a fixed shuffle + stagger per file
+  var fileDev = [], shuffle = [], delay = [];
+  DEVICES.forEach(function (d, di) { for (var k = 0; k < d[2]; k++) fileDev.push(di); });
+  (function () {
+    var r = 7; function rnd() { r = (r * 48271) % 2147483647; return r / 2147483647; }
+    for (var i = 0; i < FILE_COUNT; i++) { shuffle.push(i); delay.push(rnd()); }
+    for (i = FILE_COUNT - 1; i > 0; i--) { var k = Math.floor(rnd() * (i + 1)), t = shuffle[i]; shuffle[i] = shuffle[k]; shuffle[k] = t; }
+  })();
+  function drawWall(w, p) {
+    var c = w.canvas, cw = c.clientWidth;
+    if (!cw) return;
+    var small = cw < 600, tw = small ? 7 : 10, th = small ? 9 : 13, gap = small ? 2 : 3;
+    var cols = Math.max(10, Math.floor((cw + gap) / (tw + gap)));
+    var rows = Math.ceil(FILE_COUNT / cols), hgt = rows * (th + gap) - gap;
+    var dpr = Math.min(2, window.devicePixelRatio || 1);
+    if (w.cols !== cols || c.width !== Math.round(cw * dpr)) {
+      w.cols = cols; w.last = -1;
+      c.style.setProperty('--h', hgt + 'px');
+      c.width = Math.round(cw * dpr); c.height = Math.round(hgt * dpr);
+    }
+    w.root.classList.toggle('is-sorted', p > 0.97);
+    if (Math.abs(p - w.last) < 0.001) return;
+    w.last = p;
+    var ctx = c.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, cw, hgt);
+    var step = tw + gap, sth = th + gap;
+    for (var i = 0; i < FILE_COUNT; i++) {
+      var from = shuffle[i];                                   // where file i starts
+      var q = Math.min(1, Math.max(0, (p * 1.5 - delay[i] * 0.5)));
+      q = q < 0.5 ? 4 * q * q * q : 1 - Math.pow(-2 * q + 2, 3) / 2;
+      var x = (from % cols) * step + ((i % cols) - (from % cols)) * step * q;
+      var y = Math.floor(from / cols) * sth + (Math.floor(i / cols) - Math.floor(from / cols)) * sth * q;
+      ctx.globalAlpha = 0.55 + 0.45 * q;
+      ctx.fillStyle = DEVICES[fileDev[i]][1];
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(x, y, tw, th, 2); else ctx.rect(x, y, tw, th);
+      ctx.fill();
+    }
+  }
+  function wallProgress(w) { // the pinned wall follows the hero, the other one its own scroll position
+    if (w.root.classList.contains('files-pinned')) return Math.min(1, Math.max(0, (current - 0.1) / 0.8));
+    var r = w.root.getBoundingClientRect(), h = window.innerHeight;
+    return Math.min(1, Math.max(0, (h - r.top) / (h * 0.75)));
+  }
+
   // ---------- parallax helpers ----------
   var mocks = [].slice.call(document.querySelectorAll('.mock'));
   var featureClips = [].slice.call(document.querySelectorAll('.feature .clip'));
@@ -177,14 +247,16 @@
   // trackpad flicks turn into one smooth glide instead of jumps.
   var target = 0, current = -1, running = false;
   function heroTarget() {
+    var nav = 64; // the pin sits under the sticky header
     var r = hero.getBoundingClientRect();
-    var total = hero.offsetHeight - window.innerHeight;
-    return total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 1;
+    var total = hero.offsetHeight - (window.innerHeight - nav);
+    return total > 0 ? Math.min(1, Math.max(0, (nav - r.top) / total)) : 1;
   }
   function loop() {
     var d = target - current;
     current = Math.abs(d) < 0.0005 || current < 0 ? target : current + d * 0.14;
     renderHero(current);
+    walls.forEach(function (w) { if (w.root.offsetParent) drawWall(w, wallProgress(w)); });
     if (current !== target) requestAnimationFrame(loop); else running = false;
   }
   function parallax() {
@@ -199,6 +271,7 @@
       c.style.setProperty('--shift', ((1 - v) * (i % 2 ? -48 : 48)).toFixed(1) + 'px');
     });
     if (syncBar) syncBar.style.setProperty('--fill', visible(syncBar).toFixed(3));
+    walls.forEach(function (w) { if (w.root.offsetParent) drawWall(w, wallProgress(w)); });
   }
   var ticking = false;
   function frame() {
@@ -211,7 +284,8 @@
 
   if (reduce) {
     synced = null; // rendered after the language is set
-    setTimeout(function () { renderHero(1); }, 0);
+    setTimeout(function () { renderHero(1); walls.forEach(function (w) { drawWall(w, 1); }); }, 0);
+    window.addEventListener('resize', function () { walls.forEach(function (w) { w.cols = 0; drawWall(w, 1); }); });
     if (syncBar) syncBar.style.setProperty('--fill', '1');
   } else {
     window.addEventListener('scroll', onScroll, { passive: true });

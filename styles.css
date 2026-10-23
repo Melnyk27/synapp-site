@@ -82,7 +82,7 @@ p { margin: 0; }
 /* ---------- hero ---------- */
 .hero { padding-top: clamp(56px, 9vh, 104px); }
 .stage { position: relative; height: 185vh; margin-top: 8px; }
-.stage-pin { position: sticky; top: 64px; height: calc(100vh - 64px); display: flex; flex-direction: column; justify-content: center; gap: clamp(28px, 6vh, 64px); padding-bottom: 24px; overflow: hidden; }
+.stage-pin { position: sticky; top: 64px; height: calc(100vh - 64px); display: flex; flex-direction: column; justify-content: center; gap: clamp(18px, 3.2vh, 34px); padding-bottom: 16px; overflow: hidden; }
 .hero-copy h1 { font-size: clamp(38px, 5.8vw, 78px); font-weight: 800; letter-spacing: -0.04em; max-width: 19ch; }
 .hero-copy .lead { color: var(--muted); font-size: clamp(17px, 1.6vw, 20px); max-width: 56ch; margin-top: 22px; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
@@ -125,6 +125,24 @@ p { margin: 0; }
 .pain p { color: var(--muted); font-size: 18px; max-width: 48ch; padding-top: 6px; }
 @media (max-width: 800px) { .pain { grid-template-columns: 1fr; gap: 12px; } .pain p { font-size: 16px; } }
 @media (max-height: 620px) { .pain p { display: none; } }
+
+/* ---------- file wall: 500 files sort themselves into devices ---------- */
+.files { width: 100%; }
+.files canvas { display: block; width: 100%; height: var(--h, 96px); }
+.files-legend { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; font: 600 12px var(--mono); color: var(--muted); }
+.files-legend li { display: inline-flex; align-items: center; gap: 7px; opacity: .35; transition: opacity .4s; }
+.files-legend li::before { content: ''; width: 9px; height: 9px; border-radius: 2px; background: var(--c); }
+.files-legend li b { color: var(--text); font-weight: 600; }
+.files.is-sorted .files-legend li { opacity: 1; }
+.files-legend .total { color: var(--text); }
+.files-legend .total::before { display: none; }
+.files-pinned { display: none; }
+.files-solo { display: block; padding-top: 56px; }
+@media (min-width: 800px) and (min-height: 760px) {
+  .files-pinned { display: block; }
+  .files-solo { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .files-legend li { opacity: 1; } }
 
 /* ---------- features: each item is a clip on a track ---------- */
 .features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 56px; margin-top: 48px; }
