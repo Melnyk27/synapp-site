@@ -142,7 +142,7 @@
     flash.style.left = (at / N * 100) + '%';
   })();
 
-  function ease(x) { return 1 - Math.pow(1 - x, 3); }
+  function ease(x) { return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; } // ease in-out
   function pad(n) { return (n < 10 ? '0' : '') + n; }
   var synced = null;
   function setSynced(on) {
@@ -154,14 +154,14 @@
     status.textContent = t(key);
   }
   function renderHero(p) {
-    var e = ease(Math.min(1, Math.max(0, p / 0.7)));
+    var e = ease(Math.min(1, Math.max(0, (p - 0.04) / 0.78)));
     var vw = lanesEl.clientWidth || window.innerWidth;
-    clipEls.forEach(function (c) { c.el.style.transform = 'translateX(' + (c.off * (1 - e) / 100 * vw).toFixed(1) + 'px)'; });
-    laneEls.forEach(function (l) { l.el.style.transform = 'translateY(' + (l.spread * (1 - e)).toFixed(1) + 'px)'; });
+    clipEls.forEach(function (c) { c.el.style.transform = 'translate3d(' + (c.off * (1 - e) / 100 * vw).toFixed(1) + 'px,0,0)'; });
+    laneEls.forEach(function (l) { l.el.style.transform = 'translate3d(0,' + (l.spread * (1 - e)).toFixed(1) + 'px,0)'; });
     var frames = Math.floor(p * 24 * 40); // 40 s of picture over the scroll
     var s = 7 + Math.floor(frames / 24);
     tc.textContent = '16:42:' + pad(s % 60) + ':' + pad(frames % 24);
-    setSynced(e > 0.995);
+    setSynced(e > 0.998);
   }
 
   // ---------- parallax helpers ----------
@@ -173,23 +173,39 @@
     return Math.min(1, Math.max(0, (h - r.top) / (h * 0.65)));
   }
 
-  var ticking = false;
-  function frame() {
-    ticking = false;
+  // The hero follows the scroll through a short low-pass, so wheel steps and
+  // trackpad flicks turn into one smooth glide instead of jumps.
+  var target = 0, current = -1, running = false;
+  function heroTarget() {
     var r = hero.getBoundingClientRect();
     var total = hero.offsetHeight - window.innerHeight;
-    renderHero(total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 1);
+    return total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 1;
+  }
+  function loop() {
+    var d = target - current;
+    current = Math.abs(d) < 0.0005 || current < 0 ? target : current + d * 0.14;
+    renderHero(current);
+    if (current !== target) requestAnimationFrame(loop); else running = false;
+  }
+  function parallax() {
     var h = window.innerHeight;
     mocks.forEach(function (m) {
       var b = m.getBoundingClientRect();
       var rel = (b.top + b.height / 2 - h / 2) / h; // -0.5..0.5 around the centre
-      m.style.transform = 'translateY(' + (rel * -36).toFixed(1) + 'px)';
+      m.style.transform = 'translate3d(0,' + (rel * -36).toFixed(1) + 'px,0)';
     });
     featureClips.forEach(function (c, i) {
       var v = visible(c.parentNode);
       c.style.setProperty('--shift', ((1 - v) * (i % 2 ? -48 : 48)).toFixed(1) + 'px');
     });
     if (syncBar) syncBar.style.setProperty('--fill', visible(syncBar).toFixed(3));
+  }
+  var ticking = false;
+  function frame() {
+    ticking = false;
+    target = heroTarget();
+    if (!running) { running = true; requestAnimationFrame(loop); }
+    parallax();
   }
   function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
 

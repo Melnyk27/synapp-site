@@ -81,8 +81,8 @@ p { margin: 0; }
 
 /* ---------- hero ---------- */
 .hero { padding-top: clamp(56px, 9vh, 104px); }
-.stage { position: relative; height: 210vh; margin-top: 8px; }
-.stage-pin { position: sticky; top: 64px; height: calc(100vh - 64px); display: flex; flex-direction: column; justify-content: flex-start; padding-top: clamp(24px, 14vh, 160px); overflow: hidden; }
+.stage { position: relative; height: 185vh; margin-top: 8px; }
+.stage-pin { position: sticky; top: 64px; height: calc(100vh - 64px); display: flex; flex-direction: column; justify-content: center; gap: clamp(28px, 6vh, 64px); padding-bottom: 24px; overflow: hidden; }
 .hero-copy h1 { font-size: clamp(38px, 5.8vw, 78px); font-weight: 800; letter-spacing: -0.04em; max-width: 19ch; }
 .hero-copy .lead { color: var(--muted); font-size: clamp(17px, 1.6vw, 20px); max-width: 56ch; margin-top: 22px; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
@@ -104,7 +104,7 @@ p { margin: 0; }
 .tl-flash { position: absolute; top: 28px; bottom: 8px; left: 50%; width: 2px; background: var(--cut); opacity: 0; pointer-events: none; box-shadow: 0 0 18px 2px rgba(255, 92, 116, .55); }
 .timeline.is-synced .tl-flash { animation: flash 1.2s ease-out 1; }
 @keyframes flash { 0% { opacity: 0; } 15% { opacity: 1; } 100% { opacity: 0; } }
-.tl-hint { text-align: center; color: var(--faint); font: 600 12px var(--mono); margin-top: 14px; transition: opacity .3s; }
+.tl-hint { text-align: center; color: var(--faint); font: 600 12px var(--mono); margin-top: 22px; transition: opacity .3s; }
 .timeline.is-synced .tl-hint { opacity: 0; }
 
 @media (max-height: 700px) {
@@ -119,11 +119,12 @@ p { margin: 0; }
   .timeline.is-synced .tl-flash { animation: none; }
 }
 
-/* ---------- pain ---------- */
-.pain { padding-top: 120px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
-.pain h2 { font-size: clamp(30px, 4vw, 48px); font-weight: 750; }
-.pain p { color: var(--muted); font-size: 19px; max-width: 48ch; padding-top: 8px; }
-@media (max-width: 800px) { .pain { grid-template-columns: 1fr; gap: 20px; padding-top: 72px; } }
+/* ---------- pain: sits under the timeline while it syncs ---------- */
+.pain { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; width: 100%; }
+.pain h2 { font-size: clamp(26px, 3.4vw, 42px); font-weight: 750; }
+.pain p { color: var(--muted); font-size: 18px; max-width: 48ch; padding-top: 6px; }
+@media (max-width: 800px) { .pain { grid-template-columns: 1fr; gap: 12px; } .pain p { font-size: 16px; } }
+@media (max-height: 620px) { .pain p { display: none; } }
 
 /* ---------- features: each item is a clip on a track ---------- */
 .features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 56px; margin-top: 48px; }
