@@ -186,25 +186,29 @@
   </section>
 
   <section id="pricing" class="container section" aria-labelledby="price-title">
-    <h2 id="price-title" data-i18n="price.title">Buy once. Keep it.</h2>
+    <h2 id="price-title" data-i18n="price.title">Pick how you pay</h2>
+    <p class="section-lead" data-i18n="price.lead">Every plan has every feature and works on 2 computers. Start with 7 free days, no card required.</p>
     <div class="plans">
       <article class="plan">
-        <h3 data-i18n="price.trial">Free trial</h3>
-        <p class="price">$0</p>
-        <p class="muted" data-i18n="price.trialSub">Every feature for 7 days. No card required.</p>
-        <a href="#download" class="btn btn-ghost btn-block" data-i18n="price.download">Download free trial</a>
+        <h3 data-i18n="price.monthly">Monthly</h3>
+        <p class="price">$6.99<span class="per" data-i18n="price.perMonth">/month</span></p>
+        <p class="muted" data-i18n="price.monthlySub">For a busy season. Cancel any time.</p>
+        <a href="#buy" class="btn btn-ghost btn-block" data-plan="monthly" data-i18n="price.subscribe">Subscribe</a>
       </article>
       <article class="plan plan-main">
-        <h3 data-i18n="price.full">Full licence</h3>
-        <p class="price">$49</p>
-        <p class="muted" data-i18n="price.fullSub">One-time payment, for 2 computers.</p>
-        <ul class="plan-list">
-          <li data-i18n="price.l1">Premiere Pro export and the TakeSync panel</li>
-          <li data-i18n="price.l2">Every 1.x update, including new editors and Windows</li>
-        </ul>
-        <a href="#buy" id="buy" class="btn btn-primary btn-block" data-i18n="price.buy">Buy TakeSync</a>
+        <h3 data-i18n="price.yearly">Yearly</h3>
+        <p class="price">$60<span class="per" data-i18n="price.perYear">/year</span></p>
+        <p class="muted" data-i18n="price.yearlySub">$5 a month — about 28% less than paying monthly.</p>
+        <a href="#buy" class="btn btn-primary btn-block" data-plan="yearly" data-i18n="price.subscribe">Subscribe</a>
+      </article>
+      <article class="plan">
+        <h3 data-i18n="price.lifetime">Lifetime</h3>
+        <p class="price">$150</p>
+        <p class="muted" data-i18n="price.lifetimeSub">Pay once and keep TakeSync for good, with every update.</p>
+        <a href="#buy" class="btn btn-ghost btn-block" data-plan="lifetime" data-i18n="price.buy">Buy lifetime licence</a>
       </article>
     </div>
+    <p class="small faint plans-note" data-i18n="price.note">Prices in US dollars. Taxes are added at checkout where they apply.</p>
   </section>
 
   <section id="faq" class="container narrow section" aria-labelledby="faq-title">
@@ -214,8 +218,8 @@
       <details><summary data-i18n="faq.q2">Which formats does it read?</summary><p data-i18n="faq.a2">MP4, MOV, WAV, AIFF, M4A and MP3 out of the box. MXF, MTS and other formats work after you install FFmpeg from Settings.</p></details>
       <details><summary data-i18n="faq.q3">What happens to a clip with no sound partner?</summary><p data-i18n="faq.a3">If its camera’s clock is reliable, the clip goes on the timeline at the time it was recorded and is marked so you can check it. Otherwise it’s marked as not synced, and on export you can move such clips to the end.</p></details>
       <details><summary data-i18n="faq.q4">Does it fix drift on long recordings?</summary><p data-i18n="faq.a4">Yes. TakeSync detects when a recorder runs slightly fast or slow against the cameras and corrects the audio.</p></details>
-      <details><summary data-i18n="faq.q5">What about Final Cut Pro, DaVinci Resolve and Windows?</summary><p data-i18n="faq.a5">Final Cut Pro and DaVinci Resolve export is being tested now. Windows is in development. Both come as free 1.x updates.</p></details>
-      <details><summary data-i18n="faq.q6">Is it a subscription?</summary><p data-i18n="faq.a6">No. You pay once and the licence is yours, including every 1.x update.</p></details>
+      <details><summary data-i18n="faq.q5">What about Final Cut Pro, DaVinci Resolve and Windows?</summary><p data-i18n="faq.a5">Final Cut Pro and DaVinci Resolve export is being tested now. Windows is in development. They arrive as free updates.</p></details>
+      <details><summary data-i18n="faq.q6">Monthly, yearly or lifetime — what’s the difference?</summary><p data-i18n="faq.a6">Only how you pay. A subscription keeps TakeSync working while it’s active, and you can cancel any time. The lifetime licence is paid once and never expires. Every plan includes all features and updates.</p></details>
     </div>
   </section>
 
