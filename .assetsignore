@@ -6,3 +6,4 @@ wrangler.jsonc
 .assetsignore
 .nojekyll
 node_modules
+tools

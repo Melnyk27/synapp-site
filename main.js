@@ -1,77 +1,20 @@
-// TakeSync site: language switch (EN/UK), the scroll-synced hero timeline,
+// TakeSync site: 11 languages (strings in i18n.js), local-currency prices, the scroll-synced hero timeline,
 // light scroll parallax, and the overview video (shown once media/ has it).
 (function () {
   'use strict';
 
-  var UK = {
-    'skip': 'Перейти до змісту',
-    'nav.features': 'Що вміє', 'nav.how': 'Як це працює', 'nav.compat': 'Сумісність', 'nav.pricing': 'Ціна', 'nav.faq': 'Питання', 'nav.download': 'Завантажити',
-    'hero.title': 'Кинь футаж. Отримай таймлайн.',
-    'hero.lead': 'TakeSync зводить усі камери, рекордери й петлички за звуком — без таймкоду, хлопавки чи плескання. А потім віддає синхронізований таймлайн у Premiere Pro.',
-    'hero.cta': 'Завантажити пробну версію',
-    'hero.watch': 'Подивитися огляд за 30 секунд',
-    'hero.fine': 'Версія 1.0 для Mac на Apple Silicon. 7 днів безкоштовно, працює офлайн.',
-    'hero.tlLabel': 'Треки весілля, що стають у синхрон', 'hero.stage': 'Демонстрація синхронізації',
-    'hero.unsynced': 'Не синхронізовано',
-    'hero.synced': 'Усе в синхроні',
-    'hero.hint': 'Прокрути, щоб синхронізувати',
-    'files.total': 'Приклад, 500 файлів:', 'files.camA': 'Камера A', 'files.camB': 'Камера B', 'files.drone': 'Дрон', 'files.phone': 'Телефон', 'files.rec': 'Рекордер', 'files.lav': 'Петлички',
-    'lane.camA': 'Камера A', 'lane.camB': 'Камера B', 'lane.drone': 'Дрон', 'lane.rec': 'Рекордер', 'lane.lav1': 'Петличка 1', 'lane.lav2': 'Петличка 2',
-    'pain.title': 'Весілля — це сотні файлів з усіх пристроїв, що були на зйомці.',
-    'pain.text': 'Камери, дрон, телефон, рекордер на пульті діджея, петлички на нареченому, ведучому й батьках. Звести це вручну — це перший вечір кожного монтажу. TakeSync робить це, поки ти вариш каву.',
-    'feat.title': 'Що він робить за тебе',
-    'feat.1t': 'Синхрон за звуком', 'feat.1': 'Кожен кліп зводиться з іншими за його звуком. Підходить будь-яка камера, телефон, рекордер чи петличка — таймкод і хлопавка не потрібні.',
-    'feat.2t': 'Нічого не губиться', 'feat.2': 'У B-roll з камери, що писала сама, немає пари за звуком. TakeSync ставить його за годинником камери — на той час дня, коли його зняли.',
-    'feat.3t': 'Хибні збіги відсіюються', 'feat.3': 'Пісня, зіграна двічі, чи інтерв’ю поверх церемонії можуть здатися збігом. Кожен збіг перевіряється за годинниками пристроїв, і неможливі відкидаються.',
-    'feat.4t': 'День — по порядку', 'feat.4': 'Таймлайн іде за реальним часом дня: церемонія, фотосесія, тости, перший танець. Довгі проміжки, коли ніхто не писав, стиснуті.',
-    'feat.5t': 'Звук рекордера — одразу на місці', 'feat.5': 'Одна галочка додає другу секвенцію, де звук камери замінено рекордером чи петличкою. Кліпи, що накладаються, отримують окремі доріжки — нічого не ховається.',
-    'feat.6t': 'Приватно й офлайн', 'feat.6': 'Твій футаж не покидає Mac. Без завантаження в хмару, без акаунта, інтернет для синхрону не потрібен.',
-    'feat.7t': 'Швидко на будь-якому диску', 'feat.7': 'TakeSync визначає, де лежить футаж — на SSD, звичайному HDD чи мережевому диску, — і читає кожен так, як йому найшвидше: з SSD усіма ядрами, з HDD по два файли, кілька дисків одночасно. Уже проаналізований футаж повторно не декодується.',
-    'feat.8t': 'Просто, і нічого не зависає', 'feat.8': 'Три кроки, одна кнопка Sync, нічого не треба налаштовувати. Аналіз іде у фоні, тож вікно не підвисає, поки TakeSync працює.',
-    'how.title': 'Три кроки',
-    'how.s1t': 'Кинь папки', 'how.s1': 'Кожна папка камери, рекордера чи мікрофона стає треком. Проксі розпізнаються — додай або пропусти.',
-    'how.s2t': 'Натисни Sync', 'how.s2': 'TakeSync слухає кожен кліп, знаходить, де вони перетинаються, і будує таймлайн — спершу за звуком, решту за годинником.',
-    'how.s3t': 'Відкрий у Premiere Pro', 'how.s3': 'Панель TakeSync усередині Premiere показує всі експорти. Один клік — і синхронізована секвенція у твоєму відкритому проєкті, на тих самих медіа. Без дублів.',
-    'mock.drop': 'Перетягни сюди папки камер і рекордерів',
-    'mock.synced': 'Синхронізовано · груп: 9',
-    'mock.p1': 'Весілля — церемонія', 'mock.p2': 'Весілля — банкет', 'mock.p3': 'Інтерв’ю, замінений звук', 'mock.import': 'Імпорт',
-    'compat.title': 'На чому працює TakeSync 1.0',
-    'compat.lead': 'Версія 1.0 повністю підтримується на Mac з Apple Silicon і з Adobe Premiere Pro. Інші монтажні програми й Windows з’являться в безкоштовних оновленнях, щойно ми їх протестуємо.',
-    'compat.what': 'Платформа чи програма', 'compat.state': 'Стан у 1.0',
-    'compat.mac': 'Mac з Apple Silicon (M1 і новіші)', 'compat.ok': 'Підтримується', 'compat.okPanel': 'Підтримується, з панеллю TakeSync',
-    'compat.testing': 'Тестується', 'compat.intel': 'Mac з Intel', 'compat.notYet': 'Поки не підтримується', 'compat.dev': 'У розробці',
-    'who.title': 'Для довгих і складних днів з багатьма пристроями',
-    'who.1': 'Весілля', 'who.2': 'Івенти й конференції', 'who.3': 'Інтерв’ю й подкасти', 'who.4': 'Документальне кіно', 'who.5': 'Жива музика',
-    'price.title': 'Обери, як платити',
-    'price.lead': 'У кожному плані — усі функції, на 2 комп’ютери. Почни з 7 безкоштовних днів, картка не потрібна.',
-    'price.monthly': 'Щомісяця', 'price.perMonth': '/міс', 'price.monthlySub': 'На гарячий сезон. Скасувати можна будь-коли.',
-    'price.yearly': 'Щороку', 'price.perYear': '/рік', 'price.yearlySub': '$5 на місяць — приблизно на 28% дешевше, ніж щомісяця.',
-    'price.lifetime': 'Назавжди', 'price.lifetimeSub': 'Платиш раз і користуєшся завжди, з усіма оновленнями.',
-    'price.subscribe': 'Підписатися', 'price.buy': 'Купити довічну ліцензію',
-    'price.note': 'Ціни в доларах США. Податки, де вони діють, додаються при оплаті.',
-    'faq.title': 'Питання',
-    'faq.q1': 'Потрібен таймкод чи хлопавка?', 'faq.a1': 'Ні. TakeSync порівнює звук, записаний різними пристроями одночасно. Камери без таймкоду й телефони підходять.',
-    'faq.q2': 'Які формати читає?', 'faq.a2': 'MP4, MOV, WAV, AIFF, M4A і MP3 — одразу. MXF, MTS та інші — після встановлення FFmpeg у Налаштуваннях.',
-    'faq.q3': 'Що з кліпом, у якого немає пари за звуком?', 'faq.a3': 'Якщо годинник його камери надійний, кліп стає на таймлайн у той час, коли його записали, і позначається, щоб ти міг перевірити. Інакше він позначається як несинхронізований, і при експорті такі кліпи можна відправити в кінець.',
-    'faq.q4': 'Чи виправляє дрейф на довгих записах?', 'faq.a4': 'Так. TakeSync помічає, коли рекордер іде трохи швидше чи повільніше за камери, і вирівнює звук.',
-    'faq.q5': 'А Final Cut Pro, DaVinci Resolve і Windows?', 'faq.a5': 'Експорт у Final Cut Pro і DaVinci Resolve зараз тестується. Windows — у розробці. Усе це прийде безкоштовними оновленнями.',
-    'faq.q6': 'Щомісяця, щороку чи назавжди — у чому різниця?', 'faq.a6': 'Лише в тому, як платиш. Підписка тримає TakeSync робочим, поки вона активна, і її можна скасувати будь-коли. Довічна ліцензія оплачується раз і не закінчується. У кожному плані — усі функції й оновлення.',
-    'final.title': 'Вечір — для монтажу, а не для зведення кліпів.',
-    'final.sub': 'Безкоштовно на 7 днів. Картка не потрібна.',
-    'final.mac': 'Завантажити для Mac (Apple Silicon)',
-    'final.req': 'TakeSync 1.0 · Mac з Apple Silicon · Adobe Premiere Pro. Windows у розробці.',
-    'foot.support': 'Підтримка', 'foot.privacy': 'Політика конфіденційності', 'foot.terms': 'Умови використання',
-    'video.close': 'Закрити'
-  };
+  var I18N = (window.TAKESYNC_I18N && window.TAKESYNC_I18N.langs) || {};
   var EXTRA_EN = {
     'hero.synced': 'All in sync',
+    'price.noteEur': 'Prices in euros. Taxes are added at checkout where they apply.',
+    'price.noteLocal': 'Prices in US dollars; the amount in your currency is approximate, at today’s rate. Taxes are added at checkout where they apply.',
     'files.total': 'Example, 500 files:', 'files.camA': 'Cam A', 'files.camB': 'Cam B', 'files.drone': 'Drone', 'files.phone': 'Phone', 'files.rec': 'Recorder', 'files.lav': 'Lav mics',
     'lane.camA': 'Cam A', 'lane.camB': 'Cam B', 'lane.drone': 'Drone', 'lane.rec': 'Recorder', 'lane.lav1': 'Lav 1', 'lane.lav2': 'Lav 2'
   };
-  var TITLES = { en: document.title, uk: 'TakeSync — синхронізація multicam за звуком для Premiere Pro' };
-  var EN = {};
+  var EN = { _title: document.title };
   var lang = 'en';
-  function t(key) { var d = lang === 'uk' ? UK : EN; return d[key] != null ? d[key] : (EXTRA_EN[key] || key); }
+  function dictFor(l) { return l === 'en' ? EN : (I18N[l] || EN); }
+  function t(key) { var d = dictFor(lang); return d[key] != null ? d[key] : (EN[key] != null ? EN[key] : (EXTRA_EN[key] || key)); }
 
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -311,7 +254,6 @@
 
   // ---------- language ----------
   document.querySelectorAll('[data-i18n]').forEach(function (el) { var k = el.getAttribute('data-i18n'); if (EN[k] == null) EN[k] = el.textContent; });
-  document.querySelectorAll('[data-i18n-html]').forEach(function (el) { EN[el.getAttribute('data-i18n-html')] = el.innerHTML; });
   document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
     var spec = el.getAttribute('data-i18n-attr').split(':');
     EN[spec[1]] = el.getAttribute(spec[0]);
@@ -319,37 +261,107 @@
   Object.keys(EXTRA_EN).forEach(function (k) { EN[k] = EXTRA_EN[k]; });
 
   function setLang(next) {
-    lang = next;
-    var dict = lang === 'uk' ? UK : EN;
+    lang = I18N[next] || next === 'en' ? next : 'en';
+    var dict = dictFor(lang);
+    function get(k) { return dict[k] != null ? dict[k] : EN[k]; }
     document.documentElement.lang = lang;
-    document.title = TITLES[lang];
+    document.title = get('_title');
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
-      var v = dict[el.getAttribute('data-i18n')]; if (v != null) el.textContent = v;
-    });
-    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
-      var v = dict[el.getAttribute('data-i18n-html')]; if (v != null) el.innerHTML = v;
+      var v = get(el.getAttribute('data-i18n')); if (v != null) el.textContent = v;
     });
     document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
       var spec = el.getAttribute('data-i18n-attr').split(':');
-      var v = dict[spec[1]]; if (v != null) el.setAttribute(spec[0], v);
+      var v = get(spec[1]); if (v != null) el.setAttribute(spec[0], v);
     });
-    document.querySelectorAll('.lang button').forEach(function (b) {
-      b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang));
-    });
+    if (select) select.value = lang;
+    renderPrices();
     try { localStorage.setItem('takesync-lang', lang); } catch (e) { /* storage unavailable */ }
   }
 
-  var initial = 'en';
-  try {
-    var saved = localStorage.getItem('takesync-lang');
-    if (saved === 'en' || saved === 'uk') initial = saved;
-    else if (/^(uk|ru|be)/i.test(navigator.language || '')) initial = 'uk';
-  } catch (e) {
-    if (/^(uk|ru|be)/i.test(navigator.language || '')) initial = 'uk';
+  // ---------- prices in the visitor's currency ----------
+  // Eurozone: the same numbers in euros. Elsewhere: the dollar price, with an
+  // approximate amount in the local currency underneath. Rates are refreshed
+  // from open.er-api.com; the numbers below are the fallback (22 Oct 2026).
+  var RATES = { UAH: 45.03, GBP: 0.747, PLN: 3.88, HUF: 325.1, TRY: 49.64, KRW: 1326, CNY: 6.69, CHF: 0.825, CZK: 21.61, SEK: 9.89, NOK: 9.37, DKK: 6.66, RON: 4.75, CAD: 1.405, AUD: 1.423, NZD: 1.756, MXN: 18.63, BRL: 5.02, ARS: 1527, CLP: 975, COP: 3174, PEN: 3.43, JPY: 158.1, INR: 94.6, TWD: 32.41, HKD: 7.85, SGD: 1.277, ILS: 3.09, AED: 3.67, ZAR: 16.37, MDL: 17.96, GEL: 2.60, KZT: 448.6, RSD: 104.6 };
+  var EURO = 'AT BE BG CY DE EE ES FI FR GR HR IE IT LT LU LV MT NL PT SI SK ME XK AD MC SM VA'.split(' ');
+  var BY_COUNTRY = { UA: 'UAH', GB: 'GBP', PL: 'PLN', HU: 'HUF', TR: 'TRY', KR: 'KRW', CN: 'CNY', CH: 'CHF', LI: 'CHF', CZ: 'CZK', SE: 'SEK', NO: 'NOK', DK: 'DKK', RO: 'RON', CA: 'CAD', AU: 'AUD', NZ: 'NZD', MX: 'MXN', BR: 'BRL', AR: 'ARS', CL: 'CLP', CO: 'COP', PE: 'PEN', JP: 'JPY', IN: 'INR', TW: 'TWD', HK: 'HKD', SG: 'SGD', IL: 'ILS', AE: 'AED', ZA: 'ZAR', MD: 'MDL', GE: 'GEL', KZ: 'KZT', RS: 'RSD' };
+  var BY_ZONE = {
+    'Europe/Kyiv': 'UA', 'Europe/Kiev': 'UA', 'Europe/Uzhgorod': 'UA', 'Europe/Zaporozhye': 'UA', 'Europe/Simferopol': 'UA',
+    'Europe/London': 'GB', 'Europe/Warsaw': 'PL', 'Europe/Budapest': 'HU', 'Europe/Istanbul': 'TR', 'Asia/Istanbul': 'TR', 'Asia/Seoul': 'KR',
+    'Asia/Shanghai': 'CN', 'Asia/Chongqing': 'CN', 'Asia/Harbin': 'CN', 'Asia/Urumqi': 'CN', 'Asia/Hong_Kong': 'HK', 'Asia/Taipei': 'TW', 'Asia/Tokyo': 'JP',
+    'Europe/Zurich': 'CH', 'Europe/Prague': 'CZ', 'Europe/Stockholm': 'SE', 'Europe/Oslo': 'NO', 'Europe/Copenhagen': 'DK', 'Europe/Bucharest': 'RO',
+    'Europe/Chisinau': 'MD', 'Asia/Tbilisi': 'GE', 'Asia/Almaty': 'KZ', 'Asia/Qostanay': 'KZ', 'Asia/Aqtobe': 'KZ', 'Europe/Belgrade': 'RS',
+    'Asia/Kolkata': 'IN', 'Asia/Calcutta': 'IN', 'Asia/Singapore': 'SG', 'Asia/Jerusalem': 'IL', 'Asia/Tel_Aviv': 'IL', 'Asia/Dubai': 'AE', 'Africa/Johannesburg': 'ZA',
+    'America/Toronto': 'CA', 'America/Vancouver': 'CA', 'America/Edmonton': 'CA', 'America/Winnipeg': 'CA', 'America/Halifax': 'CA', 'America/St_Johns': 'CA', 'America/Regina': 'CA',
+    'Pacific/Auckland': 'NZ', 'America/Mexico_City': 'MX', 'America/Monterrey': 'MX', 'America/Tijuana': 'MX', 'America/Cancun': 'MX', 'America/Sao_Paulo': 'BR',
+    'America/Argentina/Buenos_Aires': 'AR', 'America/Buenos_Aires': 'AR', 'America/Santiago': 'CL', 'America/Bogota': 'CO', 'America/Lima': 'PE',
+    'Europe/Berlin': 'DE', 'Europe/Paris': 'FR', 'Europe/Madrid': 'ES', 'Atlantic/Canary': 'ES', 'Europe/Rome': 'IT', 'Europe/Vienna': 'AT', 'Europe/Amsterdam': 'NL',
+    'Europe/Brussels': 'BE', 'Europe/Lisbon': 'PT', 'Europe/Dublin': 'IE', 'Europe/Helsinki': 'FI', 'Europe/Athens': 'GR', 'Europe/Tallinn': 'EE', 'Europe/Riga': 'LV',
+    'Europe/Vilnius': 'LT', 'Europe/Bratislava': 'SK', 'Europe/Ljubljana': 'SI', 'Europe/Zagreb': 'HR', 'Europe/Luxembourg': 'LU', 'Europe/Malta': 'MT',
+    'Asia/Nicosia': 'CY', 'Europe/Nicosia': 'CY', 'Europe/Sofia': 'BG', 'Europe/Podgorica': 'ME', 'Europe/Monaco': 'MC', 'Europe/Andorra': 'AD'
+  };
+  function visitorCountry() {
+    var zone = '';
+    try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) { /* old browser */ }
+    if (BY_ZONE[zone]) return BY_ZONE[zone];
+    if (/^Australia\//.test(zone)) return 'AU';
+    var langs = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < langs.length; i++) {
+      var m = /^[a-z]{2,3}-([A-Z]{2})\b/.exec(langs[i] || '');
+      if (m) return m[1];
+    }
+    return '';
   }
-  document.querySelectorAll('.lang button').forEach(function (b) {
-    b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
-  });
-  setLang(initial);
+  var country = visitorCountry();
+  var currency = EURO.indexOf(country) >= 0 ? 'EUR' : (BY_COUNTRY[country] || 'USD');
+  var numberLocale = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+  function money(v, cur, exact) {
+    try {
+      var digits = exact ? (v % 1 ? 2 : 0) : (v >= 20 ? 0 : 2);
+      return new Intl.NumberFormat(numberLocale, { style: 'currency', currency: cur, minimumFractionDigits: digits, maximumFractionDigits: digits }).format(v);
+    } catch (e) { return cur + ' ' + v; }
+  }
+  function renderPrices() {
+    document.querySelectorAll('.amt[data-usd]').forEach(function (el) {
+      var v = parseFloat(el.getAttribute('data-usd'));
+      el.textContent = currency === 'EUR' ? money(v, 'EUR', true) : '$' + el.getAttribute('data-usd');
+    });
+    var local = currency !== 'USD' && currency !== 'EUR' && RATES[currency];
+    document.querySelectorAll('.price-local').forEach(function (el) {
+      if (!local) { el.hidden = true; return; }
+      var v = parseFloat(el.getAttribute('data-usd')) * RATES[currency];
+      el.textContent = '≈ ' + money(v >= 1000 ? Math.round(v / 10) * 10 : v, currency, false);
+      el.hidden = false;
+    });
+    var note = document.getElementById('price-note');
+    if (note) {
+      var key = currency === 'EUR' ? 'price.noteEur' : (local ? 'price.noteLocal' : 'price.noteUsd');
+      note.setAttribute('data-i18n', key);
+      note.textContent = t(key);
+    }
+  }
+  if (currency !== 'USD' && currency !== 'EUR' && window.fetch) {
+    fetch('https://open.er-api.com/v6/latest/USD').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      var r = d && d.rates && d.rates[currency];
+      if (typeof r === 'number' && r > 0) { RATES[currency] = r; renderPrices(); }
+    }).catch(function () { /* keep the fallback rate */ });
+  }
+
+  var select = document.getElementById('lang-select');
+  var supported = ['en'].concat(Object.keys(I18N));
+  function pick(code) {
+    code = String(code || '').toLowerCase();
+    if (/^(ru|be)\b/.test(code)) return 'uk';
+    var base = code.split('-')[0];
+    return supported.indexOf(base) >= 0 ? base : null;
+  }
+  var initial = null;
+  try { initial = pick(localStorage.getItem('takesync-lang')); } catch (e) { /* storage unavailable */ }
+  if (!initial) {
+    var prefs = navigator.languages || [navigator.language];
+    for (var i = 0; i < prefs.length && !initial; i++) initial = pick(prefs[i]);
+  }
+  if (select) select.addEventListener('change', function () { setLang(select.value); });
+  setLang(initial || 'en');
   if (!reduce) frame();
 })();

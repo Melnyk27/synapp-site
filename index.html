@@ -31,10 +31,12 @@
       <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
       <a href="#faq" data-i18n="nav.faq">FAQ</a>
     </div>
-    <div class="lang" role="group" aria-label="Language">
-      <button type="button" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" data-lang="uk" aria-pressed="false">UA</button>
-    </div>
+    <label class="lang">
+      <span class="visually-hidden" data-i18n="nav.lang">Language</span>
+      <select id="lang-select">
+        <option value="en">English</option><option value="uk">Українська</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="it">Italiano</option><option value="pl">Polski</option><option value="hu">Magyar</option><option value="tr">Türkçe</option><option value="ko">한국어</option><option value="zh">中文</option>
+      </select>
+    </label>
     <a href="#download" class="btn btn-primary btn-sm" data-i18n="nav.download">Download</a>
   </nav>
 </header>
@@ -194,24 +196,27 @@
     <div class="plans">
       <article class="plan">
         <h3 data-i18n="price.monthly">Monthly</h3>
-        <p class="price">$6.99<span class="per" data-i18n="price.perMonth">/month</span></p>
+        <p class="price"><span class="amt" data-usd="6.99">$6.99</span><span class="per" data-i18n="price.perMonth">/month</span></p>
+        <p class="price-local" data-usd="6.99" hidden></p>
         <p class="muted" data-i18n="price.monthlySub">For a busy season. Cancel any time.</p>
         <a href="#buy" class="btn btn-ghost btn-block" data-plan="monthly" data-i18n="price.subscribe">Subscribe</a>
       </article>
       <article class="plan plan-main">
         <h3 data-i18n="price.yearly">Yearly</h3>
-        <p class="price">$60<span class="per" data-i18n="price.perYear">/year</span></p>
-        <p class="muted" data-i18n="price.yearlySub">$5 a month — about 28% less than paying monthly.</p>
+        <p class="price"><span class="amt" data-usd="60">$60</span><span class="per" data-i18n="price.perYear">/year</span></p>
+        <p class="price-local" data-usd="60" hidden></p>
+        <p class="muted" data-i18n="price.yearlySub">About 28% less than paying monthly.</p>
         <a href="#buy" class="btn btn-primary btn-block" data-plan="yearly" data-i18n="price.subscribe">Subscribe</a>
       </article>
       <article class="plan">
         <h3 data-i18n="price.lifetime">Lifetime</h3>
-        <p class="price">$150</p>
+        <p class="price"><span class="amt" data-usd="150">$150</span></p>
+        <p class="price-local" data-usd="150" hidden></p>
         <p class="muted" data-i18n="price.lifetimeSub">Pay once and keep TakeSync for good, with every update.</p>
-        <a href="#buy" class="btn btn-ghost btn-block" data-plan="lifetime" data-i18n="price.buy">Buy lifetime licence</a>
+        <a href="#buy" class="btn btn-ghost btn-block" data-plan="lifetime" data-i18n="price.buy">Buy lifetime</a>
       </article>
     </div>
-    <p class="small faint plans-note" data-i18n="price.note">Prices in US dollars. Taxes are added at checkout where they apply.</p>
+    <p class="small faint plans-note" id="price-note" data-i18n="price.noteUsd">Prices in US dollars. Taxes are added at checkout where they apply.</p>
   </section>
 
   <section id="faq" class="container narrow section" aria-labelledby="faq-title">
@@ -254,6 +259,7 @@
   <form method="dialog"><button class="btn btn-ghost btn-sm" data-i18n="video.close">Close</button></form>
 </dialog>
 
+<script src="i18n.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
