@@ -11,14 +11,14 @@
     'hero.cta': 'Завантажити пробну версію',
     'hero.watch': 'Подивитися огляд за 30 секунд',
     'hero.fine': 'Версія 1.0 для Mac на Apple Silicon. 7 днів безкоштовно, працює офлайн.',
-    'hero.tlLabel': 'Шість треків весілля, що стають у синхрон', 'hero.stage': 'Демонстрація синхронізації',
-    'hero.unsynced': '6 пристроїв, не синхронізовано',
-    'hero.synced': '6 пристроїв у синхроні',
+    'hero.tlLabel': 'Треки весілля, що стають у синхрон', 'hero.stage': 'Демонстрація синхронізації',
+    'hero.unsynced': 'Не синхронізовано',
+    'hero.synced': 'Усе в синхроні',
     'hero.hint': 'Прокрути, щоб синхронізувати',
-    'files.total': '500 файлів:', 'files.camA': 'Камера A', 'files.camB': 'Камера B', 'files.drone': 'Дрон', 'files.phone': 'Телефон', 'files.rec': 'Рекордер', 'files.lav': 'Петлички',
+    'files.total': 'Приклад, 500 файлів:', 'files.camA': 'Камера A', 'files.camB': 'Камера B', 'files.drone': 'Дрон', 'files.phone': 'Телефон', 'files.rec': 'Рекордер', 'files.lav': 'Петлички',
     'lane.camA': 'Камера A', 'lane.camB': 'Камера B', 'lane.drone': 'Дрон', 'lane.rec': 'Рекордер', 'lane.lav1': 'Петличка 1', 'lane.lav2': 'Петличка 2',
-    'pain.title': 'Весілля — це 500 файлів і шість пристроїв.',
-    'pain.text': 'Дві камери, дрон, рекордер на пульті діджея, чотири петлички на нареченому, ведучому й батьках. Звести це вручну — це перший вечір кожного монтажу. TakeSync робить це, поки ти вариш каву.',
+    'pain.title': 'Весілля — це сотні файлів з усіх пристроїв, що були на зйомці.',
+    'pain.text': 'Камери, дрон, телефон, рекордер на пульті діджея, петлички на нареченому, ведучому й батьках. Звести це вручну — це перший вечір кожного монтажу. TakeSync робить це, поки ти вариш каву.',
     'feat.title': 'Що він робить за тебе',
     'feat.1t': 'Синхрон за звуком', 'feat.1': 'Кожен кліп зводиться з іншими за його звуком. Підходить будь-яка камера, телефон, рекордер чи петличка — таймкод і хлопавка не потрібні.',
     'feat.2t': 'Нічого не губиться', 'feat.2': 'У B-roll з камери, що писала сама, немає пари за звуком. TakeSync ставить його за годинником камери — на той час дня, коли його зняли.',
@@ -64,8 +64,8 @@
     'video.close': 'Закрити'
   };
   var EXTRA_EN = {
-    'hero.synced': '6 devices in sync',
-    'files.total': '500 files:', 'files.camA': 'Cam A', 'files.camB': 'Cam B', 'files.drone': 'Drone', 'files.phone': 'Phone', 'files.rec': 'Recorder', 'files.lav': 'Lav mics',
+    'hero.synced': 'All in sync',
+    'files.total': 'Example, 500 files:', 'files.camA': 'Cam A', 'files.camB': 'Cam B', 'files.drone': 'Drone', 'files.phone': 'Phone', 'files.rec': 'Recorder', 'files.lav': 'Lav mics',
     'lane.camA': 'Cam A', 'lane.camB': 'Cam B', 'lane.drone': 'Drone', 'lane.rec': 'Recorder', 'lane.lav1': 'Lav 1', 'lane.lav2': 'Lav 2'
   };
   var TITLES = { en: document.title, uk: 'TakeSync — синхронізація multicam за звуком для Premiere Pro' };
@@ -167,7 +167,7 @@
   }
 
   // ---------- file wall ----------
-  // 500 files from six devices, shuffled; as the timeline syncs they sort
+  // 500 files from several devices, shuffled; as the timeline syncs they sort
   // themselves into one run per device.
   var DEVICES = [
     ['files.camA', '#5b9cff', 210], ['files.camB', '#9cc2ff', 140], ['files.drone', '#b48cff', 30],
