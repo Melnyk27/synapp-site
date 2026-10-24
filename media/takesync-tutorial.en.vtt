@@ -1,0 +1,100 @@
+WEBVTT
+
+00:03.300 --> 00:10.328
+TakeSync lines up every camera, recorder and lav mic by their sound, and hands you a timeline that's ready to edit.
+
+00:10.378 --> 00:12.112
+Let me show you how it works.
+
+00:13.213 --> 00:14.844
+First, one simple rule:
+
+00:14.894 --> 00:16.453
+one device, one track.
+
+00:16.503 --> 00:22.887
+Add each camera and each recorder on its own, not one big folder with everything inside.
+
+00:24.388 --> 00:29.792
+Drag the first device's folder into the window, or click Source folder.
+
+00:29.842 --> 00:34.325
+Memory cards like AVCHD or P2 are recognized automatically.
+
+00:35.425 --> 00:38.979
+Each next device goes into the empty slot on the left.
+
+00:39.029 --> 00:40.181
+Forgot some files?
+
+00:40.231 --> 00:42.250
+Drop them on that track's name.
+
+00:43.350 --> 00:47.109
+If a folder has proxy files, TakeSync asks about them.
+
+00:47.159 --> 00:51.412
+Usually, click Skip proxies, so the sync uses your originals.
+
+00:52.512 --> 00:54.927
+The audio analysis starts on its own.
+
+00:54.977 --> 01:00.987
+You can keep adding sources while it runs, and a file analyzed once is never decoded again.
+
+01:02.087 --> 01:04.527
+When it's done, click Synchronize.
+
+01:04.577 --> 01:06.577
+Keep Correct audio drift on:
+
+01:06.627 --> 01:10.237
+it fixes recorders that run slightly fast or slow.
+
+01:11.337 --> 01:14.129
+Every clip now sits in the order it was shot.
+
+01:14.179 --> 01:17.098
+Yellow clips were placed by the camera's clock.
+
+01:17.148 --> 01:18.866
+Red ones couldn't be synced.
+
+01:18.916 --> 01:22.150
+Press Shift and the down arrow to jump between them.
+
+01:23.250 --> 01:25.425
+Press P to check the sync in the player.
+
+01:26.525 --> 01:29.923
+Now click Export timeline and choose your editor.
+
+01:29.973 --> 01:32.526
+For Premiere Pro you get an XML file.
+
+01:32.576 --> 01:40.687
+You can also export audio or video files, add a sequence with the recorder's sound, and mark or move unsynced clips.
+
+01:41.787 --> 01:42.581
+Click Export.
+
+01:42.631 --> 01:47.125
+Then click the file to show it in Finder, and import it into Premiere.
+
+01:48.225 --> 01:54.938
+Settings has the language, the waveform style, color skins, the analysis cache and your license.
+
+01:56.037 --> 02:04.164
+MP4, MOV, WAV and AIFF work out of the box on Apple Silicon.
+
+02:04.214 --> 02:09.887
+For MXF, MTS or MKV, click Install FFmpeg.
+
+02:10.988 --> 02:12.078
+And that's it:
+
+02:12.128 --> 02:15.501
+one device per track, Synchronize, Export.
+
+02:15.551 --> 02:19.412
+Try TakeSync free for seven days at takesync.uk.

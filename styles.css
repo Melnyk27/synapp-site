@@ -280,3 +280,8 @@ p { margin: 0; }
 .legal th { color: var(--muted); font-weight: 600; white-space: nowrap; }
 .legal td { color: #cdd3db; min-width: 140px; }
 .legal-cta { margin-left: auto; }
+
+/* ---------- tutorial video ---------- */
+.tutorial { margin: clamp(40px, 6vh, 72px) auto 0; max-width: 1040px; }
+.tutorial video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 16px; background: #07080b; border: 1px solid var(--border); box-shadow: 0 30px 80px rgba(0,0,0,.45); }
+.tutorial figcaption { margin-top: 14px; text-align: center; color: var(--muted); font-size: 15px; }
