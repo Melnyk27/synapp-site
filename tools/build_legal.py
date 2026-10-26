@@ -35,7 +35,7 @@ TEMPLATE = """<!doctype html>
       <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#15181d"/><rect x="5" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/><rect x="9" y="6" width="2.4" height="16" rx="1.2" fill="#4fd58a"/><rect x="13" y="10" width="2.4" height="8" rx="1.2" fill="#5b9cff"/><rect x="17" y="5" width="2.4" height="18" rx="1.2" fill="#4fd58a"/><rect x="21" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/></svg>
       TakeSync
     </a>
-    <a href="/#download" class="btn btn-primary btn-sm legal-cta">Download</a>
+    <a href="/install" class="btn btn-primary btn-sm legal-cta">Download</a>
   </nav>
 </header>
 <main id="main" class="container narrow legal">
