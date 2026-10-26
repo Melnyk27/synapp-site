@@ -1,10 +1,10 @@
 ---
 title: Refund Policy
 description: TakeSync refunds: full refund for any reason within 14 days of a purchase or renewal.
-updated: 23 October 2026
+updated: 26 October 2026
 ---
 
-**Full refund, for any reason, within 14 days.** This applies to every TakeSync plan — monthly, yearly and lifetime — and to every subscription renewal charge.
+**Full refund, for any reason, within 14 days.** This applies to every TakeSync plan — monthly, yearly and one-time — and to every subscription renewal charge.
 
 ## How to ask for a refund
 
@@ -20,4 +20,4 @@ You can cancel a subscription at any time. It then stays active until the end of
 
 Our order process is conducted by our online reseller Paddle.com Market Limited, the Merchant of Record for all our orders, which issues the refund. Where Paddle’s buyer terms or the law of your country give you more favourable rights, those apply. More details are in section 7 of our [Terms of use](/terms).
 
-**Contact:** Individual Entrepreneur Dmytro Melnyk, Ukraine · [support@takesync.uk](mailto:support@takesync.uk).
+**Contact:** Dmytro Melnyk, Ukraine · [support@takesync.uk](mailto:support@takesync.uk).

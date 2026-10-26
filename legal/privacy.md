@@ -1,12 +1,12 @@
 ---
 title: Privacy Policy
 description: How TakeSync handles personal data. Your media stays on your computer.
-updated: 23 October 2026
+updated: 26 October 2026
 ---
 
 ## 1. Who we are and what this covers
 
-Individual Entrepreneur Dmytro Melnyk, Ukraine (“we”, “us”) makes TakeSync and is the controller of the personal data described here. Contact: [support@takesync.uk](mailto:support@takesync.uk).
+Dmytro Melnyk, Ukraine (“we”, “us”) makes TakeSync and is the controller of the personal data described here. Contact: [support@takesync.uk](mailto:support@takesync.uk).
 
 This policy covers the TakeSync desktop application for macOS (the “App”), the website takesync.uk (the “Site”), purchases and support. It should be read together with the [TakeSync End User License Agreement](/terms).
 
@@ -20,7 +20,7 @@ This policy covers the TakeSync desktop application for macOS (the “App”), t
 
 **Optional FFmpeg download.** If you choose to install FFmpeg through the App, your computer downloads it directly from the third-party provider shown in the App (currently ffmpeg.martin-riedl.de). That provider receives your IP address and standard request data, as with any download. We receive nothing.
 
-**License activation.** When you activate a purchased license, the App sends us or our licensing provider: your License Key, the email address and order number linked to it, an anonymous identifier of the computer (not your name or files), the operating system, and the App version. We use this to check that the key is valid and to enforce the limit of 2 computers per license. The App may repeat this check from time to time; it works offline between checks.
+**License activation.** When you activate a purchased license, the App sends us or our licensing provider: your License Key, the email address and order number linked to it, an anonymous identifier of the computer (a one-way hash, not your files), the computer’s name as set in its system settings (so you can tell your computers apart), and the App version. We use this to check that the key is valid and to enforce the limit of 2 computers per license. The App may repeat this check from time to time; it works offline between checks.
 
 **Premiere Pro panel.** The optional TakeSync panel for Adobe Premiere Pro reads exports the App saved on your computer and imports them into your open project. It sends nothing over the internet.
 
@@ -50,12 +50,12 @@ Email to that address is forwarded by Cloudflare Email Routing to a mailbox host
 
 | Purpose | Data | Legal basis (GDPR / UK GDPR) | Kept for |
 | --- | --- | --- | --- |
-| Deliver and check your license | email, License Key, order number, computer identifier, OS, App version | performance of the contract (Art. 6(1)(b)) | while the license is active, then 2 years |
+| Deliver and check your license | email, License Key, order number, computer identifier, computer name, App version | performance of the contract (Art. 6(1)(b)) | while the license is active, then 2 years |
 | Purchase records | name, email, country, order, amount, refunds | legal obligation (Art. 6(1)(c)) | as tax and accounting law requires, up to 6 years |
 | Answer support emails | email address, messages, attachments | legitimate interest in helping you (Art. 6(1)(f)) | 2 years after the last message |
 | Run and protect the Site | IP address, request data | legitimate interest in a working, secure Site (Art. 6(1)(f)) | Cloudflare’s short-lived logs |
 
-**Who else receives data.** Only the providers named in this policy: Paddle (payments), Cloudflare (Site, downloads, email forwarding and license checks), Google (mailbox and fonts) and open.er-api.com (exchange rates). We do not sell or rent personal data, and we disclose it to authorities only when the law requires.
+**Who else receives data.** Only the providers named in this policy: Paddle (payments), Cloudflare (Site, downloads, email forwarding and license checks), Brevo / Sendinblue SAS, France (sends the email with your License Key), Google (mailbox and fonts) and open.er-api.com (exchange rates). We do not sell or rent personal data, and we disclose it to authorities only when the law requires.
 
 **International transfers.** These providers may process data outside your country, including in the United States. Where data leaves the EU or the UK, they rely on adequacy decisions or the European Commission’s Standard Contractual Clauses.
 
@@ -71,4 +71,4 @@ If you are in the EU or the UK and think we handle your data unlawfully, you can
 
 **Changes.** If we change this policy, we will publish the new version on this page with a new date, and tell licensed customers by email about significant changes.
 
-**Contact:** Individual Entrepreneur Dmytro Melnyk, Ukraine · [support@takesync.uk](mailto:support@takesync.uk).
+**Contact:** Dmytro Melnyk, Ukraine · [support@takesync.uk](mailto:support@takesync.uk).

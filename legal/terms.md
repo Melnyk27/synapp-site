@@ -1,12 +1,12 @@
 ---
 title: End User License Agreement
-description: The license terms for TakeSync: 7-day trial, monthly, yearly or lifetime license for one person on up to 2 computers, 14-day refunds.
-updated: 23 October 2026
+description: The license terms for TakeSync: 7-day trial, monthly, yearly or one-time license for one person on up to 2 computers, 14-day refunds.
+updated: 26 October 2026
 ---
 
 ## 1. Agreement and parties
 
-This End User License Agreement (“Agreement”) is a legal agreement between you (“you”, the person or the organization you represent) and Individual Entrepreneur Dmytro Melnyk, Ukraine (“we”, “us”, the “Licensor”), who makes TakeSync, for the TakeSync desktop application, including its updates, documentation and license keys (the “Software”).
+This End User License Agreement (“Agreement”) is a legal agreement between you (“you”, the person or the organization you represent) and Dmytro Melnyk, Ukraine (“we”, “us”, the “Licensor”), who makes TakeSync, for the TakeSync desktop application, including its updates, documentation and license keys (the “Software”).
 
 By installing, opening or using the Software you accept this Agreement. If you do not accept it, do not install or use the Software. If you accept on behalf of an organization, you confirm you are authorized to bind it.
 
@@ -25,15 +25,15 @@ You may use the Software free of charge for 7 days from its first launch on a co
 
 ## 3. License grant
 
-TakeSync is offered as a **monthly subscription**, a **yearly subscription** or a **lifetime license**. Every plan includes all features. After you pay, we grant you a non-exclusive, non-transferable license to install and use the Software, subject to this Agreement:
+TakeSync is offered as a **monthly subscription**, a **yearly subscription** or a **one-time license**. Every plan includes all features. After you pay, we grant you a non-exclusive, non-transferable license to install and use the Software, subject to this Agreement:
 
 - **Subscriptions** (monthly or yearly) last for the period you paid for and renew automatically at the end of each period until you cancel. You can cancel at any time in the customer portal linked in your receipt or by writing to us; the license then stays active until the end of the period already paid, and is not renewed.
-- **Lifetime license** is paid once and does not expire.
+- **One-time license** is paid once and does not expire. It covers **TakeSync version 1**: version 1.0 and every 1.x update. A future major version (2.0 or later), if we release one, is a separate purchase; your version 1 keeps working with your License Key.
 - **Who:** one named person. An organization buys one license per person who uses the Software.
 - **Where:** on up to 2 computers you own or control (for example a desktop and a laptop), used by that person only. You may move the license to another computer by deactivating it on the old one.
 - **For what:** personal and commercial work, including paid client projects.
 - **Your Output is yours.** We claim no rights in Your Media or in Output. You may use, sell and distribute Output without any further fee or credit to us, also after your subscription ends.
-- **Transfer:** you may not rent, lend, sublicense or resell the license, except that you may transfer a lifetime license once, completely, to another person with our prior written consent, after which you must stop using the Software.
+- **Transfer:** you may not rent, lend, sublicense or resell the license, except that you may transfer a one-time license once, completely, to another person with our prior written consent, after which you must stop using the Software.
 
 The license covers the Software only. Third-party software and services are licensed separately (section 5).
 
@@ -87,7 +87,7 @@ Refunds are paid by the Reseller to the original payment method. We may refuse a
 
 ## 8. Updates and support
 
-Subscriptions include every update released while the subscription is active. The lifetime license includes every future update.
+Subscriptions include every update and every new major version released while the subscription is active. The one-time license includes every update of the major version it was bought for (for example, all 1.x releases for a license bought for version 1), but not the next major version (2.0). We decide what counts as a new major version; it will be clearly named as one (for example, “TakeSync 2”), offered as a separate product, and you can always keep using the version you own.
 
 - Updates may add, change or remove features, but we will not remove the core function you paid for (audio-based synchronization and timeline export).
 - Support is provided by email at [support@takesync.uk](mailto:support@takesync.uk), usually within 3 business days, in English and Ukrainian.
@@ -141,4 +141,4 @@ Disputes will be resolved by the competent courts of Ukraine. Before going to co
 - **Assignment.** You may not assign this Agreement except as section 3 allows. We may assign it to a successor of our business.
 - **Language.** This English version prevails over any translation.
 
-**Contact:** Individual Entrepreneur Dmytro Melnyk, Ukraine · [support@takesync.uk](mailto:support@takesync.uk) · [takesync.uk](https://takesync.uk).
+**Contact:** Dmytro Melnyk, Ukraine · [support@takesync.uk](mailto:support@takesync.uk) · [takesync.uk](https://takesync.uk).

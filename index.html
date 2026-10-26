@@ -223,11 +223,11 @@
         <a href="#buy" class="btn btn-primary btn-block" data-plan="yearly" data-i18n="price.subscribe">Subscribe</a>
       </article>
       <article class="plan">
-        <h3 data-i18n="price.lifetime">Lifetime</h3>
+        <h3 data-i18n="price.lifetime">One-time</h3>
         <p class="price"><span class="amt" data-usd="150">$150</span></p>
         <p class="price-local" data-usd="150" hidden></p>
-        <p class="muted" data-i18n="price.lifetimeSub">Pay once and keep TakeSync for good, with every update.</p>
-        <a href="#buy" class="btn btn-ghost btn-block" data-plan="lifetime" data-i18n="price.buy">Buy lifetime</a>
+        <p class="muted" data-i18n="price.lifetimeSub">Pay once, keep version 1 for good, with every 1.x update. Version 2 will be a separate purchase.</p>
+        <a href="#buy" class="btn btn-ghost btn-block" data-plan="lifetime" data-i18n="price.buy">Buy version 1</a>
       </article>
     </div>
     <p class="small faint plans-note" id="price-note" data-i18n="price.noteUsd">Prices in US dollars. Taxes are added at checkout where they apply.</p>
@@ -241,7 +241,7 @@
       <details><summary data-i18n="faq.q3">What happens to a clip with no sound partner?</summary><p data-i18n="faq.a3">If its camera’s clock is reliable, the clip goes on the timeline at the time it was recorded and is marked so you can check it. Otherwise it’s marked as not synced, and on export you can move such clips to the end.</p></details>
       <details><summary data-i18n="faq.q4">Does it fix drift on long recordings?</summary><p data-i18n="faq.a4">Yes. TakeSync detects when a recorder runs slightly fast or slow against the cameras and corrects the audio.</p></details>
       <details><summary data-i18n="faq.q5">What about Final Cut Pro, DaVinci Resolve and Windows?</summary><p data-i18n="faq.a5">Final Cut Pro and DaVinci Resolve export is being tested now. Windows is in development. They arrive as free updates.</p></details>
-      <details><summary data-i18n="faq.q6">Monthly, yearly or lifetime — what’s the difference?</summary><p data-i18n="faq.a6">Only how you pay. A subscription keeps TakeSync working while it’s active, and you can cancel any time. The lifetime licence is paid once and never expires. Every plan includes all features and updates.</p></details>
+      <details><summary data-i18n="faq.q6">Monthly, yearly or one-time — what’s the difference?</summary><p data-i18n="faq.a6">A subscription keeps TakeSync working while it’s active, with every update and every new major version, and you can cancel any time. The one-time license is paid once and never expires; it covers version 1 and all its 1.x updates. A future TakeSync 2 would be a separate purchase, and version 1 keeps working.</p></details>
     </div>
   </section>
 
@@ -276,5 +276,6 @@
 
 <script src="i18n.js?v=20261024b"></script>
 <script src="main.js?v=20261024b"></script>
+<script src="checkout.js?v=20261026"></script>
 </body>
 </html>
