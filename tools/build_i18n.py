@@ -662,6 +662,18 @@ L['tr'].update({'hero.fine': 'Apple Silicon’lu Mac’ler için sürüm 1.0.1. 
 L['ko'].update({'hero.fine': 'Apple Silicon Mac용 버전 1.0.1. 7일 무료, 오프라인에서 작동합니다.', 'compat.title': 'TakeSync 1.0.1 지원 환경', 'compat.lead': '버전 1.0.1은 Apple Silicon Mac에서 Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve와 함께 완전히 지원됩니다. Windows는 테스트 중이며 무료 업데이트로 제공됩니다.', 'compat.state': '1.0.1 지원 상태', 'faq.a5': 'Final Cut Pro와 DaVinci Resolve는 버전 1.0.1부터 지원됩니다. Windows는 테스트 중이며 무료 업데이트로 제공됩니다.', 'final.req': 'TakeSync 1.0.1 · Apple Silicon Mac · Premiere Pro, Final Cut Pro, DaVinci Resolve. Windows는 테스트 중.', 'price.buy': '평생 라이선스 구매'})
 L['zh'].update({'hero.fine': '版本 1.0.1，适用于 Apple Silicon Mac。免费试用 7 天，可离线使用。', 'compat.title': 'TakeSync 1.0.1 支持的平台', 'compat.lead': '版本 1.0.1 在 Apple Silicon Mac 上全面支持 Adobe Premiere Pro、Final Cut Pro 和 DaVinci Resolve。Windows 版正在测试，将以免费更新形式推出。', 'compat.state': '1.0.1 中的状态', 'faq.a5': '自版本 1.0.1 起支持 Final Cut Pro 和 DaVinci Resolve。Windows 版正在测试，将以免费更新形式推出。', 'final.req': 'TakeSync 1.0.1 · Apple Silicon Mac · Premiere Pro、Final Cut Pro、DaVinci Resolve。Windows 版正在测试。', 'price.buy': '购买永久授权'})
 
+# 2026-10-27: no Premiere panel — import the XML with File → Import in any editor
+L['uk'].update({'how.s3t': 'Імпортуй у свій монтажний редактор', 'how.s3': 'Експортуй XML і відкрий його через File → Import у Premiere Pro, Final Cut Pro чи DaVinci Resolve. Синхронізована секвенція з’явиться в проєкті, готова до монтажу.'})
+L['de'].update({'how.s3t': 'In dein Schnittprogramm importieren', 'how.s3': 'Exportiere ein XML und öffne es über Datei → Importieren in Premiere Pro, Final Cut Pro oder DaVinci Resolve. Die synchronisierte Sequenz landet schnittbereit in deinem Projekt.'})
+L['es'].update({'how.s3t': 'Impórtalo en tu editor', 'how.s3': 'Exporta un XML y ábrelo con Archivo → Importar en Premiere Pro, Final Cut Pro o DaVinci Resolve. La secuencia sincronizada llega a tu proyecto, lista para editar.'})
+L['fr'].update({'how.s3t': 'Importez-le dans votre logiciel de montage', 'how.s3': 'Exportez un XML et ouvrez-le via Fichier → Importer dans Premiere Pro, Final Cut Pro ou DaVinci Resolve. La séquence synchronisée arrive dans votre projet, prête à monter.'})
+L['it'].update({'how.s3t': 'Importalo nel tuo programma di montaggio', 'how.s3': 'Esporta un XML e aprilo con File → Importa in Premiere Pro, Final Cut Pro o DaVinci Resolve. La sequenza sincronizzata arriva nel progetto, pronta per il montaggio.'})
+L['pl'].update({'how.s3t': 'Zaimportuj do swojego programu do montażu', 'how.s3': 'Wyeksportuj XML i otwórz go przez Plik → Importuj w Premiere Pro, Final Cut Pro lub DaVinci Resolve. Zsynchronizowana sekwencja trafi do projektu, gotowa do montażu.'})
+L['hu'].update({'how.s3t': 'Importáld a vágóprogramodba', 'how.s3': 'Exportálj egy XML-t, és nyisd meg a Fájl → Importálás menüvel a Premiere Pro, a Final Cut Pro vagy a DaVinci Resolve programban. A szinkronizált szekvencia vágásra készen kerül a projektedbe.'})
+L['tr'].update({'how.s3t': 'Kurgu programına aktar', 'how.s3': 'Bir XML dışa aktar ve Premiere Pro, Final Cut Pro ya da DaVinci Resolve’da Dosya → İçe Aktar ile aç. Senkronize sekans, kurguya hazır şekilde projene gelir.'})
+L['ko'].update({'how.s3t': '편집 프로그램으로 가져오기', 'how.s3': 'XML을 내보내고 Premiere Pro, Final Cut Pro 또는 DaVinci Resolve에서 파일 → 가져오기로 여세요. 동기화된 시퀀스가 바로 편집할 수 있는 상태로 프로젝트에 들어옵니다.'})
+L['zh'].update({'how.s3t': '导入你的剪辑软件', 'how.s3': '导出 XML，然后在 Premiere Pro、Final Cut Pro 或 DaVinci Resolve 中通过“文件 → 导入”打开。同步好的序列会直接进入你的项目，可以马上剪辑。'})
+
 NAMES = {'en': 'English', 'uk': 'Українська', 'de': 'Deutsch', 'es': 'Español', 'fr': 'Français', 'it': 'Italiano',
          'pl': 'Polski', 'hu': 'Magyar', 'tr': 'Türkçe', 'ko': '한국어', 'zh': '中文'}
 

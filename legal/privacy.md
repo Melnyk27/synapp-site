@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 description: How TakeSync handles personal data. Your media stays on your computer.
-updated: 26 October 2026
+updated: 27 October 2026
 ---
 
 ## 1. Who we are and what this covers
@@ -20,9 +20,9 @@ This policy covers the TakeSync desktop application for macOS (the “App”), t
 
 **Optional FFmpeg download.** If you choose to install FFmpeg through the App, your computer downloads it directly from the third-party provider shown in the App (currently ffmpeg.martin-riedl.de). That provider receives your IP address and standard request data, as with any download. We receive nothing.
 
-**License activation.** When you activate a purchased license, the App sends us or our licensing provider: your License Key, the email address and order number linked to it, an anonymous identifier of the computer (a one-way hash, not your files), the computer’s name as set in its system settings (so you can tell your computers apart), and the App version. We use this to check that the key is valid and to enforce the limit of 2 computers per license. The App may repeat this check from time to time; it works offline between checks.
+**License activation.** When you activate a purchased license, the App sends us or our licensing provider: your License Key, the email address and order number linked to it, an anonymous identifier of the computer (a one-way hash, not your files), the computer’s name as set in its system settings (so you can tell your computers apart), and the App version. We use this to check that the key is valid and to enforce the limit of 2 computers per license. The App repeats this check about once a week and keeps working offline between checks for up to 30 days.
 
-**Premiere Pro panel.** The optional TakeSync panel for Adobe Premiere Pro reads exports the App saved on your computer and imports them into your open project. It sends nothing over the internet.
+**Trial.** When you start the free trial, the App sends us the same anonymous identifier of the computer, once, so the trial start is remembered for that computer and a reinstall does not start a new trial. We store only that identifier and the date.
 
 ## 3. Purchases
 
