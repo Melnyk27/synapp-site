@@ -285,3 +285,14 @@ p { margin: 0; }
 .tutorial { margin: clamp(40px, 6vh, 72px) auto 0; max-width: 1040px; }
 .tutorial video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 16px; background: #07080b; border: 1px solid var(--border); box-shadow: 0 30px 80px rgba(0,0,0,.45); }
 .tutorial figcaption { margin-top: 14px; text-align: center; color: var(--muted); font-size: 15px; }
+
+/* install page */
+.cmd{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px;padding:12px 14px;border:1px solid var(--border-strong);border-radius:12px}.cmd code{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:14px;word-break:break-all;flex:1;min-width:0;color:var(--text)}.legal ol{padding-left:20px}.dl-banner{margin:0 0 28px;padding:16px 18px;border:1px solid var(--accent);border-radius:12px;background:color-mix(in srgb,var(--accent) 10%,transparent)}.dl-banner p{margin-top:6px}
+/* thanks page */
+
+  .thanks { padding-top: 96px; padding-bottom: 96px; }
+  .keybox { margin-top: 20px; padding: 16px; border: 1px solid var(--border-strong); border-radius: 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; word-break: break-all; user-select: all; }
+  .thanks ol { margin: 16px 0 0 20px; color: var(--muted); }
+  .thanks ol li { margin-top: 6px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+

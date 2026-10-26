@@ -7,7 +7,7 @@
 <meta name="description" content="How to install and open TakeSync on your Mac.">
 <meta name="theme-color" content="#0e1014">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/styles.css?v=20261024b">
+<link rel="stylesheet" href="/styles.css?v=20261026">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -21,7 +21,6 @@
   </nav>
 </header>
 <main id="main" class="container narrow legal">
-<style>.cmd{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px;padding:12px 14px;border:1px solid var(--border-strong);border-radius:12px}.cmd code{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:14px;word-break:break-all;flex:1;min-width:0;color:var(--text)}.legal ol{padding-left:20px}.dl-banner{margin:0 0 28px;padding:16px 18px;border:1px solid var(--accent);border-radius:12px;background:color-mix(in srgb,var(--accent) 10%,transparent)}.dl-banner p{margin-top:6px}</style>
 <section lang="en" data-lang="en">
   <div class="dl-banner" hidden><b>✓ Your download has started</b><p>TakeSync.dmg is downloading. Before you open it, read step 3: macOS will show a warning the first time — that’s expected, and here’s how to get past it in under a minute.</p><p class="small">Download didn’t start? <a href="/download/TakeSync.dmg">Click here</a>.</p></div>
   <h1>Install TakeSync</h1>
@@ -59,17 +58,6 @@
   <p>Напиши на <a href="mailto:support@takesync.uk">support@takesync.uk</a> версію macOS і скриншот — зазвичай відповідаємо протягом дня.</p>
 </section>
 </main>
-<script>
-(function(){
-  var l=(navigator.language||'en').toLowerCase();
-  try{var s=localStorage.getItem('takesync-lang');if(s)l=s;}catch(e){}
-  if(/^(uk|ru|be)/.test(l)){document.querySelector('[data-lang=en]').hidden=true;document.querySelector('[data-lang=uk]').hidden=false;document.documentElement.lang='uk';}
-  if(/[?&]download\b/.test(location.search)){
-    document.querySelectorAll('.dl-banner').forEach(function(b){b.hidden=false});
-    setTimeout(function(){var a=document.createElement('a');a.href='/download/TakeSync.dmg';a.download='TakeSync.dmg';document.body.appendChild(a);a.click();a.remove();},400);
-  }
-  document.querySelectorAll('.copy').forEach(function(b){b.onclick=function(){navigator.clipboard.writeText(b.previousElementSibling.textContent).then(function(){var t=b.textContent;b.textContent='✓';setTimeout(function(){b.textContent=t},1500)})}});
-})();
-</script>
+<script src="/install.js?v=20261026"></script>
 </body>
 </html>

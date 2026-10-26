@@ -9,14 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<style>
-  .thanks { padding-top: 96px; padding-bottom: 96px; }
-  .keybox { margin-top: 20px; padding: 16px; border: 1px solid var(--border-strong); border-radius: 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; word-break: break-all; user-select: all; }
-  .thanks ol { margin: 16px 0 0 20px; color: var(--muted); }
-  .thanks ol li { margin-top: 6px; }
-  .row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
-</style>
+<link rel="stylesheet" href="/styles.css?v=20261026">
 </head>
 <body>
 <main class="container narrow thanks">
@@ -37,33 +30,6 @@
   </div>
   <p class="small faint" style="margin-top:32px">Problems? <a href="mailto:support@takesync.uk">support@takesync.uk</a></p>
 </main>
-<script>
-(function () {
-  const txn = new URLSearchParams(location.search).get('txn');
-  const msg = document.getElementById('msg');
-  if (!txn) { msg.textContent = 'No order found. Your key was sent by email — check your inbox (and spam).'; return; }
-  let tries = 0;
-  async function poll() {
-    tries++;
-    try {
-      const r = await fetch('https://license.takesync.uk/v1/key?txn=' + encodeURIComponent(txn));
-      const v = await r.json();
-      if (v.status === 'ready') {
-        msg.hidden = true;
-        document.getElementById('ready').hidden = false;
-        document.getElementById('key').textContent = v.key;
-        document.getElementById('email').textContent = v.email;
-        document.getElementById('copy').onclick = async (e) => {
-          await navigator.clipboard.writeText(v.key); e.target.textContent = 'Copied ✓';
-        };
-        return;
-      }
-    } catch (e) { /* retry */ }
-    if (tries < 30) setTimeout(poll, 2000);
-    else msg.textContent = 'Payment received. The key is taking longer than usual — it will arrive by email within a few minutes. If not, write to support@takesync.uk with your order number: ' + txn;
-  }
-  poll();
-})();
-</script>
+<script src="/thanks.js?v=20261026"></script>
 </body>
 </html>
