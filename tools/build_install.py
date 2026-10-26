@@ -117,7 +117,7 @@ T = {
   once='只需操作一次，之后的更新安装时不会再出现警告。',
   s4='还是打不开？', p4='请把 macOS 版本和截图发送到 <a href="mailto:support@takesync.uk">support@takesync.uk</a>，我们通常在一天内回复。'),
 }
-LANGS = [('en','English'),('uk','Українська'),('de','Deutsch'),('es','Español'),('fr','Français'),('it','Italiano'),('pl','Polski'),('hu','Magyar'),('tr','Türkçe'),('ko','한국어'),('zh','中文')]
+LANGS = [('en', 'English'), ('de', 'Deutsch'), ('fr', 'Français'), ('es', 'Español'), ('it', 'Italiano'), ('uk', 'Українська'), ('pl', 'Polski'), ('hu', 'Magyar'), ('tr', 'Türkçe'), ('zh', '中文'), ('ko', '한국어')]
 
 def section(lang, t):
     return f'''<section lang="{lang}" data-lang="{lang}"{'' if lang == 'en' else ' hidden'}>
