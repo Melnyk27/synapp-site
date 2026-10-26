@@ -1,12 +1,12 @@
 ---
 title: End User License Agreement
 description: The license terms for TakeSync: 7-day trial, monthly, yearly or one-time license for one person on up to 2 computers, 14-day refunds.
-updated: 26 October 2026
+updated: 27 October 2026
 ---
 
 ## 1. Agreement and parties
 
-This End User License Agreement (“Agreement”) is a legal agreement between you (“you”, the person or the organization you represent) and Dmytro Melnyk, Ukraine (“we”, “us”, the “Licensor”), who makes TakeSync, for the TakeSync desktop application, including its updates, documentation and license keys (the “Software”).
+This End User License Agreement (“Agreement”) is a legal agreement between you (“you”, the person or the organization you represent) and TakeSync (“we”, “us”, the “Licensor”), who makes TakeSync, for the TakeSync desktop application, including its updates, documentation and license keys (the “Software”).
 
 By installing, opening or using the Software you accept this Agreement. If you do not accept it, do not install or use the Software. If you accept on behalf of an organization, you confirm you are authorized to bind it.
 
@@ -141,4 +141,4 @@ Disputes will be resolved by the competent courts of Ukraine. Before going to co
 - **Assignment.** You may not assign this Agreement except as section 3 allows. We may assign it to a successor of our business.
 - **Language.** This English version prevails over any translation.
 
-**Contact:** Dmytro Melnyk, Ukraine · [support@takesync.uk](mailto:support@takesync.uk) · [takesync.uk](https://takesync.uk).
+**Contact:** TakeSync · [support@takesync.uk](mailto:support@takesync.uk) · [takesync.uk](https://takesync.uk).

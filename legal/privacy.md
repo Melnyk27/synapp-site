@@ -6,7 +6,7 @@ updated: 27 October 2026
 
 ## 1. Who we are and what this covers
 
-Dmytro Melnyk, Ukraine (“we”, “us”) makes TakeSync and is the controller of the personal data described here. Contact: [support@takesync.uk](mailto:support@takesync.uk).
+The TakeSync team (“we”, “us”) makes the TakeSync app and is the controller of the personal data described here. Contact: [support@takesync.uk](mailto:support@takesync.uk).
 
 This policy covers the TakeSync desktop application for macOS (the “App”), the website takesync.uk (the “Site”), purchases and support. It should be read together with the [TakeSync End User License Agreement](/terms).
 
@@ -71,4 +71,4 @@ If you are in the EU or the UK and think we handle your data unlawfully, you can
 
 **Changes.** If we change this policy, we will publish the new version on this page with a new date, and tell licensed customers by email about significant changes.
 
-**Contact:** Dmytro Melnyk, Ukraine · [support@takesync.uk](mailto:support@takesync.uk).
+**Contact:** TakeSync · [support@takesync.uk](mailto:support@takesync.uk).
