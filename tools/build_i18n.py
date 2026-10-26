@@ -617,6 +617,17 @@ L['tr']['final.gatekeeper'] = 'İlk açılış: macOS geliştiriciyi doğrulayam
 L['ko']['final.gatekeeper'] = '처음 실행 시 macOS가 개발자를 확인할 수 없다고 표시할 수 있습니다. 시스템 설정 → 개인정보 보호 및 보안에서 아래로 스크롤해 ‘확인 없이 열기’를 클릭하세요. 한 번만 하면 됩니다.'
 L['zh']['final.gatekeeper'] = '首次启动：macOS 可能提示无法验证开发者。打开“系统设置”→“隐私与安全性”，向下滚动并点击“仍要打开”。只需一次。'
 
+L['uk']['final.install'] = 'Покрокова інструкція зі встановлення'
+L['de']['final.install'] = 'Installationsanleitung Schritt für Schritt'
+L['es']['final.install'] = 'Guía de instalación paso a paso'
+L['fr']['final.install'] = 'Guide d’installation pas à pas'
+L['it']['final.install'] = 'Guida all’installazione passo passo'
+L['pl']['final.install'] = 'Instrukcja instalacji krok po kroku'
+L['hu']['final.install'] = 'Telepítési útmutató lépésről lépésre'
+L['tr']['final.install'] = 'Adım adım kurulum rehberi'
+L['ko']['final.install'] = '단계별 설치 안내'
+L['zh']['final.install'] = '分步安装指南'
+
 NAMES = {'en': 'English', 'uk': 'Українська', 'de': 'Deutsch', 'es': 'Español', 'fr': 'Français', 'it': 'Italiano',
          'pl': 'Polski', 'hu': 'Magyar', 'tr': 'Türkçe', 'ko': '한국어', 'zh': '中文'}
 

@@ -112,5 +112,6 @@
 "hero.stage": "Sync demo",
 "hero.tlLabel": "Wedding tracks sliding into sync",
 "how.video": "Step-by-step tutorial · 2½ min",
-"final.gatekeeper": "First launch: macOS may say it can’t verify the developer. Open System Settings → Privacy & Security, scroll down and click “Open Anyway”. Only needed once."
+"final.gatekeeper": "First launch: macOS may say it can’t verify the developer. Open System Settings → Privacy & Security, scroll down and click “Open Anyway”. Only needed once.",
+"final.install": "Step-by-step install guide"
 }
