@@ -7,17 +7,31 @@
 <meta name="description" content="How to install and open TakeSync on your Mac.">
 <meta name="theme-color" content="#0e1014">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/styles.css?v=20261026b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=20261026c">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav-wrap">
   <nav class="nav container" aria-label="Main">
     <a href="/" class="brand" aria-label="TakeSync home">
-      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#15181d"/><rect x="5" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/><rect x="9" y="6" width="2.4" height="16" rx="1.2" fill="#4fd58a"/><rect x="13" y="10" width="2.4" height="8" rx="1.2" fill="#5b9cff"/><rect x="17" y="5" width="2.4" height="18" rx="1.2" fill="#4fd58a"/><rect x="21" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/></svg>
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#171a20"/><rect x="5" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/><rect x="9" y="6" width="2.4" height="16" rx="1.2" fill="#4fd58a"/><rect x="13" y="10" width="2.4" height="8" rx="1.2" fill="#5b9cff"/><rect x="17" y="5" width="2.4" height="18" rx="1.2" fill="#4fd58a"/><rect x="21" y="9" width="2.4" height="10" rx="1.2" fill="#5b9cff"/></svg>
       TakeSync
     </a>
-    <a href="/download/TakeSync.dmg" download class="btn btn-primary btn-sm legal-cta">Download</a>
+    <div class="nav-links">
+      <a href="/#features" data-i18n="nav.features">What it does</a>
+      <a href="/#how" data-i18n="nav.how">How it works</a>
+      <a href="/#compat" data-i18n="nav.compat">Compatibility</a>
+      <a href="/#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="/#faq" data-i18n="nav.faq">FAQ</a>
+    </div>
+    <label class="lang">
+      <span class="visually-hidden" data-i18n="nav.lang">Language</span>
+      <select id="lang-select"><option value="en">English</option><option value="uk">Українська</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="it">Italiano</option><option value="pl">Polski</option><option value="hu">Magyar</option><option value="tr">Türkçe</option><option value="ko">한국어</option><option value="zh">中文</option></select>
+    </label>
+    <a href="/download/TakeSync.dmg" download class="btn btn-primary btn-sm" data-i18n="nav.download">Download</a>
   </nav>
 </header>
 <main id="main" class="container narrow legal">
@@ -63,7 +77,197 @@
   <h2>Все одно не відкривається?</h2>
   <p>Напиши на <a href="mailto:support@takesync.uk">support@takesync.uk</a> версію macOS і скриншот — зазвичай відповідаємо протягом дня.</p>
 </section>
+<section lang="de" data-lang="de" hidden>
+  <h1>TakeSync installieren</h1>
+  <p class="legal-updated">Mac mit Apple Silicon · macOS 12 oder neuer</p>
+  <div class="dl-note"><b>Bitte vor dem Öffnen lesen.</b> TakeSync ist noch nicht von Apple notarisiert. Beim ersten Öffnen meldet macOS daher, es könne „nicht überprüfen, ob TakeSync frei von Schadsoftware ist“. Das ist normal – die App ist sicher, arbeitet offline und lädt deine Medien nirgendwohin hoch. Schritt 3 zeigt, wie du sie einmalig erlaubst; das dauert keine Minute.</div>
+  <h2>1. Herunterladen</h2>
+  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>TakeSync.dmg herunterladen</a></p>
+  <p>Öffne die heruntergeladene Datei.</p>
+  <h2>2. In „Programme“ bewegen</h2>
+  <p>Ziehe <b>TakeSync</b> im geöffneten Fenster auf den Ordner <b>Programme</b>.</p>
+  <h2>3. Öffnen erlauben (einmalig)</h2>
+  <p>Wähle einen der beiden Wege:</p>
+  <h3>Option A (am schnellsten): ein Befehl im Terminal</h3>
+  <ol><li>Öffne das <b>Terminal</b>: <b>⌘ Leertaste</b> drücken, <b>Terminal</b> eingeben, Return drücken.</li><li>Kopiere diese Zeile, füge sie ins Terminal ein und drücke Return:</li></ol>
+  <div class="cmd"><code>xattr -dr com.apple.quarantine /Applications/TakeSync.app</code><button class="btn btn-ghost btn-sm copy" type="button">Kopieren</button></div>
+  <ol start="3"><li>Öffne TakeSync wie gewohnt aus „Programme“.</li></ol>
+  <h3>Option B: Systemeinstellungen</h3>
+  <ol><li>Öffne TakeSync aus „Programme“. Wenn die Warnung erscheint, klicke auf <b>Fertig</b> (nicht „In den Papierkorb“).</li><li>Öffne <b>Systemeinstellungen → Datenschutz &amp; Sicherheit</b>.</li><li>Scrolle nach unten zur Meldung über TakeSync und klicke auf <b>Dennoch öffnen</b>.</li><li>Bestätige mit Passwort oder Touch ID und klicke erneut auf <b>Dennoch öffnen</b>.</li></ol>
+  <p>Das ist nur einmal nötig. Updates werden ohne Warnung installiert.</p>
+  <h2>Öffnet sich immer noch nicht?</h2>
+  <p>Schreib an <a href="mailto:support@takesync.uk">support@takesync.uk</a> mit deiner macOS-Version und einem Screenshot – wir antworten meist innerhalb eines Tages.</p>
+</section>
+<section lang="es" data-lang="es" hidden>
+  <h1>Instalar TakeSync</h1>
+  <p class="legal-updated">Mac con Apple Silicon · macOS 12 o posterior</p>
+  <div class="dl-note"><b>Léelo antes de abrir la app.</b> TakeSync aún no está notarizada por Apple, así que la primera vez macOS avisa de que «no puede verificar que TakeSync no contenga software malicioso». Es normal: la app es segura, funciona sin conexión y nunca sube tus archivos. El paso 3 explica cómo permitirla una vez; tarda menos de un minuto.</div>
+  <h2>1. Descarga</h2>
+  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>Descargar TakeSync.dmg</a></p>
+  <p>Abre el archivo descargado.</p>
+  <h2>2. Muévela a Aplicaciones</h2>
+  <p>Arrastra <b>TakeSync</b> a la carpeta <b>Aplicaciones</b> en la ventana que se abre.</p>
+  <h2>3. Permite abrirla (una vez)</h2>
+  <p>Elige una de las dos formas:</p>
+  <h3>Opción A (la más rápida): un comando en Terminal</h3>
+  <ol><li>Abre <b>Terminal</b>: pulsa <b>⌘ Espacio</b>, escribe <b>Terminal</b> y pulsa Retorno.</li><li>Copia esta línea, pégala en Terminal y pulsa Retorno:</li></ol>
+  <div class="cmd"><code>xattr -dr com.apple.quarantine /Applications/TakeSync.app</code><button class="btn btn-ghost btn-sm copy" type="button">Copiar</button></div>
+  <ol start="3"><li>Abre TakeSync desde Aplicaciones como siempre.</li></ol>
+  <h3>Opción B: Ajustes del Sistema</h3>
+  <ol><li>Abre TakeSync desde Aplicaciones. Cuando aparezca el aviso, pulsa <b>OK</b> (no «Trasladar a la papelera»).</li><li>Abre <b>Ajustes del Sistema → Privacidad y seguridad</b>.</li><li>Desplázate hasta el mensaje sobre TakeSync y pulsa <b>Abrir igualmente</b>.</li><li>Confirma con tu contraseña o Touch ID y vuelve a pulsar <b>Abrir igualmente</b>.</li></ol>
+  <p>Solo hace falta una vez. Las actualizaciones se instalan sin el aviso.</p>
+  <h2>¿Sigue sin abrirse?</h2>
+  <p>Escribe a <a href="mailto:support@takesync.uk">support@takesync.uk</a> con tu versión de macOS y una captura; solemos responder en un día.</p>
+</section>
+<section lang="fr" data-lang="fr" hidden>
+  <h1>Installer TakeSync</h1>
+  <p class="legal-updated">Mac avec Apple Silicon · macOS 12 ou ultérieur</p>
+  <div class="dl-note"><b>À lire avant d’ouvrir l’app.</b> TakeSync n’est pas encore notarisée par Apple : à la première ouverture, macOS indique qu’il « ne peut pas vérifier que TakeSync est exempte de logiciels malveillants ». C’est normal — l’app est sûre, fonctionne hors ligne et n’envoie jamais vos médias. L’étape 3 explique comment l’autoriser une fois ; moins d’une minute.</div>
+  <h2>1. Télécharger</h2>
+  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>Télécharger TakeSync.dmg</a></p>
+  <p>Ouvrez le fichier téléchargé.</p>
+  <h2>2. Placer dans Applications</h2>
+  <p>Faites glisser <b>TakeSync</b> sur le dossier <b>Applications</b> dans la fenêtre qui s’ouvre.</p>
+  <h2>3. Autoriser l’ouverture (une fois)</h2>
+  <p>Choisissez l’une des deux méthodes :</p>
+  <h3>Option A (la plus rapide) : une commande dans le Terminal</h3>
+  <ol><li>Ouvrez le <b>Terminal</b> : appuyez sur <b>⌘ Espace</b>, tapez <b>Terminal</b>, puis Entrée.</li><li>Copiez cette ligne, collez-la dans le Terminal et appuyez sur Entrée :</li></ol>
+  <div class="cmd"><code>xattr -dr com.apple.quarantine /Applications/TakeSync.app</code><button class="btn btn-ghost btn-sm copy" type="button">Copier</button></div>
+  <ol start="3"><li>Ouvrez TakeSync depuis Applications comme d’habitude.</li></ol>
+  <h3>Option B : Réglages Système</h3>
+  <ol><li>Ouvrez TakeSync depuis Applications. Quand l’alerte apparaît, cliquez sur <b>Terminé</b> (pas « Placer dans la corbeille »).</li><li>Ouvrez <b>Réglages Système → Confidentialité et sécurité</b>.</li><li>Faites défiler jusqu’au message concernant TakeSync et cliquez sur <b>Ouvrir quand même</b>.</li><li>Confirmez avec votre mot de passe ou Touch ID, puis cliquez à nouveau sur <b>Ouvrir quand même</b>.</li></ol>
+  <p>À faire une seule fois. Les mises à jour s’installent sans alerte.</p>
+  <h2>Ça ne s’ouvre toujours pas ?</h2>
+  <p>Écrivez à <a href="mailto:support@takesync.uk">support@takesync.uk</a> avec votre version de macOS et une capture d’écran — nous répondons en général sous 24 h.</p>
+</section>
+<section lang="it" data-lang="it" hidden>
+  <h1>Installare TakeSync</h1>
+  <p class="legal-updated">Mac con Apple Silicon · macOS 12 o successivo</p>
+  <div class="dl-note"><b>Leggi prima di aprire l’app.</b> TakeSync non è ancora autenticata da Apple, quindi al primo avvio macOS avvisa che «non può verificare che TakeSync sia priva di malware». È normale: l’app è sicura, funziona offline e non carica mai i tuoi file. Il passo 3 mostra come consentirla una volta; serve meno di un minuto.</div>
+  <h2>1. Scarica</h2>
+  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>Scarica TakeSync.dmg</a></p>
+  <p>Apri il file scaricato.</p>
+  <h2>2. Sposta in Applicazioni</h2>
+  <p>Trascina <b>TakeSync</b> sulla cartella <b>Applicazioni</b> nella finestra che si apre.</p>
+  <h2>3. Consenti l’apertura (una volta)</h2>
+  <p>Scegli uno dei due modi:</p>
+  <h3>Opzione A (la più veloce): un comando nel Terminale</h3>
+  <ol><li>Apri il <b>Terminale</b>: premi <b>⌘ Spazio</b>, scrivi <b>Terminale</b> e premi Invio.</li><li>Copia questa riga, incollala nel Terminale e premi Invio:</li></ol>
+  <div class="cmd"><code>xattr -dr com.apple.quarantine /Applications/TakeSync.app</code><button class="btn btn-ghost btn-sm copy" type="button">Copia</button></div>
+  <ol start="3"><li>Apri TakeSync da Applicazioni come al solito.</li></ol>
+  <h3>Opzione B: Impostazioni di Sistema</h3>
+  <ol><li>Apri TakeSync da Applicazioni. Quando compare l’avviso, fai clic su <b>Fine</b> (non «Sposta nel Cestino»).</li><li>Apri <b>Impostazioni di Sistema → Privacy e sicurezza</b>.</li><li>Scorri fino al messaggio su TakeSync e fai clic su <b>Apri comunque</b>.</li><li>Conferma con password o Touch ID e fai di nuovo clic su <b>Apri comunque</b>.</li></ol>
+  <p>Serve una sola volta. Gli aggiornamenti si installano senza avviso.</p>
+  <h2>Ancora non si apre?</h2>
+  <p>Scrivi a <a href="mailto:support@takesync.uk">support@takesync.uk</a> con la versione di macOS e uno screenshot: di solito rispondiamo entro un giorno.</p>
+</section>
+<section lang="pl" data-lang="pl" hidden>
+  <h1>Instalacja TakeSync</h1>
+  <p class="legal-updated">Mac z Apple Silicon · macOS 12 lub nowszy</p>
+  <div class="dl-note"><b>Przeczytaj, zanim otworzysz aplikację.</b> TakeSync nie jest jeszcze notaryzowany przez Apple, więc przy pierwszym uruchomieniu macOS ostrzega, że „nie może sprawdzić, czy TakeSync nie zawiera złośliwego oprogramowania”. To normalne — aplikacja jest bezpieczna, działa offline i nigdzie nie wysyła Twoich plików. Krok 3 pokazuje, jak zezwolić na nią raz; to mniej niż minuta.</div>
+  <h2>1. Pobierz</h2>
+  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>Pobierz TakeSync.dmg</a></p>
+  <p>Otwórz pobrany plik.</p>
+  <h2>2. Przenieś do Aplikacji</h2>
+  <p>Przeciągnij <b>TakeSync</b> na folder <b>Aplikacje</b> w oknie, które się otworzy.</p>
+  <h2>3. Zezwól na otwarcie (raz)</h2>
+  <p>Wybierz jeden z dwóch sposobów:</p>
+  <h3>Opcja A (najszybsza): jedno polecenie w Terminalu</h3>
+  <ol><li>Otwórz <b>Terminal</b>: naciśnij <b>⌘ Spacja</b>, wpisz <b>Terminal</b> i naciśnij Return.</li><li>Skopiuj ten wiersz, wklej go do Terminala i naciśnij Return:</li></ol>
+  <div class="cmd"><code>xattr -dr com.apple.quarantine /Applications/TakeSync.app</code><button class="btn btn-ghost btn-sm copy" type="button">Kopiuj</button></div>
+  <ol start="3"><li>Otwieraj TakeSync z Aplikacji jak zwykle.</li></ol>
+  <h3>Opcja B: Ustawienia systemowe</h3>
+  <ol><li>Otwórz TakeSync z Aplikacji. Gdy pojawi się ostrzeżenie, kliknij <b>Gotowe</b> (nie „Przenieś do kosza”).</li><li>Otwórz <b>Ustawienia systemowe → Prywatność i ochrona</b>.</li><li>Przewiń do komunikatu o TakeSync i kliknij <b>Otwórz mimo to</b>.</li><li>Potwierdź hasłem lub Touch ID i ponownie kliknij <b>Otwórz mimo to</b>.</li></ol>
+  <p>Wystarczy zrobić to raz. Aktualizacje instalują się bez ostrzeżenia.</p>
+  <h2>Nadal się nie otwiera?</h2>
+  <p>Napisz na <a href="mailto:support@takesync.uk">support@takesync.uk</a>, podając wersję macOS i zrzut ekranu — zwykle odpowiadamy w ciągu dnia.</p>
+</section>
+<section lang="hu" data-lang="hu" hidden>
+  <h1>A TakeSync telepítése</h1>
+  <p class="legal-updated">Apple Silicon processzoros Mac · macOS 12 vagy újabb</p>
+  <div class="dl-note"><b>Olvasd el, mielőtt megnyitod az appot.</b> A TakeSyncet az Apple még nem hitelesítette, ezért első indításkor a macOS figyelmeztet, hogy „nem tudja ellenőrizni, hogy a TakeSync mentes-e a rosszindulatú szoftverektől”. Ez várható — az app biztonságos, offline működik, és sehová nem tölti fel a felvételeidet. A 3. lépés megmutatja, hogyan engedélyezd egyszer; egy percnél kevesebb.</div>
+  <h2>1. Letöltés</h2>
+  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>TakeSync.dmg letöltése</a></p>
+  <p>Nyisd meg a letöltött fájlt.</p>
+  <h2>2. Áthelyezés az Alkalmazásokba</h2>
+  <p>A megnyíló ablakban húzd a <b>TakeSync</b> ikont az <b>Alkalmazások</b> mappára.</p>
+  <h2>3. Megnyitás engedélyezése (egyszer)</h2>
+  <p>Válassz a két mód közül:</p>
+  <h3>A lehetőség (leggyorsabb): egy parancs a Terminálban</h3>
+  <ol><li>Nyisd meg a <b>Terminált</b>: nyomd meg a <b>⌘ Szóköz</b> billentyűt, írd be: <b>Terminál</b>, majd Return.</li><li>Másold ki ezt a sort, illeszd be a Terminálba, és nyomj Returnt:</li></ol>
+  <div class="cmd"><code>xattr -dr com.apple.quarantine /Applications/TakeSync.app</code><button class="btn btn-ghost btn-sm copy" type="button">Másolás</button></div>
+  <ol start="3"><li>Nyisd meg a TakeSyncet az Alkalmazásokból a szokásos módon.</li></ol>
+  <h3>B lehetőség: Rendszerbeállítások</h3>
+  <ol><li>Nyisd meg a TakeSyncet az Alkalmazásokból. Amikor megjelenik a figyelmeztetés, kattints a <b>Kész</b> gombra (ne a „Kukába helyezésre”).</li><li>Nyisd meg: <b>Rendszerbeállítások → Adatvédelem és biztonság</b>.</li><li>Görgess le a TakeSyncről szóló üzenethez, és kattints a <b>Megnyitás mégis</b> gombra.</li><li>Erősítsd meg jelszóval vagy Touch ID-val, majd kattints újra a <b>Megnyitás mégis</b> gombra.</li></ol>
+  <p>Ezt csak egyszer kell megtenni. A frissítések figyelmeztetés nélkül települnek.</p>
+  <h2>Még mindig nem nyílik meg?</h2>
+  <p>Írj a <a href="mailto:support@takesync.uk">support@takesync.uk</a> címre a macOS verziójával és egy képernyőképpel — általában egy napon belül válaszolunk.</p>
+</section>
+<section lang="tr" data-lang="tr" hidden>
+  <h1>TakeSync’i kur</h1>
+  <p class="legal-updated">Apple Silicon’lu Mac · macOS 12 veya üstü</p>
+  <div class="dl-note"><b>Uygulamayı açmadan önce oku.</b> TakeSync henüz Apple tarafından onaylanmadı (notarize edilmedi), bu yüzden ilk açılışta macOS “TakeSync’in kötü amaçlı yazılım içermediğini doğrulayamadığını” söyler. Bu beklenen bir durum — uygulama güvenli, çevrimdışı çalışır ve dosyalarını hiçbir yere yüklemez. 3. adım, bir kez nasıl izin vereceğini gösterir; bir dakikadan kısa sürer.</div>
+  <h2>1. İndir</h2>
+  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>TakeSync.dmg’yi indir</a></p>
+  <p>İndirilen dosyayı aç.</p>
+  <h2>2. Uygulamalar’a taşı</h2>
+  <p>Açılan pencerede <b>TakeSync</b>’i <b>Uygulamalar</b> klasörüne sürükle.</p>
+  <h2>3. Açılmasına izin ver (bir kez)</h2>
+  <p>İki yoldan birini seç:</p>
+  <h3>Seçenek A (en hızlı): Terminal’de tek komut</h3>
+  <ol><li><b>Terminal</b>’i aç: <b>⌘ Boşluk</b>’a bas, <b>Terminal</b> yaz ve Return’e bas.</li><li>Bu satırı kopyala, Terminal’e yapıştır ve Return’e bas:</li></ol>
+  <div class="cmd"><code>xattr -dr com.apple.quarantine /Applications/TakeSync.app</code><button class="btn btn-ghost btn-sm copy" type="button">Kopyala</button></div>
+  <ol start="3"><li>TakeSync’i Uygulamalar’dan her zamanki gibi aç.</li></ol>
+  <h3>Seçenek B: Sistem Ayarları</h3>
+  <ol><li>TakeSync’i Uygulamalar’dan aç. Uyarı görünürse <b>Bitti</b>’ye tıkla (“Çöp Sepetine Taşı”ya değil).</li><li><b>Sistem Ayarları → Gizlilik ve Güvenlik</b>’i aç.</li><li>TakeSync ile ilgili mesaja kadar kaydır ve <b>Yine de Aç</b>’a tıkla.</li><li>Parolan veya Touch ID ile onayla, sonra yeniden <b>Yine de Aç</b>’a tıkla.</li></ol>
+  <p>Bunu yalnızca bir kez yapman gerekir. Güncellemeler uyarı olmadan yüklenir.</p>
+  <h2>Hâlâ açılmıyor mu?</h2>
+  <p>macOS sürümün ve bir ekran görüntüsüyle <a href="mailto:support@takesync.uk">support@takesync.uk</a> adresine yaz — genellikle bir gün içinde yanıtlıyoruz.</p>
+</section>
+<section lang="ko" data-lang="ko" hidden>
+  <h1>TakeSync 설치</h1>
+  <p class="legal-updated">Apple Silicon Mac · macOS 12 이상</p>
+  <div class="dl-note"><b>앱을 열기 전에 읽어 주세요.</b> TakeSync는 아직 Apple의 공증을 받지 않아, 처음 열 때 macOS가 “TakeSync에 악성 코드가 없는지 확인할 수 없다”고 경고합니다. 정상입니다. 앱은 안전하며 오프라인으로 작동하고 미디어를 어디에도 업로드하지 않습니다. 3단계에서 한 번 허용하는 방법을 안내합니다. 1분도 걸리지 않습니다.</div>
+  <h2>1. 다운로드</h2>
+  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>TakeSync.dmg 다운로드</a></p>
+  <p>다운로드한 파일을 엽니다.</p>
+  <h2>2. 응용 프로그램으로 이동</h2>
+  <p>열린 창에서 <b>TakeSync</b>를 <b>응용 프로그램</b> 폴더로 드래그합니다.</p>
+  <h2>3. 열기 허용(한 번만)</h2>
+  <p>두 가지 방법 중 하나를 선택하세요:</p>
+  <h3>방법 A(가장 빠름): 터미널에서 명령 하나</h3>
+  <ol><li><b>터미널</b>을 엽니다: <b>⌘ 스페이스</b>를 누르고 <b>터미널</b>을 입력한 뒤 Return.</li><li>이 줄을 복사해 터미널에 붙여넣고 Return을 누릅니다:</li></ol>
+  <div class="cmd"><code>xattr -dr com.apple.quarantine /Applications/TakeSync.app</code><button class="btn btn-ghost btn-sm copy" type="button">복사</button></div>
+  <ol start="3"><li>평소처럼 응용 프로그램에서 TakeSync를 엽니다.</li></ol>
+  <h3>방법 B: 시스템 설정</h3>
+  <ol><li>응용 프로그램에서 TakeSync를 엽니다. 경고가 나타나면 <b>완료</b>를 클릭합니다(“휴지통으로 이동” 아님).</li><li><b>시스템 설정 → 개인정보 보호 및 보안</b>을 엽니다.</li><li>TakeSync 관련 메시지까지 스크롤해 <b>그래도 열기</b>를 클릭합니다.</li><li>암호나 Touch ID로 확인한 뒤 다시 <b>그래도 열기</b>를 클릭합니다.</li></ol>
+  <p>한 번만 하면 됩니다. 업데이트는 경고 없이 설치됩니다.</p>
+  <h2>그래도 열리지 않나요?</h2>
+  <p>macOS 버전과 스크린샷을 <a href="mailto:support@takesync.uk">support@takesync.uk</a>로 보내 주세요. 보통 하루 안에 답변드립니다.</p>
+</section>
+<section lang="zh" data-lang="zh" hidden>
+  <h1>安装 TakeSync</h1>
+  <p class="legal-updated">搭载 Apple 芯片的 Mac · macOS 12 或更高版本</p>
+  <div class="dl-note"><b>打开应用前请先阅读。</b>TakeSync 尚未经过 Apple 公证，因此首次打开时 macOS 会提示“无法验证 TakeSync 不含恶意软件”。这是正常现象——应用是安全的，离线运行，绝不会上传你的素材。第 3 步介绍如何允许一次，用时不到一分钟。</div>
+  <h2>1. 下载</h2>
+  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>下载 TakeSync.dmg</a></p>
+  <p>打开下载的文件。</p>
+  <h2>2. 移到“应用程序”</h2>
+  <p>在打开的窗口中，把 <b>TakeSync</b> 拖到 <b>应用程序</b> 文件夹。</p>
+  <h2>3. 允许打开（仅一次）</h2>
+  <p>任选以下一种方式：</p>
+  <h3>方式 A（最快）：在“终端”中运行一条命令</h3>
+  <ol><li>打开<b>终端</b>：按 <b>⌘ 空格</b>，输入<b>终端</b>，按回车。</li><li>复制这一行，粘贴到终端并按回车：</li></ol>
+  <div class="cmd"><code>xattr -dr com.apple.quarantine /Applications/TakeSync.app</code><button class="btn btn-ghost btn-sm copy" type="button">复制</button></div>
+  <ol start="3"><li>像平常一样从“应用程序”打开 TakeSync。</li></ol>
+  <h3>方式 B：系统设置</h3>
+  <ol><li>从“应用程序”打开 TakeSync。出现警告时点击<b>完成</b>（不要点“移到废纸篓”）。</li><li>打开<b>系统设置 → 隐私与安全性</b>。</li><li>向下滚动到关于 TakeSync 的提示，点击<b>仍要打开</b>。</li><li>用密码或触控 ID 确认，再次点击<b>仍要打开</b>。</li></ol>
+  <p>只需操作一次，之后的更新安装时不会再出现警告。</p>
+  <h2>还是打不开？</h2>
+  <p>请把 macOS 版本和截图发送到 <a href="mailto:support@takesync.uk">support@takesync.uk</a>，我们通常在一天内回复。</p>
+</section>
 </main>
-<script src="/install.js?v=20261026b"></script>
+<script src="/i18n.js?v=20261026c"></script>
+<script src="/install.js?v=20261026c"></script>
 </body>
 </html>
