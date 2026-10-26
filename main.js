@@ -7,7 +7,7 @@
   var EXTRA_EN = {
     'hero.synced': 'All in sync',
     'price.noteEur': 'Prices in euros. Taxes are added at checkout where they apply.',
-    'price.noteLocal': 'Prices in US dollars; the amount in your currency is approximate, at today’s rate. Taxes are added at checkout where they apply.',
+    'price.noteLocal': 'Prices in US dollars; the amount in your currency is approximate, at today’s rate. Tax is calculated at checkout based on your country.',
     'files.total': 'Example, 500 files:', 'files.camA': 'Cam A', 'files.camB': 'Cam B', 'files.drone': 'Drone', 'files.phone': 'Phone', 'files.rec': 'Recorder', 'files.lav': 'Lav mics',
     'lane.camA': 'Cam A', 'lane.camB': 'Cam B', 'lane.drone': 'Drone', 'lane.rec': 'Recorder', 'lane.lav1': 'Lav 1', 'lane.lav2': 'Lav 2'
   };

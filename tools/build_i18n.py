@@ -628,6 +628,28 @@ L['tr']['final.install'] = 'Adım adım kurulum rehberi'
 L['ko']['final.install'] = '단계별 설치 안내'
 L['zh']['final.install'] = '分步安装指南'
 
+# 2026-10-26: USD only; tax wording fits Paddle's automatic tax mode
+L['uk']['price.noteUsd'] = 'Ціни в доларах США. Податок розраховується при оплаті залежно від країни.'
+L['uk']['price.noteLocal'] = 'Ціни в доларах США; сума у твоїй валюті — приблизна, за сьогоднішнім курсом. Податок розраховується при оплаті залежно від країни.'
+L['de']['price.noteUsd'] = 'Preise in US-Dollar. Die Steuer wird beim Bezahlen je nach Land berechnet.'
+L['de']['price.noteLocal'] = 'Preise in US-Dollar; der Betrag in deiner Währung ist ein Richtwert zum heutigen Kurs. Die Steuer wird beim Bezahlen je nach Land berechnet.'
+L['es']['price.noteUsd'] = 'Precios en dólares estadounidenses. El impuesto se calcula al pagar según tu país.'
+L['es']['price.noteLocal'] = 'Precios en dólares estadounidenses; el importe en tu moneda es aproximado, al cambio de hoy. El impuesto se calcula al pagar según tu país.'
+L['fr']['price.noteUsd'] = 'Prix en dollars américains. La taxe est calculée au paiement selon votre pays.'
+L['fr']['price.noteLocal'] = 'Prix en dollars américains ; le montant dans votre devise est indicatif, au taux du jour. La taxe est calculée au paiement selon votre pays.'
+L['it']['price.noteUsd'] = 'Prezzi in dollari USA. L’imposta viene calcolata al pagamento in base al tuo paese.'
+L['it']['price.noteLocal'] = 'Prezzi in dollari USA; l’importo nella tua valuta è indicativo, al cambio di oggi. L’imposta viene calcolata al pagamento in base al tuo paese.'
+L['pl']['price.noteUsd'] = 'Ceny w dolarach amerykańskich. Podatek jest naliczany przy płatności w zależności od kraju.'
+L['pl']['price.noteLocal'] = 'Ceny w dolarach amerykańskich; kwota w Twojej walucie jest przybliżona, po dzisiejszym kursie. Podatek jest naliczany przy płatności w zależności od kraju.'
+L['hu']['price.noteUsd'] = 'Az árak amerikai dollárban. Az adót fizetéskor számoljuk ki az országod alapján.'
+L['hu']['price.noteLocal'] = 'Az árak amerikai dollárban; a saját pénznemedben mutatott összeg tájékoztató, mai árfolyamon. Az adót fizetéskor számoljuk ki az országod alapján.'
+L['tr']['price.noteUsd'] = 'Fiyatlar ABD doları cinsindendir. Vergi, ödeme sırasında ülkene göre hesaplanır.'
+L['tr']['price.noteLocal'] = 'Fiyatlar ABD doları cinsindendir; kendi para birimindeki tutar bugünkü kura göre yaklaşıktır. Vergi, ödeme sırasında ülkene göre hesaplanır.'
+L['ko']['price.noteUsd'] = '가격은 미국 달러 기준입니다. 세금은 결제 시 국가에 따라 계산됩니다.'
+L['ko']['price.noteLocal'] = '가격은 미국 달러 기준이며, 현지 통화 금액은 오늘 환율 기준 대략적인 값입니다. 세금은 결제 시 국가에 따라 계산됩니다.'
+L['zh']['price.noteUsd'] = '价格以美元计。税费在结账时根据你所在的国家计算。'
+L['zh']['price.noteLocal'] = '价格以美元计；以你的货币显示的金额按今日汇率估算。税费在结账时根据你所在的国家计算。'
+
 NAMES = {'en': 'English', 'uk': 'Українська', 'de': 'Deutsch', 'es': 'Español', 'fr': 'Français', 'it': 'Italiano',
          'pl': 'Polski', 'hu': 'Magyar', 'tr': 'Türkçe', 'ko': '한국어', 'zh': '中文'}
 
