@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TakeSync — multicam sync by sound for Premiere Pro</title>
-<meta name="description" content="TakeSync lines up every camera, recorder and lav mic by their sound — no timecode, no slate — and hands a synced timeline to Premiere Pro. Version 1.0 for Macs with Apple Silicon.">
+<meta name="description" content="TakeSync lines up every camera, recorder and lav mic by their sound — no timecode, no slate — and hands a synced timeline to Premiere Pro, Final Cut Pro or DaVinci Resolve. Version 1.0.1 for Macs with Apple Silicon.">
 <meta property="og:title" content="TakeSync — drop the footage, get the timeline">
 <meta property="og:description" content="Multicam sync by sound for Premiere Pro. Cameras, recorders and lav mics, no timecode needed. For Macs with Apple Silicon.">
 <meta property="og:type" content="website">
@@ -60,7 +60,7 @@
           <a href="/install" class="btn btn-primary btn-lg" data-i18n="hero.cta">Download free trial</a>
           <button type="button" class="btn btn-ghost btn-lg" id="watch" hidden data-i18n="hero.watch">Watch the 36-second overview</button>
         </div>
-        <p class="fine" data-i18n="hero.fine">Version 1.0 for Macs with Apple Silicon. 7 days free, works offline.</p>
+        <p class="fine" data-i18n="hero.fine">Version 1.0.1 for Macs with Apple Silicon. 7 days free, works offline.</p>
       </div>
   </section>
 
@@ -178,17 +178,16 @@
   </section>
 
   <section id="compat" class="container section" aria-labelledby="compat-title">
-    <h2 id="compat-title" data-i18n="compat.title">What TakeSync 1.0 runs on</h2>
-    <p class="section-lead" data-i18n="compat.lead">Version 1.0 is fully supported on Macs with Apple Silicon and with Adobe Premiere Pro. Other editors and Windows arrive in free updates once they’re tested.</p>
+    <h2 id="compat-title" data-i18n="compat.title">What TakeSync 1.0.1 runs on</h2>
+    <p class="section-lead" data-i18n="compat.lead">Version 1.0.1 is fully supported on Macs with Apple Silicon, with Adobe Premiere Pro, Final Cut Pro and DaVinci Resolve. Windows is in testing and arrives as a free update.</p>
     <table class="compat">
-      <thead><tr><th scope="col" data-i18n="compat.what">Platform or editor</th><th scope="col" data-i18n="compat.state">Status in 1.0</th></tr></thead>
+      <thead><tr><th scope="col" data-i18n="compat.what">Platform or editor</th><th scope="col" data-i18n="compat.state">Status in 1.0.1</th></tr></thead>
       <tbody>
         <tr><th scope="row" data-i18n="compat.mac">Mac with Apple Silicon (M1 or newer)</th><td><span class="state ok" data-i18n="compat.ok">Supported</span></td></tr>
         <tr><th scope="row">Adobe Premiere Pro</th><td><span class="state ok" data-i18n="compat.okPanel">Supported, with the TakeSync panel</span></td></tr>
-        <tr><th scope="row">Final Cut Pro</th><td><span class="state test" data-i18n="compat.testing">In testing</span></td></tr>
-        <tr><th scope="row">DaVinci Resolve</th><td><span class="state test" data-i18n="compat.testing">In testing</span></td></tr>
-        <tr><th scope="row" data-i18n="compat.intel">Mac with Intel</th><td><span class="state no" data-i18n="compat.notYet">Not supported yet</span></td></tr>
-        <tr><th scope="row">Windows</th><td><span class="state no" data-i18n="compat.dev">In development</span></td></tr>
+        <tr><th scope="row">Final Cut Pro</th><td><span class="state ok" data-i18n="compat.ok">Supported</span></td></tr>
+        <tr><th scope="row">DaVinci Resolve</th><td><span class="state ok" data-i18n="compat.ok">Supported</span></td></tr>
+        <tr><th scope="row">Windows</th><td><span class="state test" data-i18n="compat.testing">In testing</span></td></tr>
       </tbody>
     </table>
   </section>
@@ -227,7 +226,7 @@
         <p class="price"><span class="amt" data-usd="150">$150</span></p>
         <p class="price-local" data-usd="150" hidden></p>
         <p class="muted" data-i18n="price.lifetimeSub">Pay once, keep version 1 for good, with every 1.x update. Version 2 will be a separate purchase.</p>
-        <a href="#buy" class="btn btn-ghost btn-block" data-plan="lifetime" data-i18n="price.buy">Buy version 1</a>
+        <a href="#buy" class="btn btn-ghost btn-block" data-plan="lifetime" data-i18n="price.buy">Buy lifetime</a>
       </article>
     </div>
     <p class="small faint plans-note" id="price-note" data-i18n="price.noteUsd">Prices in US dollars. Tax is calculated at checkout based on your country.</p>
@@ -240,7 +239,7 @@
       <details><summary data-i18n="faq.q2">Which formats does it read?</summary><p data-i18n="faq.a2">MP4, MOV, WAV, AIFF, M4A and MP3 out of the box. MXF, MTS and other formats work after you install FFmpeg from Settings.</p></details>
       <details><summary data-i18n="faq.q3">What happens to a clip with no sound partner?</summary><p data-i18n="faq.a3">If its camera’s clock is reliable, the clip goes on the timeline at the time it was recorded and is marked so you can check it. Otherwise it’s marked as not synced, and on export you can move such clips to the end.</p></details>
       <details><summary data-i18n="faq.q4">Does it fix drift on long recordings?</summary><p data-i18n="faq.a4">Yes. TakeSync detects when a recorder runs slightly fast or slow against the cameras and corrects the audio.</p></details>
-      <details><summary data-i18n="faq.q5">What about Final Cut Pro, DaVinci Resolve and Windows?</summary><p data-i18n="faq.a5">Final Cut Pro and DaVinci Resolve export is being tested now. Windows is in development. They arrive as free updates.</p></details>
+      <details><summary data-i18n="faq.q5">What about Final Cut Pro, DaVinci Resolve and Windows?</summary><p data-i18n="faq.a5">Final Cut Pro and DaVinci Resolve are supported since version 1.0.1. Windows is in testing and arrives as a free update.</p></details>
       <details><summary data-i18n="faq.q6">Monthly, yearly or one-time — what’s the difference?</summary><p data-i18n="faq.a6">A subscription keeps TakeSync working while it’s active, with every update and every new major version, and you can cancel any time. The one-time license is paid once and never expires; it covers version 1 and all its 1.x updates. A future TakeSync 2 would be a separate purchase, and version 1 keeps working.</p></details>
     </div>
   </section>
@@ -254,7 +253,7 @@
       </div>
       <p class="small muted" data-i18n="final.gatekeeper" style="max-width:60ch;margin:12px auto 0">First launch: macOS may say it can’t verify the developer. Open System Settings → Privacy & Security, scroll down and click “Open Anyway”. Only needed once.</p>
       <p class="small"><a href="/install" data-i18n="final.install">Step-by-step install guide</a></p>
-      <p class="small faint" data-i18n="final.req">TakeSync 1.0 · Mac with Apple Silicon · Adobe Premiere Pro. Windows is in development.</p>
+      <p class="small faint" data-i18n="final.req">TakeSync 1.0.1 · Mac with Apple Silicon · Premiere Pro, Final Cut Pro, DaVinci Resolve. Windows is in testing.</p>
     </div>
   </section>
 </main>
