@@ -2,7 +2,7 @@
 
 Landing page for TakeSync, the audio-based multicam sync app. Version 1.0: Macs with Apple Silicon, Adobe Premiere Pro; Final Cut Pro and DaVinci Resolve in testing, Windows in development.
 Static HTML/CSS/JS, no build step. 11 languages, like the app: English in the markup, the rest in `i18n.js` (generated: edit `tools/build_i18n.py`, run `python3 tools/build_i18n.py i18n.js`). Auto-detected from the browser, switch in the header.
-Prices: eurozone visitors see the same numbers in euros; elsewhere the dollar price gets an approximate local amount (country from the time zone, then the browser language; rate from open.er-api.com, fallback in `main.js`).
+Prices: always in US dollars (what Paddle charges); outside the US an approximate local amount is shown underneath (country from the time zone, then the browser language; rate from open.er-api.com, fallback in `main.js`).
 
 - `index.html` — page (English copy lives in the markup)
 - `main.js` — Ukrainian strings, language switch, scroll-synced hero timeline, parallax, overview video

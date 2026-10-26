@@ -302,7 +302,7 @@
   // Eurozone: the same numbers in euros. Elsewhere: the dollar price, with an
   // approximate amount in the local currency underneath. Rates are refreshed
   // from open.er-api.com; the numbers below are the fallback (22 Oct 2026).
-  var RATES = { UAH: 45.03, GBP: 0.747, PLN: 3.88, HUF: 325.1, TRY: 49.64, KRW: 1326, CNY: 6.69, CHF: 0.825, CZK: 21.61, SEK: 9.89, NOK: 9.37, DKK: 6.66, RON: 4.75, CAD: 1.405, AUD: 1.423, NZD: 1.756, MXN: 18.63, BRL: 5.02, ARS: 1527, CLP: 975, COP: 3174, PEN: 3.43, JPY: 158.1, INR: 94.6, TWD: 32.41, HKD: 7.85, SGD: 1.277, ILS: 3.09, AED: 3.67, ZAR: 16.37, MDL: 17.96, GEL: 2.60, KZT: 448.6, RSD: 104.6 };
+  var RATES = { EUR: 0.86, UAH: 45.03, GBP: 0.747, PLN: 3.88, HUF: 325.1, TRY: 49.64, KRW: 1326, CNY: 6.69, CHF: 0.825, CZK: 21.61, SEK: 9.89, NOK: 9.37, DKK: 6.66, RON: 4.75, CAD: 1.405, AUD: 1.423, NZD: 1.756, MXN: 18.63, BRL: 5.02, ARS: 1527, CLP: 975, COP: 3174, PEN: 3.43, JPY: 158.1, INR: 94.6, TWD: 32.41, HKD: 7.85, SGD: 1.277, ILS: 3.09, AED: 3.67, ZAR: 16.37, MDL: 17.96, GEL: 2.60, KZT: 448.6, RSD: 104.6 };
   var EURO = 'AT BE BG CY DE EE ES FI FR GR HR IE IT LT LU LV MT NL PT SI SK ME XK AD MC SM VA'.split(' ');
   var BY_COUNTRY = { UA: 'UAH', GB: 'GBP', PL: 'PLN', HU: 'HUF', TR: 'TRY', KR: 'KRW', CN: 'CNY', CH: 'CHF', LI: 'CHF', CZ: 'CZK', SE: 'SEK', NO: 'NOK', DK: 'DKK', RO: 'RON', CA: 'CAD', AU: 'AUD', NZ: 'NZD', MX: 'MXN', BR: 'BRL', AR: 'ARS', CL: 'CLP', CO: 'COP', PE: 'PEN', JP: 'JPY', IN: 'INR', TW: 'TWD', HK: 'HKD', SG: 'SGD', IL: 'ILS', AE: 'AED', ZA: 'ZAR', MD: 'MDL', GE: 'GEL', KZ: 'KZT', RS: 'RSD' };
   var BY_ZONE = {
@@ -344,9 +344,9 @@
   function renderPrices() {
     document.querySelectorAll('.amt[data-usd]').forEach(function (el) {
       var v = parseFloat(el.getAttribute('data-usd'));
-      el.textContent = currency === 'EUR' ? money(v, 'EUR', true) : '$' + el.getAttribute('data-usd');
+      el.textContent = '$' + el.getAttribute('data-usd'); // one price everywhere: USD, as charged by Paddle
     });
-    var local = currency !== 'USD' && currency !== 'EUR' && RATES[currency];
+    var local = currency !== 'USD' && RATES[currency];
     document.querySelectorAll('.price-local').forEach(function (el) {
       if (!local) { el.hidden = true; return; }
       var v = parseFloat(el.getAttribute('data-usd')) * RATES[currency];
@@ -355,12 +355,12 @@
     });
     var note = document.getElementById('price-note');
     if (note) {
-      var key = currency === 'EUR' ? 'price.noteEur' : (local ? 'price.noteLocal' : 'price.noteUsd');
+      var key = local ? 'price.noteLocal' : 'price.noteUsd';
       note.setAttribute('data-i18n', key);
       note.textContent = t(key);
     }
   }
-  if (currency !== 'USD' && currency !== 'EUR' && window.fetch) {
+  if (currency !== 'USD' && window.fetch) {
     fetch('https://open.er-api.com/v6/latest/USD').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
       var r = d && d.rates && d.rates[currency];
       if (typeof r === 'number' && r > 0) { RATES[currency] = r; renderPrices(); }
