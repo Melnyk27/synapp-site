@@ -2,9 +2,9 @@
 // Fill PADDLE below from Paddle → Developer tools → Authentication (client-side token) and Catalog (price ids).
 // Until the token is set, the buttons keep scrolling to #pricing / download as before.
 const PADDLE = {
-  env: 'sandbox',            // 'production' after Paddle approves the account
+  env: 'production',         // 'sandbox' only for testing with a sandbox token and sandbox price ids
   token: '',                 // test_… (sandbox) or live_…
-  prices: { monthly: 'pri_…', yearly: 'pri_…', lifetime: 'pri_…' },
+  prices: { monthly: 'pri_01m5n0mc6zkazzzfcz201sdet1', yearly: 'pri_01m5n0n2zkmmb41egqb0ftem4x', lifetime: 'pri_01m5n0njrzk0h0rd71rf49j1bb' },
 };
 
 (function () {
