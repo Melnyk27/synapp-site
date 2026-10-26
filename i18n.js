@@ -133,7 +133,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "Політика конфіденційності",
 "foot.terms": "Умови використання",
 "video.close": "Закрити",
-"_title": "TakeSync — синхронізація multicam за звуком для Premiere Pro"
+"_title": "TakeSync — синхронізація multicam за звуком для Premiere Pro",
+"final.gatekeeper": "Перший запуск: macOS може написати, що не може перевірити розробника. Відкрий Системні параметри → Приватність і безпека, прокрути вниз і натисни «Усе одно відкрити». Потрібно лише раз."
 },
 "de": {
 "foot.refund": "Rückerstattung",
@@ -254,7 +255,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "Datenschutz",
 "foot.terms": "Nutzungsbedingungen",
 "video.close": "Schließen",
-"_title": "TakeSync – Multicam-Synchronisation über den Ton für Premiere Pro"
+"_title": "TakeSync – Multicam-Synchronisation über den Ton für Premiere Pro",
+"final.gatekeeper": "Erster Start: macOS meldet eventuell, dass der Entwickler nicht überprüft werden kann. Öffne Systemeinstellungen → Datenschutz & Sicherheit, scrolle nach unten und klicke auf „Dennoch öffnen“. Nur einmal nötig."
 },
 "es": {
 "foot.refund": "Reembolsos",
@@ -375,7 +377,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "Política de privacidad",
 "foot.terms": "Condiciones de uso",
 "video.close": "Cerrar",
-"_title": "TakeSync — sincronización multicámara por sonido para Premiere Pro"
+"_title": "TakeSync — sincronización multicámara por sonido para Premiere Pro",
+"final.gatekeeper": "Primer inicio: macOS puede decir que no puede verificar al desarrollador. Abre Ajustes del Sistema → Privacidad y seguridad, desplázate hacia abajo y pulsa «Abrir igualmente». Solo hace falta una vez."
 },
 "fr": {
 "foot.refund": "Remboursements",
@@ -496,7 +499,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "Confidentialité",
 "foot.terms": "Conditions d’utilisation",
 "video.close": "Fermer",
-"_title": "TakeSync — synchronisation multicam par le son pour Premiere Pro"
+"_title": "TakeSync — synchronisation multicam par le son pour Premiere Pro",
+"final.gatekeeper": "Premier lancement : macOS peut indiquer qu’il ne peut pas vérifier le développeur. Ouvrez Réglages Système → Confidentialité et sécurité, faites défiler et cliquez sur « Ouvrir quand même ». Une seule fois."
 },
 "it": {
 "foot.refund": "Rimborsi",
@@ -617,7 +621,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "Privacy",
 "foot.terms": "Condizioni d’uso",
 "video.close": "Chiudi",
-"_title": "TakeSync — sincronizzazione multicamera dal suono per Premiere Pro"
+"_title": "TakeSync — sincronizzazione multicamera dal suono per Premiere Pro",
+"final.gatekeeper": "Primo avvio: macOS potrebbe dire che non può verificare lo sviluppatore. Apri Impostazioni di Sistema → Privacy e sicurezza, scorri in basso e fai clic su «Apri comunque». Serve una sola volta."
 },
 "pl": {
 "foot.refund": "Zwroty",
@@ -738,7 +743,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "Polityka prywatności",
 "foot.terms": "Warunki korzystania",
 "video.close": "Zamknij",
-"_title": "TakeSync — synchronizacja multicam po dźwięku dla Premiere Pro"
+"_title": "TakeSync — synchronizacja multicam po dźwięku dla Premiere Pro",
+"final.gatekeeper": "Pierwsze uruchomienie: macOS może napisać, że nie może zweryfikować dewelopera. Otwórz Ustawienia systemowe → Prywatność i ochrona, przewiń w dół i kliknij „Otwórz mimo to”. Tylko raz."
 },
 "hu": {
 "foot.refund": "Visszatérítés",
@@ -859,7 +865,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "Adatvédelem",
 "foot.terms": "Felhasználási feltételek",
 "video.close": "Bezárás",
-"_title": "TakeSync — multicam szinkron hang alapján a Premiere Pro-hoz"
+"_title": "TakeSync — multicam szinkron hang alapján a Premiere Pro-hoz",
+"final.gatekeeper": "Első indítás: a macOS jelezheti, hogy nem tudja ellenőrizni a fejlesztőt. Nyisd meg a Rendszerbeállítások → Adatvédelem és biztonság részt, görgess le, és kattints a „Megnyitás mégis” gombra. Csak egyszer kell."
 },
 "tr": {
 "foot.refund": "İade politikası",
@@ -980,7 +987,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "Gizlilik politikası",
 "foot.terms": "Kullanım koşulları",
 "video.close": "Kapat",
-"_title": "TakeSync — Premiere Pro için sese göre çok kameralı eşitleme"
+"_title": "TakeSync — Premiere Pro için sese göre çok kameralı eşitleme",
+"final.gatekeeper": "İlk açılış: macOS geliştiriciyi doğrulayamadığını söyleyebilir. Sistem Ayarları → Gizlilik ve Güvenlik’i aç, aşağı kaydır ve “Yine de Aç”a tıkla. Yalnızca bir kez gerekir."
 },
 "ko": {
 "foot.refund": "환불 정책",
@@ -1101,7 +1109,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "개인정보 처리방침",
 "foot.terms": "이용약관",
 "video.close": "닫기",
-"_title": "TakeSync — Premiere Pro용 소리 기반 멀티캠 싱크"
+"_title": "TakeSync — Premiere Pro용 소리 기반 멀티캠 싱크",
+"final.gatekeeper": "처음 실행 시 macOS가 개발자를 확인할 수 없다고 표시할 수 있습니다. 시스템 설정 → 개인정보 보호 및 보안에서 아래로 스크롤해 ‘확인 없이 열기’를 클릭하세요. 한 번만 하면 됩니다."
 },
 "zh": {
 "foot.refund": "退款政策",
@@ -1222,7 +1231,8 @@ window.TAKESYNC_I18N = {
 "foot.privacy": "隐私政策",
 "foot.terms": "使用条款",
 "video.close": "关闭",
-"_title": "TakeSync — 为 Premiere Pro 打造的按声音多机位同步"
+"_title": "TakeSync — 为 Premiere Pro 打造的按声音多机位同步",
+"final.gatekeeper": "首次启动：macOS 可能提示无法验证开发者。打开“系统设置”→“隐私与安全性”，向下滚动并点击“仍要打开”。只需一次。"
 }
 }
 };

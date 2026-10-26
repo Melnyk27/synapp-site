@@ -605,6 +605,18 @@ L['tr'].update({'price.lifetime': 'Tek seferlik', 'price.lifetimeSub': 'Bir kez 
 L['ko'].update({'price.lifetime': '일회성 구매', 'price.lifetimeSub': '한 번 결제로 버전 1을 영구히 사용하고 모든 1.x 업데이트를 받습니다. 버전 2는 별도 구매입니다.', 'price.buy': '버전 1 구매', 'faq.q6': '월간, 연간, 일회성 — 무엇이 다른가요?', 'faq.a6': '구독은 활성 상태인 동안 모든 업데이트와 새 메이저 버전을 포함하며 언제든 해지할 수 있습니다. 일회성 라이선스는 한 번 결제하며 만료되지 않고, 버전 1과 모든 1.x 업데이트를 포함합니다. 향후 TakeSync 2는 별도 구매이며 버전 1은 계속 작동합니다.'})
 L['zh'].update({'price.lifetime': '一次性购买', 'price.lifetimeSub': '一次付费，永久使用版本 1，并获得所有 1.x 更新。版本 2 需另行购买。', 'price.buy': '购买版本 1', 'faq.q6': '月付、年付还是一次性购买——有什么区别？', 'faq.a6': '订阅在有效期内让 TakeSync 保持可用，包含所有更新和新的大版本，可随时取消。一次性许可证只需付款一次，永不过期，涵盖版本 1 及其所有 1.x 更新。未来的 TakeSync 2 需另行购买，版本 1 仍可继续使用。'})
 
+# 2026-10-26: first-launch note (app is not notarized)
+L['uk']['final.gatekeeper'] = 'Перший запуск: macOS може написати, що не може перевірити розробника. Відкрий Системні параметри → Приватність і безпека, прокрути вниз і натисни «Усе одно відкрити». Потрібно лише раз.'
+L['de']['final.gatekeeper'] = 'Erster Start: macOS meldet eventuell, dass der Entwickler nicht überprüft werden kann. Öffne Systemeinstellungen → Datenschutz & Sicherheit, scrolle nach unten und klicke auf „Dennoch öffnen“. Nur einmal nötig.'
+L['es']['final.gatekeeper'] = 'Primer inicio: macOS puede decir que no puede verificar al desarrollador. Abre Ajustes del Sistema → Privacidad y seguridad, desplázate hacia abajo y pulsa «Abrir igualmente». Solo hace falta una vez.'
+L['fr']['final.gatekeeper'] = 'Premier lancement : macOS peut indiquer qu’il ne peut pas vérifier le développeur. Ouvrez Réglages Système → Confidentialité et sécurité, faites défiler et cliquez sur « Ouvrir quand même ». Une seule fois.'
+L['it']['final.gatekeeper'] = 'Primo avvio: macOS potrebbe dire che non può verificare lo sviluppatore. Apri Impostazioni di Sistema → Privacy e sicurezza, scorri in basso e fai clic su «Apri comunque». Serve una sola volta.'
+L['pl']['final.gatekeeper'] = 'Pierwsze uruchomienie: macOS może napisać, że nie może zweryfikować dewelopera. Otwórz Ustawienia systemowe → Prywatność i ochrona, przewiń w dół i kliknij „Otwórz mimo to”. Tylko raz.'
+L['hu']['final.gatekeeper'] = 'Első indítás: a macOS jelezheti, hogy nem tudja ellenőrizni a fejlesztőt. Nyisd meg a Rendszerbeállítások → Adatvédelem és biztonság részt, görgess le, és kattints a „Megnyitás mégis” gombra. Csak egyszer kell.'
+L['tr']['final.gatekeeper'] = 'İlk açılış: macOS geliştiriciyi doğrulayamadığını söyleyebilir. Sistem Ayarları → Gizlilik ve Güvenlik’i aç, aşağı kaydır ve “Yine de Aç”a tıkla. Yalnızca bir kez gerekir.'
+L['ko']['final.gatekeeper'] = '처음 실행 시 macOS가 개발자를 확인할 수 없다고 표시할 수 있습니다. 시스템 설정 → 개인정보 보호 및 보안에서 아래로 스크롤해 ‘확인 없이 열기’를 클릭하세요. 한 번만 하면 됩니다.'
+L['zh']['final.gatekeeper'] = '首次启动：macOS 可能提示无法验证开发者。打开“系统设置”→“隐私与安全性”，向下滚动并点击“仍要打开”。只需一次。'
+
 NAMES = {'en': 'English', 'uk': 'Українська', 'de': 'Deutsch', 'es': 'Español', 'fr': 'Français', 'it': 'Italiano',
          'pl': 'Polski', 'hu': 'Magyar', 'tr': 'Türkçe', 'ko': '한국어', 'zh': '中文'}
 
