@@ -18,3 +18,7 @@
 
 /media/*
   Cache-Control: public, max-age=2592000
+
+/stats-e9a0e7b67f*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
