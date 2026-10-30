@@ -19,7 +19,7 @@ Our order process is conducted by our online reseller Paddle.com Market Limited 
 You may use the Software free of charge for 7 days from its first launch on a computer, so you can judge whether it suits your work before you buy. The Trial requires no payment details and does not turn into a paid purchase on its own.
 
 - During the Trial, all features are available unless the Software states otherwise.
-- When the Trial ends, the Software stops synchronizing and exporting until you enter a valid License Key. Your projects and files remain on your computer.
+- When the Trial ends, the Software switches to the free version with ads: all features keep working, and the Software shows advertising, including a full-panel ad you must view for a few seconds before exporting on some launches. Entering a valid License Key (a subscription or a one-time license) removes the ads. Your projects and files remain on your computer.
 - One Trial per person. You may not reset, extend or bypass the Trial, for example by changing the system clock, reinstalling, or using multiple accounts or virtual machines.
 - The Trial is provided “as is”. Sections 9 and 10 apply to it in full, to the extent the law allows.
 
@@ -116,7 +116,7 @@ These limits do not apply to liability that cannot be limited by law, including 
 
 This Agreement lasts until it is terminated. You may terminate it at any time by uninstalling the Software and deleting all copies.
 
-Your license ends automatically, without notice, if you materially breach this Agreement (for example, by sharing License Keys or circumventing license checks), if your payment is refunded or reversed, or when a Trial expires without purchase. We may also deactivate License Keys that were obtained fraudulently or published.
+Your license ends automatically, without notice, if you materially breach this Agreement (for example, by sharing License Keys or circumventing license checks), if your payment is refunded or reversed. We may also deactivate License Keys that were obtained fraudulently or published.
 
 When the license ends, you must stop using the Software and delete it. Output you created while you were licensed remains yours. Sections 5, 6, 9, 10, 13 and 14 survive termination.
 

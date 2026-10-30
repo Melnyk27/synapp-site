@@ -24,6 +24,8 @@ This policy covers the TakeSync desktop application for macOS (the “App”), t
 
 **Trial.** When you start the free trial, the App sends us the same anonymous identifier of the computer, once, so the trial start is remembered for that computer and a reinstall does not start a new trial. We store only that identifier and the date.
 
+**The free version and its ads.** After the 7-day trial the app shows banners. To choose them it asks our license service for the list; the service sees your IP address and uses the country derived from it, and stores nothing about the request. Clicking a banner opens the advertiser’s or affiliate partner’s website in your browser; the partner may set its own cookies there and may pay us a commission on a purchase. Banners are shown only in the free version, never in the trial or with a license.
+
 ## 3. Purchases
 
 Our order process is conducted by our online reseller Paddle.com Market Limited (“Paddle”), the Merchant of Record for all our orders. Paddle runs the checkout, takes payment, charges sales tax or VAT, issues invoices and handles refunds. For that, Paddle is an independent controller of the data you give at checkout, under [Paddle’s privacy policy](https://www.paddle.com/privacy-buyers).
