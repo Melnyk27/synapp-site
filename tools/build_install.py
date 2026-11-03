@@ -183,7 +183,7 @@ page = f'''<!doctype html>
 </header>
 <main id="main" class="container narrow legal">
 {''.join(section(c, T[c]) for c, _ in LANGS)}</main>
-<script src="/i18n.js?v=20261103"></script>
+<script src="/i18n.js?v=20261103b"></script>
 <script src="/install.js?v=20261026c"></script>
 <script src="/track.js?v=1"></script>
 </body>
