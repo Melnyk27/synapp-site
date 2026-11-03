@@ -1,10 +1,10 @@
 ---
 title: Refund Policy
 description: TakeSync refunds: full refund for any reason within 14 days of a purchase or renewal.
-updated: 27 October 2026
+updated: 3 November 2026
 ---
 
-**Full refund, for any reason, within 14 days.** This applies to every TakeSync plan — monthly, yearly and one-time — and to every subscription renewal charge.
+**Full refund, for any reason, within 14 days.** This applies to the Remove Ads license and to earlier TakeSync purchases, including renewal charges of earlier subscriptions.
 
 ## How to ask for a refund
 
@@ -12,9 +12,9 @@ Write to [support@takesync.uk](mailto:support@takesync.uk) with your order numbe
 
 After a refund, the License Key is deactivated for the refunded period.
 
-## Subscriptions
+## Earlier subscriptions
 
-You can cancel a subscription at any time. It then stays active until the end of the period you already paid for and does not renew. If you were charged for a renewal you did not want, ask within 14 days and we refund it.
+TakeSync no longer sells subscriptions. If you have one from before, you can cancel it at any time. It then stays active until the end of the period you already paid for and does not renew. If you were charged for a renewal you did not want, ask within 14 days and we refund it.
 
 ## Who processes refunds
 

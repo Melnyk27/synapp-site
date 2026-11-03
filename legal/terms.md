@@ -1,7 +1,7 @@
 ---
 title: End User License Agreement
-description: The license terms for TakeSync: 7-day trial, monthly, yearly or one-time license for one person on up to 2 computers, 14-day refunds.
-updated: 27 October 2026
+description: The license terms for TakeSync: 7-day trial, then a free version with ads; a one-time Remove Ads license for one person on up to 2 computers; 14-day refunds.
+updated: 3 November 2026
 ---
 
 ## 1. Agreement and parties
@@ -19,21 +19,21 @@ Our order process is conducted by our online reseller Paddle.com Market Limited 
 You may use the Software free of charge for 7 days from its first launch on a computer, so you can judge whether it suits your work before you buy. The Trial requires no payment details and does not turn into a paid purchase on its own.
 
 - During the Trial, all features are available unless the Software states otherwise.
-- When the Trial ends, the Software switches to the free version with ads: all features keep working, and the Software shows advertising, including a full-panel ad you must view for a few seconds before exporting on some launches. Entering a valid License Key (a subscription or a one-time license) removes the ads. Your projects and files remain on your computer.
+- When the Trial ends, the Software switches to the free version with ads: all features keep working, and the Software shows advertising, including a full-panel ad you must view for a few seconds before exporting on some launches. Entering a valid License Key removes the ads. Your projects and files remain on your computer.
 - One Trial per person. You may not reset, extend or bypass the Trial, for example by changing the system clock, reinstalling, or using multiple accounts or virtual machines.
 - The Trial is provided “as is”. Sections 9 and 10 apply to it in full, to the extent the law allows.
 
 ## 3. License grant
 
-TakeSync is offered as a **monthly subscription**, a **yearly subscription** or a **one-time license**. Every plan includes all features. After you pay, we grant you a non-exclusive, non-transferable license to install and use the Software, subject to this Agreement:
+TakeSync is free to use with ads after the Trial (section 2). To remove the ads you can buy a **Remove Ads license**: a one-time payment that does not expire. After you pay, we grant you a non-exclusive, non-transferable license to install and use the Software without ads, subject to this Agreement:
 
-- **Subscriptions** (monthly or yearly) last for the period you paid for and renew automatically at the end of each period until you cancel. You can cancel at any time in the customer portal linked in your receipt or by writing to us; the license then stays active until the end of the period already paid, and is not renewed.
-- **One-time license** is paid once and does not expire. It covers **TakeSync version 1**: version 1.0 and every 1.x update. A future major version (2.0 or later), if we release one, is a separate purchase; your version 1 keeps working with your License Key.
+- **Remove Ads license** is paid once and does not expire. It removes the ads in the current version and in every future version of the Software. It does not include paid features or plans we may offer in the future; those, if any, are sold separately.
+- **Earlier purchases.** Subscriptions and one-time licenses bought before 3 November 2026 keep the terms under which they were bought: a subscription keeps working while it is active and renews until you cancel it (in the customer portal linked in your receipt or by writing to us); a one-time license covers version 1 and every 1.x update.
 - **Who:** one named person. An organization buys one license per person who uses the Software.
 - **Where:** on up to 2 computers you own or control (for example a desktop and a laptop), used by that person only. You may move the license to another computer by deactivating it on the old one.
 - **For what:** personal and commercial work, including paid client projects.
-- **Your Output is yours.** We claim no rights in Your Media or in Output. You may use, sell and distribute Output without any further fee or credit to us, also after your subscription ends.
-- **Transfer:** you may not rent, lend, sublicense or resell the license, except that you may transfer a one-time license once, completely, to another person with our prior written consent, after which you must stop using the Software.
+- **Your Output is yours.** We claim no rights in Your Media or in Output. You may use, sell and distribute Output without any further fee or credit to us, also after your license ends.
+- **Transfer:** you may not rent, lend, sublicense or resell the license, except that you may transfer a Remove Ads or one-time license once, completely, to another person with our prior written consent, after which you must stop using the Software.
 
 The license covers the Software only. Third-party software and services are licensed separately (section 5).
 
@@ -75,7 +75,7 @@ The Software processes Your Media only on your computer. It does not upload Your
 
 The price, currency and taxes are shown at checkout. The Reseller charges you, issues the invoice and collects the applicable VAT or sales tax.
 
-**Refunds.** You can get a full refund, for any reason, within **14 days** of a purchase or of a subscription renewal charge. Write to [support@takesync.uk](mailto:support@takesync.uk) or contact Paddle with your order number. After a refund your License Key is deactivated for the refunded period and you must stop using the Software.
+**Refunds.** You can get a full refund, for any reason, within **14 days** of a purchase (or of a renewal charge of an earlier subscription). Write to [support@takesync.uk](mailto:support@takesync.uk) or contact Paddle with your order number. After a refund your License Key is deactivated, and the free version with ads applies again.
 
 - **Defects:** if the Software does not work as described and we cannot fix it within a reasonable time, you are also entitled to a refund under applicable law.
 - **Statutory rights:** if you are a consumer in the EU, the UK or another country that gives you stronger rights for digital content, those rights apply.
@@ -87,9 +87,9 @@ Refunds are paid by the Reseller to the original payment method. We may refuse a
 
 ## 8. Updates and support
 
-Subscriptions include every update and every new major version released while the subscription is active. The one-time license includes every update of the major version it was bought for (for example, all 1.x releases for a license bought for version 1), but not the next major version (2.0). We decide what counts as a new major version; it will be clearly named as one (for example, “TakeSync 2”), offered as a separate product, and you can always keep using the version you own.
+Updates are free for everyone. A Remove Ads license keeps the ads off in every update and every future major version. Earlier subscriptions include every update while active; earlier one-time licenses include every 1.x update.
 
-- Updates may add, change or remove features, but we will not remove the core function you paid for (audio-based synchronization and timeline export).
+- Updates may add, change or remove features, but we will not remove the core function (audio-based synchronization and timeline export) or bring ads back for a Remove Ads license.
 - Support is provided by email at [support@takesync.uk](mailto:support@takesync.uk), usually within 3 business days, in English and Ukrainian.
 - Keep your own copy of the installer and your License Key.
 - The Software checks the license over the internet from time to time. It keeps working offline for at least 30 days between checks.
