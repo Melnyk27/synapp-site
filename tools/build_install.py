@@ -157,7 +157,7 @@ page = f'''<!doctype html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20261026c">
+<link rel="stylesheet" href="/styles.css?v=20261103">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -183,7 +183,7 @@ page = f'''<!doctype html>
 </header>
 <main id="main" class="container narrow legal">
 {''.join(section(c, T[c]) for c, _ in LANGS)}</main>
-<script src="/i18n.js?v=20261026c"></script>
+<script src="/i18n.js?v=20261103"></script>
 <script src="/install.js?v=20261026c"></script>
 <script src="/track.js?v=1"></script>
 </body>
