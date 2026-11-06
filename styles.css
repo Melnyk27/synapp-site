@@ -211,6 +211,7 @@ p { margin: 0; }
 /* ---------- pricing: three plans side by side ---------- */
 .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px; max-width: 1040px; }
 .plans-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 720px; }
+.plans-1 { grid-template-columns: minmax(0, 1fr); max-width: 360px; }
 .plans-note { margin-top: 18px; }
 .plan { border: 1px solid var(--border); border-radius: 16px; padding: clamp(18px, 2.4vw, 28px); display: flex; flex-direction: column; gap: 12px; min-width: 0; }
 .plan-main { border-color: var(--accent); background: linear-gradient(180deg, rgba(91, 156, 255, .07), transparent 60%); }

@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261103">
+<link rel="stylesheet" href="styles.css?v=20261106">
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
@@ -57,10 +57,10 @@
         <h1 id="hero-title" data-i18n="hero.title">Drop the footage. Get the timeline.</h1>
         <p class="lead" data-i18n="hero.lead">TakeSync lines up every camera, recorder and lav mic by their sound — no timecode, no slate, no clapping. Then hands the synced timeline to Premiere Pro.</p>
         <div class="cta-row">
-          <a href="/install" class="btn btn-primary btn-lg" data-i18n="hero.cta">Download free trial</a>
+          <a href="/install" class="btn btn-primary btn-lg" data-i18n="hero.cta">Download free</a>
           <button type="button" class="btn btn-ghost btn-lg" id="watch" hidden data-i18n="hero.watch">Watch the 36-second overview</button>
         </div>
-        <p class="fine" data-i18n="hero.fine">For Macs with Apple Silicon. 7 days of everything, then free with ads. Works offline.</p>
+        <p class="fine" data-i18n="hero.fine">For Macs with Apple Silicon. Free, every feature, no ads. Works offline.</p>
       </div>
   </section>
 
@@ -204,24 +204,16 @@
   </section>
 
   <section id="pricing" class="container section" aria-labelledby="price-title">
-    <h2 id="price-title" data-i18n="price.title">Free to use. $10 to remove ads.</h2>
-    <p class="section-lead" data-i18n="price.lead">Every feature is in the free version. The first 7 days have no ads; after that you see ads in the export panel. One payment removes them for good.</p>
-    <div class="plans plans-2">
-      <article class="plan">
+    <h2 id="price-title" data-i18n="price.title">Free. Every feature, no ads.</h2>
+    <p class="section-lead" data-i18n="price.lead">TakeSync is free to use: no trial, no time limit, no ads. No card, no account.</p>
+    <div class="plans plans-1">
+      <article class="plan plan-main">
         <h3 data-i18n="price.free">Free</h3>
         <p class="price"><span class="amt">$0</span></p>
-        <p class="muted" data-i18n="price.freeSub">Every feature. 7 days without ads, then with ads. No card, no account.</p>
-        <a href="/install" class="btn btn-ghost btn-block" data-i18n="price.download">Download</a>
-      </article>
-      <article class="plan plan-main">
-        <h3 data-i18n="price.noads">Remove ads</h3>
-        <p class="price"><span class="amt" data-usd="10">$10</span><span class="per" data-i18n="price.once">once</span></p>
-        <p class="price-local" data-usd="10" hidden></p>
-        <p class="muted" data-i18n="price.noadsSub">Pay once, no ads for good — in this and every future version, on 2 computers. Supports development.</p>
-        <a href="#pricing" class="btn btn-primary btn-block" data-plan="noads" data-i18n="price.buyNoads">Remove ads</a>
+        <p class="muted" data-i18n="price.freeSub">Every feature, no time limit, no ads.</p>
+        <a href="/install" class="btn btn-primary btn-block" data-i18n="price.download">Download</a>
       </article>
     </div>
-    <p class="small faint plans-note" id="price-note" data-i18n="price.noteUsd">Prices in US dollars. Tax is calculated at checkout based on your country.</p>
   </section>
 
   <section id="faq" class="container narrow section" aria-labelledby="faq-title">
@@ -232,20 +224,20 @@
       <details><summary data-i18n="faq.q3">What happens to a clip with no sound partner?</summary><p data-i18n="faq.a3">If its camera’s clock is reliable, the clip goes on the timeline at the time it was recorded and is marked so you can check it. Otherwise it’s marked as not synced, and on export you can move such clips to the end.</p></details>
       <details><summary data-i18n="faq.q4">Does it fix drift on long recordings?</summary><p data-i18n="faq.a4">Yes. TakeSync detects when a recorder runs slightly fast or slow against the cameras and corrects the audio.</p></details>
       <details><summary data-i18n="faq.q5">What about Final Cut Pro, DaVinci Resolve and Windows?</summary><p data-i18n="faq.a5">Final Cut Pro and DaVinci Resolve are supported since version 1.0.1. Windows is in testing and arrives as a free update.</p></details>
-      <details><summary data-i18n="faq.q6">What do I get for $10?</summary><p data-i18n="faq.a6">No more ads, for good: in this version and every future one, on up to 2 computers. Everything else is the same as in the free version — it isn’t cut down. If paid extras come later, your ad-free license stays ad-free.</p></details>
+      <details><summary data-i18n="faq.q6">Is it really free?</summary><p data-i18n="faq.a6">Yes: every feature, no time limit, no ads. If paid extras come one day, everything you can do today stays free. Licenses bought earlier keep working.</p></details>
     </div>
   </section>
 
   <section id="download" class="container section-last" aria-labelledby="final-title">
     <div class="final">
       <h2 id="final-title" data-i18n="final.title">Spend the evening editing, not lining up clips.</h2>
-      <p class="muted" data-i18n="final.sub">7 days free, then free with ads. No card required.</p>
+      <p class="muted" data-i18n="final.sub">Free. No card, no account.</p>
       <div class="cta-row">
         <a href="/install" class="btn btn-primary btn-lg" data-i18n="final.mac">Download for Mac (Apple Silicon)</a>
       </div>
       <p class="small muted" data-i18n="final.gatekeeper" style="max-width:60ch;margin:12px auto 0">First launch: macOS may say it can’t verify the developer. Open System Settings → Privacy & Security, scroll down and click “Open Anyway”. Only needed once.</p>
       <p class="small"><a href="/install" data-i18n="final.install">Step-by-step install guide</a></p>
-      <p class="small faint" data-i18n="final.req">TakeSync 1.1.3 · Mac with Apple Silicon · Premiere Pro, Final Cut Pro, DaVinci Resolve. Windows is in testing.</p>
+      <p class="small faint" data-i18n="final.req">TakeSync 1.1.5 · Mac with Apple Silicon · Premiere Pro, Final Cut Pro, DaVinci Resolve. Windows is in testing.</p>
     </div>
   </section>
 </main>
@@ -267,9 +259,8 @@
   <form method="dialog"><button class="btn btn-ghost btn-sm" data-i18n="video.close">Close</button></form>
 </dialog>
 
-<script src="i18n.js?v=20261103b"></script>
+<script src="i18n.js?v=20261106"></script>
 <script src="main.js?v=20261026b"></script>
-<script src="checkout.js?v=20261103"></script>
 <script src="track.js?v=1"></script>
 </body>
 </html>

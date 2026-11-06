@@ -1,7 +1,7 @@
 ---
 title: End User License Agreement
 description: The license terms for TakeSync: 7-day trial, then a free version with ads; a one-time Remove Ads license for one person on up to 2 computers; 14-day refunds.
-updated: 3 November 2026
+updated: 6 November 2026
 ---
 
 ## 1. Agreement and parties
@@ -12,15 +12,14 @@ By installing, opening or using the Software you accept this Agreement. If you d
 
 Our order process is conducted by our online reseller Paddle.com Market Limited (“Paddle”, the “Reseller”). Paddle is the Merchant of Record for all our orders. The Reseller sells you the license and handles payment, taxes, invoices and refunds under its own buyer terms. The license itself is granted by us under this Agreement.
 
-**Definitions.** “Trial” means the free evaluation period in section 2. “License Key” means the code or account that unlocks a purchased license. “Output” means files the Software produces for you, such as XML/FCPXML timelines, synchronized audio or video files and reports. “Your Media” means the audio and video files you open in the Software.
+**Definitions.** “Trial” means free use of the Software under section 2. “License Key” means the code or account that unlocks a purchased license. “Output” means files the Software produces for you, such as XML/FCPXML timelines, synchronized audio or video files and reports. “Your Media” means the audio and video files you open in the Software.
 
-## 2. Free trial
+## 2. Free use
 
-You may use the Software free of charge for 7 days from its first launch on a computer, so you can judge whether it suits your work before you buy. The Trial requires no payment details and does not turn into a paid purchase on its own.
+The Software is currently free of charge: all features, no time limit, no advertising and no payment details needed. In this Agreement this free use is called the “Trial”.
 
-- During the Trial, all features are available unless the Software states otherwise.
-- When the Trial ends, the Software switches to the free version with ads: all features keep working, and the Software shows advertising, including a full-panel ad you must view for a few seconds before exporting on some launches. Entering a valid License Key removes the ads. Your projects and files remain on your computer.
-- One Trial per person. You may not reset, extend or bypass the Trial, for example by changing the system clock, reinstalling, or using multiple accounts or virtual machines.
+- We may add paid features, a subscription or advertising to the Software later. We will say so on our website and in the Software before such a change applies to you. Output you have already made stays yours.
+- License Keys bought earlier keep working as described in section 3.
 - The Trial is provided “as is”. Sections 9 and 10 apply to it in full, to the extent the law allows.
 
 ## 3. License grant
