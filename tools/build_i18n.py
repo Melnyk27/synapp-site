@@ -696,9 +696,9 @@ _FREE = {
 }
 for _l, _d in L.items():
     _d.update(_FREE[_l])
-    _d['final.req'] = _d['final.req'].replace('1.1.3', '1.1.5')
+    _d['final.req'] = _d['final.req'].replace('1.1.3', '1.1.6')
     for _k in ("compat.title", "compat.lead", "compat.state"):
-        if _k in _d: _d[_k] = _d[_k].replace("1.0.2", "1.1.5")
+        if _k in _d: _d[_k] = _d[_k].replace("1.0.2", "1.1.6")
 
 # "Get TakeSync" window (get.js): email + pay what you want
 _GET_KEYS = ["get.title", "get.lead", "get.email", "get.price", "get.other", "get.min", "get.btnFree", "get.btnPay", "get.noteFree", "get.notePay", "get.errEmail", "get.errDisposable", "get.errMin", "get.errNet", "get.doneTitle", "get.doneText", "get.download", "get.install", "get.close"]
