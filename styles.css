@@ -298,3 +298,22 @@ p { margin: 0; }
   .thanks ol li { margin-top: 6px; }
   .row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
 
+
+/* "Get TakeSync" window: email + pay what you want ($0 or MIN..) */
+.get-dialog { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 16px; padding: 28px; width: min(460px, calc(100vw - 32px)); position: relative; }
+.get-dialog::backdrop { background: rgba(5, 6, 8, .78); }
+.get-dialog h2 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+.get-dialog .muted { margin-top: 8px; }
+.get-label { display: block; margin: 20px 0 8px; font-size: 14px; color: var(--muted); }
+.get-dialog input { font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--border-strong); border-radius: 10px; min-height: 44px; padding: 0 12px; }
+#get-email { width: 100%; }
+.get-amounts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.get-amounts button { font: inherit; font-weight: 700; color: var(--text); background: var(--bg); border: 1px solid var(--border-strong); border-radius: 10px; min-height: 44px; cursor: pointer; }
+.get-amounts button[aria-checked="true"] { border: 2px solid var(--accent); color: var(--accent); }
+.get-other { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 14px; color: var(--muted); }
+.get-other input { width: 90px; min-height: 38px; }
+.get-err { min-height: 22px; margin: 10px 0 6px; font-size: 14px; color: var(--cut); }
+.get-note { margin-top: 10px; text-align: center; }
+.get-x { position: absolute; top: 12px; right: 14px; background: none; border: 0; color: var(--muted); font-size: 26px; line-height: 1; cursor: pointer; }
+.get-x:hover { color: var(--text); }
+#get-done .btn { margin-top: 20px; }
