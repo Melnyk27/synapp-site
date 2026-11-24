@@ -1,10 +1,10 @@
 {
   "version": "1.1.6",
   "notes": "",
-  "pub_date": "2026-11-24T12:28:00.712Z",
+  "pub_date": "2026-11-24T12:38:12.369Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUcnZvTGlLUm9vK3hHTnliWnkxNGs3bUx6VGRWQUhNelZkc3RsbXpzK0M3OHRMZm9VS3pUT0lHQjVOOU1EMWtpem5KaldmcTlFU2pnanVzamNiL0R2WTVmRDhaUXVBYkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIzMjgwCWZpbGU6VGFrZVN5bmMuYXBwLnRhci5negl2ZXJzaW9uOjEuMS42CnljSk9ZTHZrR3JKWVFVNktVN2l1c29WM2hTSzNOZGVnQkZ4ZFQ3VkdXTVNWVDRnYUQwaFg4bWF0VjlRelRzNGdjNnBONG5qYnUxeXUvOXdNcEg1RkF3PT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUcnZvTGlLUm9vK3hXU1VyQXJsdFJLMjlYOFU5Y0lUcWd3c1gwbDNqMXRhVTdJb0t5cWx6UjVteFhCdmhjUEN6K2FzRHZYTGpxaGc1VHA1ZWtwdWFmRWhXQ2U5VURTdEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIzODkxCWZpbGU6VGFrZVN5bmMuYXBwLnRhci5negl2ZXJzaW9uOjEuMS42CnBxcGd2NDFvdC9aVDBPeXB3eWZnanFEaHlPYkdFR2JPS1VkMERydzgrSEpMNExELytPYWdsZ1FmNkkwUDJyei8zSUxPamIwVUdQWTJiVUx6cVR4ckNnPT0K",
       "url": "https://takesync.uk/updates/TakeSync_1.1.6_aarch64.app.tar.gz"
     }
   }
