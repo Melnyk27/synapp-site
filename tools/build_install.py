@@ -125,7 +125,7 @@ def section(lang, t):
   <p class="legal-updated">{t['sub']}</p>
   <div class="dl-note">{t['note']}</div>
   <h2>1. {t['s1']}</h2>
-  <p><a class="btn btn-primary btn-lg" href="/download/TakeSync.dmg" download>{t['btn']}</a></p>
+  <p><a class="btn btn-primary btn-lg" href="/?get=1">{t['btn']}</a></p>
   <p>{t['p1']}</p>
   <h2>2. {t['s2']}</h2>
   <p>{t['p2']}</p>
@@ -178,7 +178,7 @@ page = f'''<!doctype html>
       <span class="visually-hidden" data-i18n="nav.lang">Language</span>
       <select id="lang-select">{options}</select>
     </label>
-    <a href="/download/TakeSync.dmg" download class="btn btn-primary btn-sm" data-i18n="nav.download">Download</a>
+    <a href="/?get=1" class="btn btn-primary btn-sm" data-i18n="nav.download">Download</a>
   </nav>
 </header>
 <main id="main" class="container narrow legal">
